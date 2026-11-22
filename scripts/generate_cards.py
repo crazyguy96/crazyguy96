@@ -436,13 +436,39 @@ def build_terminal(theme="dark"):
 
 # ---- 3 · Project Cards (meeting, delay, vision, mazdoor) -----------------------
 CARD_W = 434
-CARD_H = 186
+CARD_H = 226
 
 
-def build_project_card(filename, category, title, subhead, meta, accent_color, right_svg, delay):
+def build_project_card(filename, category, title, desc_lines, tags, repo_slug, accent_color, right_svg, delay):
     w, h = CARD_W, CARD_H
     css = font_face() + BASE_CSS
-    content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)} - {escape(subhead)}">
+    
+    # Generate description lines
+    desc_svg = []
+    y_start = 56
+    for i, line in enumerate(desc_lines):
+        y = y_start + i * 16.5
+        desc_svg.append(
+            f'<text class="r" style="animation-delay:{delay + 0.12 + i * 0.04:.2f}s" '
+            f'x="0" y="{y:.1f}" font-family="{SANS}" font-size="11.5" fill="{INK_SOFT}">{escape(line)}</text>'
+        )
+    desc_str = "\n    ".join(desc_svg)
+
+    # Generate tag pills
+    tags_svg = []
+    cur_x = 0
+    for j, tag in enumerate(tags):
+        tag_w = round(len(tag) * 5.8 + 14)
+        tags_svg.append(
+            f'<g class="f" style="animation-delay:{delay + 0.3 + j * 0.05:.2f}s" transform="translate({cur_x}, 0)">\n'
+            f'      <rect width="{tag_w}" height="19" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>\n'
+            f'      <text x="{tag_w / 2:.1f}" y="13" text-anchor="middle" font-family="{MONO}" font-size="9.5" fill="{INK_SOFT}">{escape(tag)}</text>\n'
+            f'    </g>'
+        )
+        cur_x += tag_w + 6
+    tags_str = "\n    ".join(tags_svg)
+
+    content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)} - {escape(category)}">
 <title>{escape(title)}</title>
 <style>{css}</style>
 <defs>
@@ -457,31 +483,45 @@ def build_project_card(filename, category, title, subhead, meta, accent_color, r
 <!-- Card Surface -->
 <g clip-path="url(#card-clip-{filename})">
   <rect width="{w}" height="{h}" fill="{WHITE}" stroke="{BORDER}" stroke-width="1"/>
-  <rect class="sh" style="animation-delay:{delay + 1.2:.2f}s" x="0" y="0" width="100" height="{h}" fill="url(#card-sheen)" transform="translate(-260 0)"/>
+  <rect class="sh" style="animation-delay:{delay + 1.2:.2f}s" x="0" y="0" width="120" height="{h}" fill="url(#card-sheen)" transform="translate(-280 0)"/>
 </g>
 <rect width="{w}" height="{h}" rx="14" fill="none" stroke="{BORDER}" stroke-width="1"/>
 
-<!-- Left Content -->
-<g transform="translate(24, 32)">
+<!-- Left Content Block -->
+<g transform="translate(22, 22)">
+  <!-- Category Tag -->
   <g class="f" style="animation-delay:{delay:.2f}s">
     <rect x="0" y="0" width="6" height="6" rx="1.5" fill="{accent_color}"/>
-    <text x="12" y="6" font-family="{MONO}" font-size="11" letter-spacing="1" fill="{accent_color}">{escape(category)}</text>
+    <text x="12" y="6" font-family="{MONO}" font-size="10.5" letter-spacing="1" font-weight="600" fill="{accent_color}">{escape(category)}</text>
   </g>
-  <text class="r" style="animation-delay:{delay + 0.1:.2f}s" x="0" y="36" font-family="{SANS}" font-weight="600" font-size="19" fill="{INK}" letter-spacing="-0.3">
+  
+  <!-- Title -->
+  <text class="r" style="animation-delay:{delay + 0.08:.2f}s" x="0" y="32" font-family="{SANS}" font-weight="600" font-size="18.5" fill="{INK}" letter-spacing="-0.3">
     {escape(title)}
   </text>
-  <text class="r" style="animation-delay:{delay + 0.2:.2f}s" x="0" y="62" font-family="{SANS}" font-size="13.5" fill="{INK_SOFT}">
-    {escape(subhead)}
-  </text>
-  <text class="r" style="animation-delay:{delay + 0.3:.2f}s" x="0" y="100" font-family="{MONO}" font-size="11" fill="{MUTED}">
-    {escape(meta)}
-  </text>
-  <text class="nu" x="228" y="100" font-family="{MONO}" font-size="12" fill="{accent_color}">&#8599;</text>
+  
+  <!-- Description (What I worked on) -->
+  <g>
+    {desc_str}
+  </g>
+
+  <!-- Divider -->
+  <line class="f" style="animation-delay:{delay + 0.28:.2f}s" x1="0" y1="127" x2="234" y2="127" stroke="#ebebe6" stroke-width="0.8"/>
+
+  <!-- Tech Stack Tag Pills -->
+  <g transform="translate(0, 137)">
+    {tags_str}
+  </g>
+
+  <!-- Repo Action Link -->
+  <g transform="translate(0, 175)" class="r" style="animation-delay:{delay + 0.42:.2f}s">
+    <text x="0" y="0" font-family="{MONO}" font-size="11" font-weight="600" fill="{accent_color}">{escape(repo_slug)} &#8599;</text>
+  </g>
 </g>
 
 <!-- Right Schematic Visual Box -->
-<g transform="translate(276, 24)">
-  <rect class="f" style="animation-delay:{delay + 0.15:.2f}s" width="134" height="138" rx="10" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
+<g transform="translate(274, 18)">
+  <rect class="f" style="animation-delay:{delay + 0.15:.2f}s" width="138" height="190" rx="10" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
   {right_svg}
 </g>
 </svg>"""
@@ -492,21 +532,31 @@ def generate_project_cards():
     # 1. meeting.svg
     meeting_visual = f"""
   <text class="f" style="animation-delay:0.4s" x="14" y="22" font-family="{MONO}" font-size="9" fill="{MUTED}">SPEECH WAVEFORM</text>
-  <path class="r" style="animation-delay:0.5s" d="M 14 44 h 10 l 4 -8 l 6 16 l 7 -22 l 7 28 l 8 -18 l 6 12 l 8 -8 h 26" 
+  <path class="r" style="animation-delay:0.5s" d="M 14 50 h 10 l 4 -8 l 6 16 l 7 -22 l 7 28 l 8 -18 l 6 12 l 8 -8 h 30" 
         fill="none" stroke="{BLUE}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-  <line class="f" style="animation-delay:0.6s" x1="14" y1="68" x2="100" y2="68" stroke="#d5d5cf" stroke-width="2" stroke-linecap="round"/>
-  <line class="f" style="animation-delay:0.65s" x1="14" y1="78" x2="80" y2="78" stroke="#dcdcd7" stroke-width="2" stroke-linecap="round"/>
+  <line class="f" style="animation-delay:0.6s" x1="14" y1="76" x2="106" y2="76" stroke="#d5d5cf" stroke-width="2" stroke-linecap="round"/>
+  <line class="f" style="animation-delay:0.65s" x1="14" y1="88" x2="84" y2="88" stroke="#dcdcd7" stroke-width="2" stroke-linecap="round"/>
+  <text class="f" style="animation-delay:0.7s" x="14" y="116" font-family="{MONO}" font-size="9" fill="{MUTED}">16 kHz log-mel · 0.4s</text>
   
   <!-- Verified check badge -->
-  <g transform="translate(14, 98)" class="f" style="animation-delay:0.75s">
-    <rect width="106" height="24" rx="4" fill="#e8efff" stroke="#c7d8ff" stroke-width="1"/>
+  <g transform="translate(14, 134)" class="f" style="animation-delay:0.75s">
+    <rect width="110" height="24" rx="4" fill="#e8efff" stroke="#c7d8ff" stroke-width="1"/>
     <path d="M 10 12 l 3 3 l 6 -6" fill="none" stroke="{BLUE}" stroke-width="1.5" stroke-linecap="round"/>
     <text x="24" y="15" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{BLUE}">0% HALLUCINATION</text>
   </g>
+  <text class="f" style="animation-delay:0.85s" x="14" y="176" font-family="{MONO}" font-size="8.5" fill="{BLUE}">&#x2713; Transcript Grounded</text>
 """
-    build_project_card("meeting", "SPEECH PIPELINE", "AI Meeting Assistant",
-                       "Audio to verified action items", "Faster-Whisper · Verification",
-                       BLUE, meeting_visual, 0.1)
+    meeting_desc = [
+        "Inter IIT ML bootcamp pipeline turning",
+        "audio into minutes & action items.",
+        "Faster-Whisper transcription checked",
+        "against ground-truth evidence."
+    ]
+    build_project_card(
+        "meeting", "SPEECH PIPELINE", "AI Meeting Assistant",
+        meeting_desc, ["Faster-Whisper", "Verification"],
+        "AI_Meeting_Assistant", BLUE, meeting_visual, 0.1
+    )
 
     # 2. delay.svg
     delay_visual = f"""
@@ -514,32 +564,44 @@ def generate_project_cards():
   
   <g transform="translate(14, 38)" font-family="{MONO}" font-size="8.5">
     <text x="0" y="10" fill="{INK_SOFT}">Clearance</text>
-    <rect class="r" style="animation-delay:0.55s" x="50" y="3" width="52" height="8" rx="2" fill="{AMBER}"/>
+    <rect class="r" style="animation-delay:0.55s" x="52" y="3" width="54" height="8" rx="2" fill="{AMBER}"/>
     
     <text x="0" y="28" fill="{INK_SOFT}">Disputes</text>
-    <rect class="r" style="animation-delay:0.65s" x="50" y="21" width="38" height="8" rx="2" fill="{AMBER}" opacity="0.8"/>
+    <rect class="r" style="animation-delay:0.65s" x="52" y="21" width="40" height="8" rx="2" fill="{AMBER}" opacity="0.85"/>
     
-    <text x="0" y="46" fill="{INK_SOFT}">Buffer</text>
-    <rect class="r" style="animation-delay:0.75s" x="50" y="39" width="28" height="8" rx="2" fill="#71717a"/>
-    <line x1="50" y1="0" x2="50" y2="52" stroke="#d5d5cf" stroke-width="1"/>
+    <text x="0" y="46" fill="{INK_SOFT}">Budget</text>
+    <rect class="r" style="animation-delay:0.72s" x="52" y="39" width="30" height="8" rx="2" fill="{AMBER}" opacity="0.65"/>
+
+    <text x="0" y="64" fill="{INK_SOFT}">Buffer</text>
+    <rect class="r" style="animation-delay:0.78s" x="52" y="57" width="20" height="8" rx="2" fill="#71717a"/>
+    <line x1="52" y1="0" x2="52" y2="70" stroke="#d5d5cf" stroke-width="1"/>
   </g>
   
   <!-- Risk Score -->
-  <g transform="translate(14, 102)" class="f" style="animation-delay:0.85s">
-    <rect width="106" height="22" rx="4" fill="#fef3c7" stroke="#fde68a" stroke-width="1"/>
-    <text x="12" y="15" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{AMBER}">RISK INDEX: 78.4%</text>
+  <g transform="translate(14, 134)" class="f" style="animation-delay:0.85s">
+    <rect width="110" height="24" rx="4" fill="#fef3c7" stroke="#fde68a" stroke-width="1"/>
+    <text x="12" y="16" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{AMBER}">RISK INDEX: 78.4%</text>
   </g>
+  <text class="f" style="animation-delay:0.95s" x="14" y="176" font-family="{MONO}" font-size="8.5" fill="{AMBER}">High Delay Probability</text>
 """
-    build_project_card("delay", "EXPLAINABLE ML", "Land Delay Prediction",
-                       "Risk scores & SHAP attribution", "LightGBM · XGBoost · SHAP",
-                       AMBER, delay_visual, 0.2)
+    delay_desc = [
+        "Smart India Hackathon PS 26017.",
+        "Compares ML classifiers for infra delay",
+        "risk; uses SHAP attribution to explain",
+        "predictions on unlabeled projects."
+    ]
+    build_project_card(
+        "delay", "EXPLAINABLE ML", "Land Delay Prediction",
+        delay_desc, ["LightGBM", "XGBoost", "SHAP"],
+        "SIH_PS_ID_26017", AMBER, delay_visual, 0.2
+    )
 
     # 3. vision.svg
     vision_visual = f"""
   <text class="f" style="animation-delay:0.5s" x="14" y="22" font-family="{MONO}" font-size="9" fill="{MUTED}">ViT ATTENTION MAP</text>
   
   <!-- Astronomical Galaxy Drawing -->
-  <g transform="translate(67, 65)">
+  <g transform="translate(69, 74)">
     <ellipse cx="0" cy="0" rx="46" ry="19" transform="rotate(-26)" fill="#ede9fe" fill-opacity="0.8"/>
     <ellipse cx="0" cy="0" rx="28" ry="10" transform="rotate(-26)" fill="#ddd6fe" fill-opacity="0.9"/>
     <circle cx="0" cy="0" r="2.5" fill="{VIOLET}"/>
@@ -552,38 +614,69 @@ def generate_project_cards():
     <rect class="r" style="animation-delay:0.7s" x="-10" y="-10" width="20" height="20" fill="none" stroke="{VIOLET}" stroke-width="1.2" stroke-dasharray="2 2"/>
   </g>
   
-  <text class="f" style="animation-delay:0.8s" x="14" y="122" font-family="{MONO}" font-size="8.5" fill="{MUTED}">DINOv2 patch tokens</text>
+  <!-- Model Badge -->
+  <g transform="translate(14, 134)" class="f" style="animation-delay:0.8s">
+    <rect width="110" height="24" rx="4" fill="#ede9fe" stroke="#ddd6fe" stroke-width="1"/>
+    <text x="10" y="16" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{VIOLET}">DINOv2 EMBEDDINGS</text>
+  </g>
+  <text class="f" style="animation-delay:0.9s" x="14" y="176" font-family="{MONO}" font-size="8.5" fill="{VIOLET}">DESI Legacy Survey</text>
 """
-    build_project_card("vision", "COMPUTER VISION", "Vision Transformers",
-                       "DINOv2 on galaxy surveys", "PyTorch · DINOv2 · CIFAR-10",
-                       VIOLET, vision_visual, 0.3)
+    vision_desc = [
+        "DINOv2 representations on DESI Legacy",
+        "Survey galaxy images, plus a compact",
+        "DINO student–teacher model trained",
+        "end-to-end on CIFAR-10."
+    ]
+    build_project_card(
+        "vision", "COMPUTER VISION", "Vision Transformers",
+        vision_desc, ["PyTorch", "DINOv2", "CIFAR-10"],
+        "Self-Supervised-Vit", VIOLET, vision_visual, 0.3
+    )
 
     # 4. mazdoor.svg
     mazdoor_visual = f"""
   <text class="f" style="animation-delay:0.55s" x="14" y="22" font-family="{MONO}" font-size="9" fill="{MUTED}">WORK LOG LEDGER</text>
   
   <!-- Ledger Slip -->
-  <g transform="translate(14, 34)">
-    <rect width="106" height="70" rx="4" fill="{WHITE}" stroke="#dcdcd7" stroke-width="1"/>
+  <g transform="translate(14, 38)">
+    <rect width="110" height="82" rx="4" fill="{WHITE}" stroke="#dcdcd7" stroke-width="1"/>
     
     <g font-family="{MONO}" font-size="8.5">
       <text x="8" y="18" fill="{INK_SOFT}">Shift 08h</text>
-      <text x="98" y="18" text-anchor="end" fill="{GREEN}">₹650</text>
-      <line x1="8" y1="24" x2="98" y2="24" stroke="#ebebe6" stroke-width="0.75"/>
+      <text x="102" y="18" text-anchor="end" fill="{GREEN}">₹650</text>
+      <line x1="8" y1="24" x2="102" y2="24" stroke="#ebebe6" stroke-width="0.75"/>
       
       <text x="8" y="38" fill="{INK_SOFT}">Shift 08h</text>
-      <text x="98" y="38" text-anchor="end" fill="{GREEN}">₹650</text>
-      <line x1="8" y1="44" x2="98" y2="44" stroke="#ebebe6" stroke-width="0.75"/>
+      <text x="102" y="38" text-anchor="end" fill="{GREEN}">₹650</text>
+      <line x1="8" y1="44" x2="102" y2="44" stroke="#ebebe6" stroke-width="0.75"/>
 
-      <text x="8" y="58" fill="{MUTED}">Verified</text>
-      <text x="98" y="58" text-anchor="end" font-weight="600" fill="{INK}">₹1,300</text>
+      <text x="8" y="58" fill="{MUTED}">Overtime 02h</text>
+      <text x="102" y="58" text-anchor="end" fill="{GREEN}">₹200</text>
+      <line x1="8" y1="64" x2="102" y2="64" stroke="#ebebe6" stroke-width="0.75"/>
+
+      <text x="8" y="74" fill="{MUTED}">Total</text>
+      <text x="102" y="74" text-anchor="end" font-weight="600" fill="{INK}">₹1,500</text>
     </g>
   </g>
-  <text class="f" style="animation-delay:0.85s" x="14" y="122" font-family="{MONO}" font-size="8.5" fill="{GREEN}">&#x2713; Tamper-evident proof</text>
+  
+  <!-- Proof Badge -->
+  <g transform="translate(14, 134)" class="f" style="animation-delay:0.85s">
+    <rect width="110" height="24" rx="4" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+    <text x="12" y="16" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{GREEN}">TAMPER-EVIDENT</text>
+  </g>
+  <text class="f" style="animation-delay:0.95s" x="14" y="176" font-family="{MONO}" font-size="8.5" fill="{GREEN}">&#x2713; 100% Offline Vault</text>
 """
-    build_project_card("mazdoor", "CIVIC TECH", "Mazdoor Evidence Kit",
-                       "Work logs & wage records", "Offline-first · LocalStorage",
-                       GREEN, mazdoor_visual, 0.4)
+    mazdoor_desc = [
+        "Mobile-first offline workflow for daily-wage",
+        "workers to log shifts, reconcile wage",
+        "payments, and organize tamper-",
+        "evident records they choose to share."
+    ]
+    build_project_card(
+        "mazdoor", "CIVIC TECH", "Mazdoor Evidence Kit",
+        mazdoor_desc, ["Offline-first", "LocalStorage"],
+        "Mazdoor-Evidence-Kit", GREEN, mazdoor_visual, 0.4
+    )
 
 
 # ---- 4 · activity.svg (Monthly Bars Chart) -------------------------------------

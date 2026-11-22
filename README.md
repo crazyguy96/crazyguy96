@@ -36,13 +36,6 @@
   <a href="https://github.com/crazyguy96/Mazdoor-Evidence-Kit"><img src="./cards/mazdoor.svg" width="49%" alt="Mazdoor Evidence Kit — work logs and wage records"></a>
 </div>
 
-| Project | What I worked on |
-| :--- | :--- |
-| [AI Meeting Assistant](https://github.com/crazyguy96/AI_Meeting_Assistant) | An Inter IIT ML bootcamp project that turns recordings into transcripts, minutes, decisions, and action items. The pipeline uses Faster-Whisper for transcription and checks generated records against transcript evidence. |
-| [Land Acquisition Delay Prediction](https://github.com/crazyguy96/SIH_PS_ID_26017) | A Smart India Hackathon PS 26017 project. The ML pipeline compares classifiers for infrastructure delay risk and uses SHAP to explain predictions on unlabeled projects. |
-| [Self-Supervised Vision Transformers](https://github.com/crazyguy96/Self-Supervised-Vit) | Experiments with DINOv2 representations of DESI Legacy Survey galaxy images, plus a compact DINO-style student–teacher implementation trained on CIFAR-10. |
-| [Mazdoor Evidence Kit](https://github.com/crazyguy96/Mazdoor-Evidence-Kit) | A mobile-first workflow for daily-wage workers to record work, reconcile payments, and organize evidence they can choose to share. |
-
 ## Tools & Technologies
 
 **Languages**  
