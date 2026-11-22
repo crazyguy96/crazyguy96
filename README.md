@@ -2,6 +2,11 @@
   <img src="./cards/hero.svg" alt="Jatin Mehra · Data Science and AI at IIT Guwahati" width="100%">
 </div>
 
+
+<div align="center">
+  <a href="https://github.com/crazyguy96/AI_Meeting_Assistant"><img src="./cards/terminal.svg" width="100%" alt="jatin@github terminal preview. Open the AI Meeting Assistant repository."></a>
+</div>
+
 <p align="center">
   <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/">LinkedIn</a> ·
   <a href="https://leetcode.com/u/JatinMehra08/">LeetCode</a> ·
