@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 252" role="img" aria-labelledby="title details">
+  <title id="title">jatin@github terminal preview</title>
+  <desc id="details">Jatin Mehra studies Data Science and AI at IIT Guwahati. Featured projects include AI Meeting Assistant, Land Delay Risk, DINOv2 Galaxy Vision, and Mazdoor Evidence Kit. The meeting assistant turns audio into transcripts and evidence-checked action items.</desc>
+  <style>
+    .command-text { animation-duration: 12s; animation-iteration-count: infinite; }
+    .command-one { animation-name: type-one; }
+    .command-two { animation-name: type-two; }
+    .command-three { animation-name: type-three; }
+    .output-one { animation: show-one 12s infinite step-end; }
+    .output-two { animation: show-two 12s infinite step-end; }
+    .output-three { animation: show-three 12s infinite step-end; }
+    .prompt { animation: cursor 1s infinite step-end; }
+    @keyframes type-one {
+      0% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(6, end); }
+      9%, 100% { clip-path: inset(0); }
+    }
+    @keyframes type-two {
+      0%, 18% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(11, end); }
+      30%, 100% { clip-path: inset(0); }
+    }
+    @keyframes type-three {
+      0%, 40% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(22, end); }
+      60%, 100% { clip-path: inset(0); }
+    }
+    @keyframes show-one { 0% { opacity: 0; } 11%, 100% { opacity: 1; } }
+    @keyframes show-two { 0% { opacity: 0; } 32%, 100% { opacity: 1; } }
+    @keyframes show-three { 0% { opacity: 0; } 63%, 100% { opacity: 1; } }
+    @keyframes cursor { 50% { opacity: .25; } }
+    @media (prefers-reduced-motion: reduce) {
+      .command-text, .output-one, .output-two, .output-three, .prompt { animation: none; }
+    }
+  </style>
+  <rect x="1" y="1" width="918" height="250" rx="22" fill="#0c1426" stroke="#334362" stroke-width="2"/>
+  <path d="M2 48h916" stroke="#334362"/>
+  <g>
+    <circle cx="29" cy="25" r="5" fill="#fa8699"/>
+    <circle cx="47" cy="25" r="5" fill="#ffc87a"/>
+    <circle cx="65" cy="25" r="5" fill="#6be8e1"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="23">
+    <text x="91" y="32" fill="#afc0dd">jatin@github</text>
+    <g fill="#6be8e1">
+      <text x="31" y="81">$</text>
+      <text x="31" y="137">$</text>
+      <text x="31" y="193">$</text>
+      <text class="command-text command-one" x="58" y="81">whoami</text>
+      <text class="command-text command-two" x="58" y="137">ls projects</text>
+      <text class="command-text command-three" x="58" y="193">open meeting-assistant</text>
+    </g>
+    <g fill="#e9f1ff" font-size="21">
+      <text class="output-one" x="58" y="108">Jatin Mehra · Data Science &amp; AI · IIT Guwahati</text>
+      <text class="output-two" x="58" y="164">Meeting AI · Land Delay Risk · Galaxy Vision · Mazdoor</text>
+      <g class="output-three">
+        <text x="58" y="222">Audio → Transcript → Evidence-checked action items</text>
+        <rect class="prompt" x="710" y="205" width="10" height="21" rx="1" fill="#6be8e1"/>
+      </g>
+    </g>
+  </g>
+</svg>

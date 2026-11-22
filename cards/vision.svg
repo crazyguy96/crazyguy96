@@ -5,7 +5,23 @@
   <linearGradient id="wash"><stop stop-color="#10182b"/><stop offset="1" stop-color="#151e35"/></linearGradient>
   <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#c4a8ff" opacity=".17"/></pattern>
   <clipPath id="side"><rect x="315" y="17" width="118" height="154" rx="14"/></clipPath>
+  <clipPath id="scan-window"><rect x="14" y="20" width="72" height="72"/></clipPath>
+  <linearGradient id="scan-light" x2="0%" y2="100%">
+    <stop stop-color="#e2ccff" stop-opacity="0"/>
+    <stop offset="1" stop-color="#e2ccff" stop-opacity=".46"/>
+  </linearGradient>
 </defs>
+<style>
+  .scanner { animation: scan 5s ease-in-out infinite; }
+  @keyframes scan {
+    0% { transform: translateY(-9px); opacity: 0; }
+    15% { opacity: 1; }
+    75% { opacity: 1; }
+    90%, 100% { transform: translateY(78px); opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { .scanner { animation: none; display: none; } }
+</style>
+
 <rect x="1" y="1" width="448" height="186" rx="21" fill="url(#wash)" stroke="#c4a8ff" stroke-opacity=".48" stroke-width="2"/>
 <g clip-path="url(#side)">
   <rect x="315" y="17" width="118" height="154" fill="#0c1325"/>
@@ -59,6 +75,12 @@
   <circle cx="74.2" cy="79.0" r="0.5" fill="#e8dbff" opacity="0.27"/>
   <path d="M14 20h72v72H14zm24 0v72m24-72v72M14 44h72M14 68h72" fill="none" stroke="#e0cbff" stroke-opacity=".42"/>
   <rect x="38" y="44" width="24" height="24" fill="none" stroke="#f2e8ff"/>
+  <g clip-path="url(#scan-window)">
+    <g class="scanner" opacity="0">
+      <rect x="14" y="9" width="72" height="13" fill="url(#scan-light)"/>
+      <path d="M14 22h72" fill="none" stroke="#efdeff" stroke-width="1.6"/>
+    </g>
+  </g>
 
   </g>
 </g>
