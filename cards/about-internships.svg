@@ -36,12 +36,12 @@
   <g transform="translate(0, 130)" class="f" style="animation-delay:0.55s">
     <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/" target="_blank">
     <g>
-      <rect width="206" height="32" rx="16" fill="#f7f7f5" stroke="#e4e4df" stroke-width="1"/>
+      <rect width="206" height="32" rx="16" fill="#0077b5" stroke="#0077b5" stroke-width="1"/>
       <g transform="translate(12, 8) scale(0.666)">
-        <path fill="#0077b5" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        <path fill="#ffffff" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
       </g>
-      <text x="36" y="20.5" class="sans" font-size="12" font-weight="600" fill="#111111">Connect on LinkedIn</text>
-      <text x="182" y="20.5" class="mono" font-size="12" fill="#e11d48">&#8599;</text>
+      <text x="36" y="20.5" class="sans" font-size="12" font-weight="600" fill="#ffffff">Connect on LinkedIn</text>
+      <text x="182" y="20.5" class="mono" font-size="12" fill="#ffffff">&#8599;</text>
     </g>
     </a>
   </g>

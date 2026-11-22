@@ -21,11 +21,11 @@
 </p>
 
 <div align="center">
-  <a href="https://leetcode.com/u/JatinMehra08/"><img src="./cards/about-leetcode.svg" width="49%" alt="Data Structures &amp; LeetCode — Algorithms &amp; Problem Solving"></a>
-  <a href="https://codeforces.com/profile/crazyguy96"><img src="./cards/about-codeforces.svg" width="49%" alt="Competitive Programming &amp; Codeforces — Contests &amp; Rating"></a>
+  <a href="https://leetcode.com/u/JatinMehra08/"><img src="./cards/about-leetcode.svg?v=3" width="49%" alt="Data Structures &amp; LeetCode — Algorithms &amp; Problem Solving"></a>
+  <a href="https://codeforces.com/profile/crazyguy96"><img src="./cards/about-codeforces.svg?v=3" width="49%" alt="Competitive Programming &amp; Codeforces — Contests &amp; Rating"></a>
   <br>
-  <a href="#about-me"><img src="./cards/about-athletics.svg" width="49%" alt="Athletics &amp; Team Instincts — Badminton, Cricket, Football"></a>
-  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/"><img src="./cards/about-internships.svg" width="49%" alt="Seeking Internships — Reach out on LinkedIn"></a>
+  <a href="#about-me"><img src="./cards/about-athletics.svg?v=3" width="49%" alt="Athletics &amp; Team Instincts — Badminton, Cricket, Football"></a>
+  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/"><img src="./cards/about-internships.svg?v=3" width="49%" alt="Seeking Internships — Reach out on LinkedIn"></a>
 </div>
 
 ## Featured projects
