@@ -22,7 +22,6 @@ I’m looking for **internships in Data Science, AI/ML, or software development*
 <div align="center">
   <a href="#featured-projects"><img src="./cards/build.svg" width="31%" alt="Build: featured projects"></a>
   <a href="#research"><img src="./cards/research.svg" width="31%" alt="Research: machine learning and statistics"></a>
-  <a href="#experience-and-leadership"><img src="./cards/community.svg" width="31%" alt="Community: experience and leadership"></a>
 </div>
 
 ## Featured projects
@@ -46,25 +45,6 @@ I’m looking for **internships in Data Science, AI/ML, or software development*
 
 - **Self-supervised vision.** I’ve explored how DINOv2 represents galaxy images using whole-image and patch-level features, and how those features can support unsupervised object and part discovery.
 - **Bayesian statistics.** In a Weibull competing-risks course project, I compared maximum-likelihood and Bayesian estimators under order constraints using simulation, tracking bias, MSE, and interval coverage.
-
-## Experience and leadership
-
-| Organization | Role | Dates |
-| --- | --- | --- |
-| [IITG.ai](https://www.linkedin.com/company/14387361/) | Coordinator | Oct 2026–Present |
-| [IITG.ai](https://www.linkedin.com/company/14387361/) | Associate | Jan 2026–Oct 2026 |
-| [Anchorenza & RadioG](https://www.linkedin.com/company/67290518/) | Associate | Apr 2026–Present |
-| [Students’ Academic Board, IIT Guwahati](https://www.linkedin.com/company/80428281/) | Branch Representative, DSAI | Oct 2025–Jun 2026 |
-
-As Branch Representative for my first-year DSAI batch, I coordinated communication between students and faculty, managed announcements, and helped students with academic coordination.
-
-My [IITG.ai hackathon submission](https://github.com/crazyguy96/IITG.ai-Hackathon-Submission) includes notebooks for two tasks. For the Inter IIT ML Bootcamp Phase 2, I worked on the [AI Meeting Assistant](https://github.com/crazyguy96/AI_Meeting_Assistant), including documenting how the pipeline checks generated meeting records against transcript evidence.
-
-## Certifications and campus achievements
-
-- **Deloitte Australia Technology Job Simulation** · Forage · June 2026
-- **Certificate for Serving as Branch Representative** · Students’ Academic Board, IIT Guwahati · June 2026
-- **Manthan ’26** · Gold in Standup and Soundbound, Silver in Film Making and Quite Sketchy, Bronze in Group Dance, and participation in Improv
 
 ## Tools I use
 
