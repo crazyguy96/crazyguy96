@@ -38,15 +38,11 @@
 
 ## Tools & Technologies
 
-**Languages**  
-[![Languages](https://skillicons.dev/icons?i=py,cpp,c,bash,html,css,js&theme=light)](https://skillicons.dev)
-
-**Machine Learning & Data Science**  
-[![Machine Learning & Data](https://skillicons.dev/icons?i=pytorch,sklearn,pandas,numpy,jupyter&theme=light)](https://skillicons.dev)  
-*Libraries & frameworks:* LightGBM · XGBoost · SHAP · Faster-Whisper · Gradio
-
-**Environment & Tools**  
-[![Tools](https://skillicons.dev/icons?i=git,github,vscode,linux&theme=light)](https://skillicons.dev)
+<div align="center">
+  <img src="./cards/skills-languages.svg" width="32.8%" alt="Languages — Python, C++, C, Bash, HTML5, CSS3, JavaScript">
+  <img src="./cards/skills-ml.svg" width="32.8%" alt="Machine Learning & AI — PyTorch, Scikit-learn, LightGBM, XGBoost, SHAP">
+  <img src="./cards/skills-tools.svg" width="32.8%" alt="Environment & Tools — Git, GitHub, VS Code, Linux">
+</div>
 
 ## GitHub activity
 
