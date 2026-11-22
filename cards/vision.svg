@@ -37,8 +37,8 @@
 <g transform="translate(24, 28)">
   <!-- Category Tag -->
   <g class="f" style="animation-delay:0.30s">
-    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#7c3aed"/>
-    <text x="12" y="6.5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="1.2" font-weight="600" fill="#7c3aed">COMPUTER VISION</text>
+    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#2563eb"/>
+    <text x="12" y="6.5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="1.2" font-weight="600" fill="#2563eb">COMPUTER VISION</text>
   </g>
   
   <!-- Title -->
@@ -72,7 +72,7 @@
     </g>
 
   <!-- Interactive Action Arrow -->
-  <text class="nu" x="224" y="152" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" fill="#7c3aed">&#8599;</text>
+  <text class="nu" x="224" y="152" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" fill="#2563eb">&#8599;</text>
 </g>
 
 <!-- Right Schematic Visual Box -->
@@ -83,24 +83,24 @@
   
   <!-- Astronomical Galaxy Drawing -->
   <g transform="translate(69, 74)">
-    <ellipse cx="0" cy="0" rx="46" ry="19" transform="rotate(-26)" fill="#ede9fe" fill-opacity="0.8"/>
-    <ellipse cx="0" cy="0" rx="28" ry="10" transform="rotate(-26)" fill="#ddd6fe" fill-opacity="0.9"/>
-    <circle cx="0" cy="0" r="2.5" fill="#7c3aed"/>
-    <circle cx="18" cy="-10" r="1.2" fill="#7c3aed"/>
-    <circle cx="-22" cy="12" r="1" fill="#7c3aed"/>
-    <circle cx="30" cy="14" r="1.5" fill="#7c3aed"/>
-    <circle cx="-14" cy="-14" r="0.8" fill="#7c3aed"/>
+    <ellipse cx="0" cy="0" rx="46" ry="19" transform="rotate(-26)" fill="#eff6ff" fill-opacity="0.9"/>
+    <ellipse cx="0" cy="0" rx="28" ry="10" transform="rotate(-26)" fill="#dbeafe" fill-opacity="0.9"/>
+    <circle cx="0" cy="0" r="2.5" fill="#2563eb"/>
+    <circle cx="18" cy="-10" r="1.2" fill="#2563eb"/>
+    <circle cx="-22" cy="12" r="1" fill="#2563eb"/>
+    <circle cx="30" cy="14" r="1.5" fill="#2563eb"/>
+    <circle cx="-14" cy="-14" r="0.8" fill="#2563eb"/>
     
     <!-- Single attended patch token outline -->
-    <rect class="r" style="animation-delay:0.7s" x="-10" y="-10" width="20" height="20" fill="none" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <rect class="r" style="animation-delay:0.7s" x="-10" y="-10" width="20" height="20" fill="none" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="2 2"/>
   </g>
   
   <!-- Model Badge -->
   <g transform="translate(14, 134)" class="f" style="animation-delay:0.8s">
-    <rect width="110" height="24" rx="4" fill="#ede9fe" stroke="#ddd6fe" stroke-width="1"/>
-    <text x="10" y="16" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" font-weight="600" fill="#7c3aed">DINOv2 EMBEDDINGS</text>
+    <rect width="110" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <text x="10" y="16" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" font-weight="600" fill="#2563eb">DINOv2 EMBEDDINGS</text>
   </g>
-  <text class="f" style="animation-delay:0.9s" x="14" y="176" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" fill="#7c3aed">DESI Legacy Survey</text>
+  <text class="f" style="animation-delay:0.9s" x="14" y="176" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" fill="#2563eb">DESI Legacy Survey</text>
 
 </g>
 </svg>

@@ -593,29 +593,30 @@ def generate_project_cards():
     )
 
     # 3. vision.svg
+    vision_blue = "#2563eb"
     vision_visual = f"""
   <text class="f" style="animation-delay:0.5s" x="14" y="22" font-family="{MONO}" font-size="9" fill="{MUTED}">ViT ATTENTION MAP</text>
   
   <!-- Astronomical Galaxy Drawing -->
   <g transform="translate(69, 74)">
-    <ellipse cx="0" cy="0" rx="46" ry="19" transform="rotate(-26)" fill="#ede9fe" fill-opacity="0.8"/>
-    <ellipse cx="0" cy="0" rx="28" ry="10" transform="rotate(-26)" fill="#ddd6fe" fill-opacity="0.9"/>
-    <circle cx="0" cy="0" r="2.5" fill="{VIOLET}"/>
-    <circle cx="18" cy="-10" r="1.2" fill="{VIOLET}"/>
-    <circle cx="-22" cy="12" r="1" fill="{VIOLET}"/>
-    <circle cx="30" cy="14" r="1.5" fill="{VIOLET}"/>
-    <circle cx="-14" cy="-14" r="0.8" fill="{VIOLET}"/>
+    <ellipse cx="0" cy="0" rx="46" ry="19" transform="rotate(-26)" fill="#eff6ff" fill-opacity="0.9"/>
+    <ellipse cx="0" cy="0" rx="28" ry="10" transform="rotate(-26)" fill="#dbeafe" fill-opacity="0.9"/>
+    <circle cx="0" cy="0" r="2.5" fill="{vision_blue}"/>
+    <circle cx="18" cy="-10" r="1.2" fill="{vision_blue}"/>
+    <circle cx="-22" cy="12" r="1" fill="{vision_blue}"/>
+    <circle cx="30" cy="14" r="1.5" fill="{vision_blue}"/>
+    <circle cx="-14" cy="-14" r="0.8" fill="{vision_blue}"/>
     
     <!-- Single attended patch token outline -->
-    <rect class="r" style="animation-delay:0.7s" x="-10" y="-10" width="20" height="20" fill="none" stroke="{VIOLET}" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <rect class="r" style="animation-delay:0.7s" x="-10" y="-10" width="20" height="20" fill="none" stroke="{vision_blue}" stroke-width="1.2" stroke-dasharray="2 2"/>
   </g>
   
   <!-- Model Badge -->
   <g transform="translate(14, 134)" class="f" style="animation-delay:0.8s">
-    <rect width="110" height="24" rx="4" fill="#ede9fe" stroke="#ddd6fe" stroke-width="1"/>
-    <text x="10" y="16" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{VIOLET}">DINOv2 EMBEDDINGS</text>
+    <rect width="110" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <text x="10" y="16" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{vision_blue}">DINOv2 EMBEDDINGS</text>
   </g>
-  <text class="f" style="animation-delay:0.9s" x="14" y="176" font-family="{MONO}" font-size="8.5" fill="{VIOLET}">DESI Legacy Survey</text>
+  <text class="f" style="animation-delay:0.9s" x="14" y="176" font-family="{MONO}" font-size="8.5" fill="{vision_blue}">DESI Legacy Survey</text>
 """
     vision_desc = [
         "DINOv2 representations on DESI Legacy",
@@ -626,7 +627,7 @@ def generate_project_cards():
     build_project_card(
         "vision", "COMPUTER VISION", "Vision Transformers",
         vision_desc, ["PyTorch", "DINOv2", "CIFAR-10"],
-        VIOLET, vision_visual, 0.3
+        vision_blue, vision_visual, 0.3
     )
 
     # 4. mazdoor.svg
