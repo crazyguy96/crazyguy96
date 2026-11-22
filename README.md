@@ -15,12 +15,16 @@
 
 ## About me
 
-> **Sophomore at IIT Guwahati** pursuing a **B.Tech in Data Science & Artificial Intelligence (2025–2029)**.  
-> Interested in how machine learning can solve problems with messy, real-world inputs—from meeting audio and infrastructure reports to galaxy surveys.
+<p align="center">
+  <b>Sophomore at IIT Guwahati</b> · B.Tech in Data Science &amp; AI (2025–2029)<br>
+  Machine learning systems for messy, real-world inputs.
+</p>
 
-| 🧠 Algorithms & Systems | 🏸 Beyond the Screen | 💼 Opportunities |
-| :--- | :--- | :--- |
-| Competitive programming on [LeetCode](https://leetcode.com/u/JatinMehra08/) & [Codeforces](https://codeforces.com/profile/crazyguy96). Breaking down complex problems and turning algorithms into clean working tools. | Badminton competitor, cricket and football player. Sports have taught me to think on my feet and build high-tempo team rhythm. | Looking for **internships in Data Science, AI/ML, or Software Development**. Open to collaborations—[reach out on LinkedIn](https://www.linkedin.com/in/jatin-mehra-51a675380/). |
+<div align="center">
+  <a href="https://leetcode.com/u/JatinMehra08/"><img src="./cards/about-code.svg" width="32.8%" alt="Data Structures &amp; Code — LeetCode and Codeforces"></a>
+  <a href="#about-me"><img src="./cards/about-sports.svg" width="32.8%" alt="Athletics &amp; Team Instincts — Badminton, Cricket, Football"></a>
+  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/"><img src="./cards/about-work.svg" width="32.8%" alt="Seeking Internships — Reach out on LinkedIn"></a>
+</div>
 
 ## Featured projects
 

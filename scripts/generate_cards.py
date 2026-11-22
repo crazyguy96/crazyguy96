@@ -716,6 +716,162 @@ def generate_social_icons():
         write_card(f"{name}.svg", pill_svg)
 
 
+
+# ---- 6 · About Me 3-Pillar Cards -----------------------------------------------
+def generate_about_cards():
+    w, h = 286, 216
+    css = font_face() + """
+.serif { font-family: 'Instrument Serif', Georgia, serif; }
+.sans { font-family: Geist, system-ui, -apple-system, sans-serif; }
+.mono { font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+.f { opacity: 0; animation: fade .8s ease-out both; }
+.r { opacity: 0; animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+.live { animation: pulse 2s ease-in-out infinite; }
+"""
+
+    # 1. about-code.svg
+    code_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Algorithms &amp; Systems - LeetCode and Codeforces">
+<title>Algorithms &amp; Systems</title>
+<style>{css}</style>
+<rect width="{w}" height="{h}" rx="14" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+
+<g transform="translate(22, 26)">
+  <!-- Tag -->
+  <g class="f" style="animation-delay:0.1s">
+    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#d97706"/>
+    <text x="12" y="6" class="mono" font-size="10" letter-spacing="1" fill="#d97706">01 / ALGORITHMS</text>
+  </g>
+
+  <!-- Title -->
+  <text x="0" y="36" class="serif r" style="animation-delay:0.2s" font-size="22" fill="#111111">
+    Data Structures &amp; Code
+  </text>
+
+  <!-- Body -->
+  <text class="sans r" style="animation-delay:0.3s" font-size="12" fill="#4a4a4e">
+    <tspan x="0" y="64">Breaking down complex problems</tspan>
+    <tspan x="0" y="82">into optimal complexity, then turning</tspan>
+    <tspan x="0" y="100">algorithms into working tools.</tspan>
+  </text>
+
+  <!-- Badges: LeetCode & Codeforces -->
+  <g transform="translate(0, 126)" class="f" style="animation-delay:0.4s">
+    <!-- LeetCode Pill -->
+    <g>
+      <rect width="112" height="28" rx="14" fill="#fcfcfb" stroke="#e4e4df" stroke-width="1"/>
+      <g transform="translate(8, 6) scale(0.666)">
+        <path fill="#ffa116" d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.762-1.823.762s-1.357-.295-1.824-.762L4.57 15.349a2.58 2.58 0 0 1 0-3.647l5.188-5.188a2.58 2.58 0 0 1 3.647 0l2.697 2.608a.748.748 0 0 1-1.058 1.058l-2.697-2.608a1.085 1.085 0 0 0-1.531 0L5.628 12.76a1.085 1.085 0 0 0 0 1.531l5.188 5.189c.423.423 1.108.423 1.531 0l2.697-2.608a.748.748 0 0 1 1.058 1.058z"/>
+        <path fill="#262626" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
+        <path fill="#8a8a8e" d="M8.077 12.75h7.846a.75.75 0 0 0 0-1.5H8.077a.75.75 0 0 0 0 1.5z"/>
+      </g>
+      <text x="30" y="18" class="sans" font-size="11.5" font-weight="600" fill="#111111">LeetCode</text>
+      <text x="96" y="18" class="mono" font-size="11" fill="#d97706">&#8599;</text>
+    </g>
+
+    <!-- Codeforces Pill -->
+    <g transform="translate(120, 0)">
+      <rect width="122" height="28" rx="14" fill="#fcfcfb" stroke="#e4e4df" stroke-width="1"/>
+      <g transform="translate(8, 7) scale(0.666)">
+        <rect x="1.5" y="8" width="5.5" height="13" rx="1.5" fill="#1F8ACB"/>
+        <rect x="9.25" y="2" width="5.5" height="19" rx="1.5" fill="#FCD239"/>
+        <rect x="17" y="5" width="5.5" height="16" rx="1.5" fill="#E34343"/>
+      </g>
+      <text x="30" y="18" class="sans" font-size="11.5" font-weight="600" fill="#111111">Codeforces</text>
+      <text x="106" y="18" class="mono" font-size="11" fill="#1F8ACB">&#8599;</text>
+    </g>
+  </g>
+</g>
+</svg>"""
+    write_card("about-code.svg", code_svg)
+
+    # 2. about-sports.svg
+    sports_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Beyond the Screen - Athletics and Team Instincts">
+<title>Beyond the Screen</title>
+<style>{css}</style>
+<rect width="{w}" height="{h}" rx="14" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+
+<g transform="translate(22, 26)">
+  <!-- Tag -->
+  <g class="f" style="animation-delay:0.15s">
+    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#059669"/>
+    <text x="12" y="6" class="mono" font-size="10" letter-spacing="1" fill="#059669">02 / ATHLETICS</text>
+  </g>
+
+  <!-- Title -->
+  <text x="0" y="36" class="serif r" style="animation-delay:0.25s" font-size="22" fill="#111111">
+    Reflexes &amp; Team Rhythm
+  </text>
+
+  <!-- Body -->
+  <text class="sans r" style="animation-delay:0.35s" font-size="12" fill="#4a4a4e">
+    <tspan x="0" y="64">Badminton is a big part of my life,</tspan>
+    <tspan x="0" y="82">alongside cricket and football. Sports</tspan>
+    <tspan x="0" y="100">taught me to think fast and collaborate.</tspan>
+  </text>
+
+  <!-- Athletic Badges -->
+  <g transform="translate(0, 126)" class="f" style="animation-delay:0.45s">
+    <g>
+      <rect width="84" height="28" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+      <circle cx="14" cy="14" r="3" fill="#059669"/>
+      <path d="M 14 11 L 22 7 M 14 14 L 23 14 M 14 17 L 22 21" stroke="#059669" stroke-width="1.2" stroke-linecap="round"/>
+      <text x="28" y="18" class="mono" font-size="10.5" font-weight="600" fill="#047857">Badminton</text>
+    </g>
+    <g transform="translate(90, 0)">
+      <rect width="72" height="28" rx="6" fill="#f7f7f5" stroke="#e4e4df" stroke-width="1"/>
+      <text x="12" y="18" class="mono" font-size="10.5" fill="#71717a">Cricket</text>
+    </g>
+    <g transform="translate(168, 0)">
+      <rect width="74" height="28" rx="6" fill="#f7f7f5" stroke="#e4e4df" stroke-width="1"/>
+      <text x="12" y="18" class="mono" font-size="10.5" fill="#71717a">Football</text>
+    </g>
+  </g>
+</g>
+</svg>"""
+    write_card("about-sports.svg", sports_svg)
+
+    # 3. about-work.svg
+    work_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Opportunities - Internships in Data Science and AI">
+<title>Opportunities</title>
+<style>{css}</style>
+<rect width="{w}" height="{h}" rx="14" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+
+<g transform="translate(22, 26)">
+  <!-- Tag -->
+  <g class="f" style="animation-delay:0.2s">
+    <circle cx="3" cy="3" r="3" fill="#059669" class="live"/>
+    <text x="14" y="6" class="mono" font-size="10" letter-spacing="1" fill="#059669">03 / ACTIVE CANDIDATE</text>
+  </g>
+
+  <!-- Title -->
+  <text x="0" y="36" class="serif r" style="animation-delay:0.3s" font-size="22" fill="#111111">
+    Seeking Internships
+  </text>
+
+  <!-- Body -->
+  <text class="sans r" style="animation-delay:0.4s" font-size="12" fill="#4a4a4e">
+    <tspan x="0" y="64">Sophomore @ IIT Guwahati (DSAI).</tspan>
+    <tspan x="0" y="82">Looking for Data Science, AI/ML or</tspan>
+    <tspan x="0" y="100">software development roles.</tspan>
+  </text>
+
+  <!-- Action: LinkedIn Pill Button -->
+  <g transform="translate(0, 126)" class="f" style="animation-delay:0.5s">
+    <rect width="242" height="28" rx="14" fill="#0077b5" stroke="#0077b5" stroke-width="1"/>
+    <g transform="translate(14, 6) scale(0.666)">
+      <path fill="#ffffff" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+    </g>
+    <text x="36" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#ffffff">Reach out on LinkedIn</text>
+    <text x="220" y="18.5" class="mono" font-size="12" fill="#ffffff">&#8599;</text>
+  </g>
+</g>
+</svg>"""
+    write_card("about-work.svg", work_svg)
+
+
 if __name__ == "__main__":
     print("generating all cards with Paper & Ink UI/UX...")
     build_hero()
@@ -723,4 +879,5 @@ if __name__ == "__main__":
     generate_project_cards()
     build_activity()
     generate_social_icons()
+    generate_about_cards()
     print("complete.")
