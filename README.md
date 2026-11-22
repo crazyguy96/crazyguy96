@@ -1,26 +1,23 @@
-# Jatin Mehra
+<div align="center">
+  <img src="./cards/hero.svg" alt="Jatin Mehra. Data Science and AI at IIT Guwahati." width="100%">
+</div>
 
-**B.Tech in Data Science and Artificial Intelligence · IIT Guwahati · 2025–2029**
+**B.Tech in Data Science and Artificial Intelligence · IIT Guwahati**
 
-I build machine learning projects with meeting audio, infrastructure reports, and galaxy images. I also enjoy data structures and algorithms and building software around models so people can use their outputs.
+I build applied ML projects that turn messy inputs into outputs people can use, from meeting audio and infrastructure reports to galaxy images.
 
-[Portfolio](https://crazyguy96.github.io/) · [LinkedIn](https://www.linkedin.com/in/jatin-mehra-51a675380/) · [LeetCode](https://leetcode.com/u/JatinMehra08/) · [Codeforces](https://codeforces.com/profile/crazyguy96)
+## Featured projects
 
-## Selected work
+<div align="center">
+  <a href="https://github.com/crazyguy96/AI_Meeting_Assistant"><img src="./cards/meeting.svg" width="48%" alt="AI Meeting Assistant — Turns meeting audio into transcripts and evidence-checked action items."></a>
+  <a href="https://github.com/crazyguy96/SIH_PS_ID_26017"><img src="./cards/delay.svg" width="48%" alt="Land Acquisition Delay Prediction — Scores infrastructure project delay risk and explains predictions with SHAP."></a>
+  <br>
+  <a href="https://github.com/crazyguy96/Self-Supervised-Vit"><img src="./cards/vision.svg" width="48%" alt="Self-Supervised Vision Transformers — Explores DINOv2 representations of galaxy images."></a>
+  <a href="https://github.com/crazyguy96/Mazdoor-Evidence-Kit"><img src="./cards/mazdoor.svg" width="48%" alt="Mazdoor Evidence Kit — Helps daily-wage workers track work, reconcile payments, and organize evidence."></a>
+</div>
 
-### [AI Meeting Assistant](https://github.com/crazyguy96/AI_Meeting_Assistant)
+## Tools I work with
 
-[![Illustrated speech waveform](./assets/meeting-waveform.svg)](https://github.com/crazyguy96/AI_Meeting_Assistant)
+Python, C++ · PyTorch, scikit-learn, LightGBM, XGBoost · pandas, SHAP, Jupyter, Gradio
 
-An Inter IIT ML Bootcamp project that turns recorded meetings into transcripts, minutes, decisions, and action items. It uses Faster-Whisper and checks generated outputs against transcript evidence.
-
-- **[Land Acquisition Delay Prediction](https://github.com/crazyguy96/SIH_PS_ID_26017)** · Compares classifiers for infrastructure delay risk and uses SHAP to explain individual predictions. Smart India Hackathon PS 26017.
-- **[Self-Supervised Vision Transformers](https://github.com/crazyguy96/Self-Supervised-Vit)** · Explores DINOv2 patch features on DESI galaxy images and implements a compact DINO-style student–teacher model on CIFAR-10.
-- **[Mazdoor Evidence Kit](https://github.com/crazyguy96/Mazdoor-Evidence-Kit)** · Helps daily-wage workers log work, reconcile payments, and organize evidence they can choose to share.
-
-## Research and tools
-
-- **Bayesian statistics.** Compared maximum-likelihood and Bayesian estimators under order constraints in a Weibull competing-risks course project. Used simulations to compare bias, mean squared error, and interval coverage.
-- **Tools.** Python, C++, PyTorch, scikit-learn, LightGBM, XGBoost, pandas, NumPy, SHAP, Jupyter, Faster-Whisper, and Gradio.
-
-I’m looking for internships in data science, AI/ML, or software development. Away from my laptop, I play badminton and enjoy cricket and football.
+[LinkedIn](https://www.linkedin.com/in/jatin-mehra-51a675380/) · [LeetCode](https://leetcode.com/u/JatinMehra08/) · [Codeforces](https://codeforces.com/profile/crazyguy96) · [All repositories](https://github.com/crazyguy96?tab=repositories)
