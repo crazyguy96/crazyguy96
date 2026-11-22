@@ -11,9 +11,9 @@
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 .live { animation: pulse 2s ease-in-out infinite; }
 </style>
-<rect width="434" height="226" rx="14" fill="#f4efe6" stroke="#dad3c5" stroke-width="1"/>
+<rect width="434" height="226" rx="14" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
 
-<g transform="translate(26, 26)">
+<g transform="translate(28, 26)">
   <!-- Tag -->
   <g class="f" style="animation-delay:0.15s">
     <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#1F8ACB"/>
@@ -26,17 +26,17 @@
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.35s" font-size="12.5" fill="#45423d">
+  <text class="sans r" style="animation-delay:0.35s" font-size="12.5" fill="#4a4a4e">
     <tspan x="0" y="64">Competing under the clock in rated rounds.</tspan>
     <tspan x="0" y="84">Sharpening mathematical intuition, fast invariants,</tspan>
     <tspan x="0" y="104">and high-speed, bug-free implementations.</tspan>
   </text>
 
   <!-- Action: Codeforces Pill -->
-  <g transform="translate(0, 128)" class="f" style="animation-delay:0.45s">
+  <g transform="translate(0, 130)" class="f" style="animation-delay:0.45s">
     <a href="https://codeforces.com/profile/crazyguy96" target="_blank">
     <g>
-      <rect width="186" height="32" rx="16" fill="#e8e2d7" stroke="#dad3c5" stroke-width="1"/>
+      <rect width="186" height="32" rx="16" fill="#f7f7f5" stroke="#e4e4df" stroke-width="1"/>
       <g transform="translate(12, 9) scale(0.666)">
         <rect x="1.5" y="8" width="5.5" height="13" rx="1.5" fill="#1F8ACB"/>
         <rect x="9.25" y="2" width="5.5" height="19" rx="1.5" fill="#FCD239"/>
