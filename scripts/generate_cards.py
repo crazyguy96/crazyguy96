@@ -1038,11 +1038,23 @@ SKILL_ICONS_DEFS = """
     <path d="M67.3117 213.932L86.9027 202.076C90.6821 208.777 94.1202 214.447 102.367 214.447C110.272 214.447 115.256 211.355 115.256 199.327V117.529H139.314V199.667C139.314 224.584 124.708 235.926 103.398 235.926C84.1533 235.926 72.9819 225.959 67.3113 213.93" fill="#323330"/>
     <path d="M152.381 211.354L171.969 200.013C177.126 208.434 183.828 214.62 195.684 214.62C205.653 214.62 212.009 209.636 212.009 202.762C212.009 194.514 205.479 191.592 194.481 186.782L188.468 184.203C171.111 176.815 159.597 167.535 159.597 147.945C159.597 129.901 173.345 116.153 194.826 116.153C210.12 116.153 221.118 121.481 229.022 135.4L210.291 147.429C206.166 140.04 201.7 137.119 194.826 137.119C187.78 137.119 183.312 141.587 183.312 147.429C183.312 154.646 187.78 157.568 198.09 162.037L204.104 164.614C224.553 173.379 236.067 182.313 236.067 202.418C236.067 224.072 219.055 235.928 196.2 235.928C173.861 235.928 159.426 225.274 152.381 211.354" fill="#323330"/>
   </g>
+  <!-- Markdown -->
+  <g id="icon-markdown">
+    <rect width="256" height="256" fill="#242938" rx="60"/>
+    <path stroke="#fff" stroke-width="10" d="M217 69H39C33.4772 69 29 73.4772 29 79V177C29 182.523 33.4772 187 39 187H217C222.523 187 227 182.523 227 177V79C227 73.4772 222.523 69 217 69Z"/>
+    <path fill="#fff" d="M54 162V94H74L94 119L114 94H134V162H114V123L94 148L74 123V162H54ZM179 162L149 129H169V94H189V129H209L179 162Z"/>
+  </g>
+
   <!-- PyTorch -->
   <g id="icon-pytorch">
     <rect width="256" height="256" rx="60" fill="#242938"/>
     <path d="M180.975 90.4153L167.567 103.824C189.508 125.765 189.508 161.115 167.567 182.65C145.625 204.591 110.275 204.591 88.7404 182.65C66.7991 160.709 66.7991 125.359 88.7404 103.824L123.481 69.0835L128.357 64.2077V38L75.9413 90.4153C46.6862 119.67 46.6862 166.804 75.9413 196.059C105.196 225.314 152.33 225.314 180.975 196.059C210.23 166.6 210.23 119.67 180.975 90.4153Z" fill="#EE4C2C"/>
     <path d="M154.77 87.1705C160.156 87.1705 164.522 82.8045 164.522 77.4188C164.522 72.0331 160.156 67.667 154.77 67.667C149.385 67.667 145.019 72.0331 145.019 77.4188C145.019 82.8045 149.385 87.1705 154.77 87.1705Z" fill="#EE4C2C"/>
+  </g>
+  <!-- TensorFlow -->
+  <g id="icon-tensorflow">
+    <rect width="256" height="256" rx="60" fill="#242938"/>
+    <path d="M124.228 229L90.623 208.89V90.31L40 120.459L40.123 75.545L124.228 26V229ZM131.784 26V229L165.393 208.89V151.781L190.763 166.895L190.612 127.833L165.393 112.988V90.31L216 120.459L215.878 75.545L131.784 26Z" fill="#FF6F00"/>
   </g>
   <!-- Scikit-Learn -->
   <g id="icon-sklearn">
@@ -1050,6 +1062,48 @@ SKILL_ICONS_DEFS = """
     <path d="M181.405 160.654C205.831 136.23 209.891 100.69 190.472 81.2731C171.056 61.8579 135.518 65.9168 111.094 90.3399C86.6691 114.764 93.7346 161.426 102.028 169.721C108.73 176.423 156.982 185.078 181.405 160.654Z" fill="#F89939"/>
     <path d="M81.1816 125.361C67.0116 111.192 46.3899 108.833 35.1213 120.1C23.8556 131.367 26.211 151.991 40.3838 166.159C54.5567 180.333 81.6323 176.234 86.4412 171.42C90.3327 167.535 95.3558 139.533 81.1816 125.361Z" fill="#3499CD"/>
   </g>
+  <!-- OpenCV -->
+  <g id="icon-opencv">
+    <rect width="256" height="256" rx="60" fill="#242938"/>
+    <path d="M104.028 122.58C95.08 117.414 88.087 109.44 84.1332 99.895C80.1794 90.3496 79.4857 79.7664 82.1598 69.7866C84.8339 59.8069 90.7262 50.9884 98.923 44.6988C107.12 38.4092 117.163 35 127.495 35C137.826 35 147.87 38.4092 156.066 44.6988C164.263 50.9884 170.155 59.8069 172.829 69.7866C175.504 79.7664 174.81 90.3496 170.856 99.895C166.902 109.44 159.909 117.414 150.962 122.58L136.831 98.1043C140.39 96.0492 143.172 92.8769 144.745 89.0795C146.318 85.282 146.594 81.0717 145.53 77.1015C144.466 73.1312 142.122 69.623 138.861 67.1208C135.6 64.6186 131.605 63.2623 127.495 63.2623C123.384 63.2623 119.389 64.6186 116.128 67.1208C112.867 69.623 110.523 73.1312 109.459 77.1015C108.395 81.0717 108.671 85.282 110.244 89.0795C111.817 92.8769 114.599 96.0492 118.159 98.1043L104.028 122.58Z" fill="#FF0101"/>
+    <path d="M204.533 133.943C213.481 139.109 220.474 147.083 224.427 156.628C228.381 166.173 229.075 176.756 226.401 186.736C223.727 196.716 217.834 205.534 209.638 211.824C201.441 218.114 191.398 221.523 181.066 221.523C170.734 221.523 160.691 218.114 152.494 211.824C144.297 205.534 138.405 196.716 135.731 186.736C133.057 176.756 133.751 166.173 137.704 156.628C141.658 147.083 148.651 139.109 157.599 133.943L171.73 158.419C168.17 160.474 165.388 163.646 163.815 167.443C162.242 171.241 161.967 175.451 163.03 179.421C164.094 183.392 166.438 186.9 169.699 189.402C172.96 191.904 176.956 193.261 181.066 193.261C185.176 193.261 189.172 191.904 192.433 189.402C195.693 186.9 198.038 183.392 199.101 179.421C200.165 175.451 199.889 171.241 198.316 167.443C196.743 163.646 193.961 160.474 190.402 158.419L204.533 133.943Z" fill="#0101FF"/>
+    <path d="M121.868 174.589C121.868 184.921 118.459 194.964 112.169 203.16C105.88 211.357 97.0613 217.25 87.0816 219.924C77.1018 222.598 66.5186 221.904 56.9733 217.95C47.4279 213.996 39.4539 207.003 34.288 198.056C29.1221 189.108 27.053 178.706 28.4016 168.463C29.7502 158.219 34.4411 148.707 41.7467 141.401C49.0524 134.096 58.5646 129.405 68.808 128.056C79.0514 126.708 89.4536 128.777 98.4012 133.943L84.27 158.419C80.7104 156.363 76.5721 155.54 72.497 156.077C68.4219 156.613 64.6376 158.479 61.7312 161.386C58.8248 164.292 56.9586 168.077 56.4221 172.152C55.8856 176.227 56.7088 180.365 58.7639 183.925C60.8191 187.484 63.9914 190.266 67.7888 191.839C71.5862 193.412 75.7965 193.688 79.7668 192.624C83.737 191.561 87.2453 189.216 89.7475 185.955C92.2496 182.695 93.6059 178.699 93.6059 174.589H121.868Z" fill="#01FF01"/>
+  </g>
+  <!-- NumPy -->
+  <g id="icon-numpy">
+    <rect width="256" height="256" rx="60" fill="#242938"/>
+    <g transform="translate(38.4, 38.4) scale(1.4)">
+      <path fill="#4DABCF" d="m55.012 26.006-21.38-10.789L10.154 26.93l21.969 11.027Zm9.808 4.951L87.241 42.28 63.982 53.955l-22-11.043Zm29.948-15.581 23.037 11.552L97.2 37.272 74.735 25.938ZM84.853 10.4 64.113 0 43.598 10.24 64.97 21.014ZM68.64 99.702V128l25.122-12.537-.023-28.31ZM93.727 77.27l-.028-28.012-25.06 12.458V89.74Zm30.158-5.246v28.41l-21.43 10.69-.017-28.279zm0-9.935V34.25l-21.47 10.673.016 28.068z"/>
+      <path fill="#4c75cf" d="m59.77 61.716-16.918-8.512V89.97s-20.7-44.033-22.612-47.99c-.246-.513-1.263-1.07-1.522-1.209-3.731-1.947-14.603-7.45-14.603-7.45v64.977l15.04 8.063V72.382s20.478 39.346 20.689 39.78c.214.429 2.257 4.57 4.459 6.028 2.92 1.939 15.458 9.477 15.458 9.477z"/>
+    </g>
+  </g>
+  <!-- Pandas -->
+  <g id="icon-pandas">
+    <rect width="256" height="256" rx="60" fill="#242938"/>
+    <g transform="translate(48, 38.4) scale(1.4)">
+      <path fill="#ffffff" d="M46.236 7.567h13.99v29.047h-13.99Zm0 59.668h13.99V96.28h-13.99Z"/>
+      <path fill="#ffca00" d="M46.236 45.092h13.99v13.705h-13.99Z"/>
+      <path fill="#ffffff" d="M23.763 31.446h13.989V128h-13.99ZM68.245 91.2h13.99v29.046h-13.99Zm0-59.72h13.99v29.047h-13.99Z"/>
+      <path fill="#e70488" d="M68.245 69.011h13.99v13.705h-13.99Z"/>
+      <path fill="#ffffff" d="M90.248 0h13.99v96.554h-13.99Z"/>
+    </g>
+  </g>
+  <!-- Jupyter -->
+  <g id="icon-jupyter">
+    <rect width="256" height="256" rx="60" fill="#242938"/>
+    <g transform="translate(38.4, 38.4) scale(1.4)">
+      <path d="M109.766 7.281a7.691 7.691 0 01-1.09 4.282 7.583 7.583 0 01-3.262 2.949 7.49 7.49 0 01-4.34.62 7.525 7.525 0 01-3.953-1.913A7.642 7.642 0 0195.137 5a7.606 7.606 0 012.629-3.531 7.509 7.509 0 014.136-1.461 7.51 7.51 0 015.422 1.996 7.627 7.627 0 012.438 5.273zm0 0" fill="#989798"/>
+      <path d="M65.758 96.79c-20.098 0-37.649-7.364-46.766-18.267a49.95 49.95 0 0018.102 24.254 49.251 49.251 0 0028.676 9.215 49.279 49.279 0 0028.675-9.215 49.917 49.917 0 0018.094-24.254C103.406 89.426 85.855 96.79 65.758 96.79zm0 0M65.75 25.883c20.098 0 37.652 7.367 46.766 18.265a49.95 49.95 0 00-18.102-24.253 49.27 49.27 0 00-28.672-9.22 49.27 49.27 0 00-28.672 9.22A49.909 49.909 0 0018.97 44.148C28.102 33.27 45.652 25.883 65.75 25.883zm0 0" fill="#f37726"/>
+      <path d="M38.164 117.984a9.671 9.671 0 01-1.371 5.399 9.5 9.5 0 01-9.59 4.504 9.405 9.405 0 01-4.98-2.418 9.671 9.671 0 01-2.809-4.797 9.73 9.73 0 01.313-5.567 9.624 9.624 0 013.328-4.453 9.466 9.466 0 0112.043.688 9.63 9.63 0 013.066 6.648zm0 0" fill="#989798"/>
+      <path d="M21.285 23.418a5.53 5.53 0 01-3.14-.816 5.627 5.627 0 01-2.618-5.672 5.612 5.612 0 011.407-2.95 5.593 5.593 0 012.789-1.664 5.46 5.46 0 013.238.184 5.539 5.539 0 012.586 1.969 5.66 5.66 0 01-.399 7.129 5.557 5.557 0 01-3.867 1.82zm0 0" fill="#989798"/>
+    </g>
+  </g>
+  <!-- FastAPI -->
+  <g id="icon-fastapi">
+    <rect width="256" height="256" rx="60" fill="#049789"/>
+    <path d="M127.5 41C79.743 41 41 79.743 41 127.5C41 175.257 79.743 214 127.5 214C175.257 214 214 175.257 214 127.5C214 79.743 175.257 41 127.5 41ZM122.993 196.839V142.581H92.8306L136.167 58.1615V112.419H165.203L122.993 196.839Z" fill="white"/>
+  </g>
+
   <!-- Git -->
   <g id="icon-git">
     <rect width="256" height="256" fill="#F03C2E" rx="60"/>
@@ -1079,11 +1133,39 @@ SKILL_ICONS_DEFS = """
     <circle cx="137" cy="65" r="5" fill="#212121"/>
     <path fill="#FFC107" d="M108 90C104 88 101 85 101 82C101 78 104 77 107 74C108 73 114 67 121 67C127 67 135 72 138 73C143 74 149 75 148 79C148 85 147 86 141 89C137 90 129 97 124 97C121 97 118 97 115 96C114 96 111 93 108 90Z"/>
   </g>
+  <!-- Docker -->
+  <g id="icon-docker">
+    <rect width="256" height="256" fill="#2396ED" rx="60"/>
+    <path fill="#fff" d="M141.187 122.123H161.904V103.379H141.187V122.123ZM116.525 122.123H137.241V103.379H116.525V122.123ZM92.3554 122.123H113.072V103.379H92.3554V122.123ZM68.1859 122.123H88.4093V103.379H68.1859V122.123ZM43.5233 122.123H64.2399V103.379H43.5233V122.123ZM68.1859 99.4333H88.4093V80.6896H68.1859V99.4333ZM92.3554 99.4333H113.072V80.6896H92.3554V99.4333ZM116.525 99.4333H137.241V80.6896H116.525V99.4333ZM116.525 76.7436H137.241V58H116.525V76.7436ZM228 113.738C228 113.738 219.121 105.352 200.871 108.312C198.898 94.0075 183.607 85.6222 183.607 85.6222C183.607 85.6222 169.303 102.886 179.661 122.123C176.702 123.603 171.769 125.576 164.37 125.576H28.7257C26.2594 134.948 26.2594 197.097 94.3284 197.097C143.16 197.097 179.661 174.408 196.925 132.974C222.574 134.948 228 113.738 228 113.738Z"/>
+  </g>
+  <!-- Ubuntu -->
+  <g id="icon-ubuntu">
+    <rect width="256" height="256" rx="60" fill="#242938"/>
+    <path d="M127.5 206.25C170.992 206.25 206.25 170.992 206.25 127.5C206.25 84.0076 170.992 48.75 127.5 48.75C84.0076 48.75 48.75 84.0076 48.75 127.5C48.75 170.992 84.0076 206.25 127.5 206.25Z" fill="#F47421"/>
+    <path d="M127.5 165.694C148.594 165.694 165.694 148.594 165.694 127.5C165.694 106.406 148.594 89.3062 127.5 89.3062C106.406 89.3062 89.3062 106.406 89.3062 127.5C89.3062 148.594 106.406 165.694 127.5 165.694Z" stroke="white" stroke-width="8.55"/>
+    <path d="M73.9499 142.266C82.1048 142.266 88.7157 135.655 88.7157 127.5C88.7157 119.345 82.1048 112.734 73.9499 112.734C65.795 112.734 59.1841 119.345 59.1841 127.5C59.1841 135.655 65.795 142.266 73.9499 142.266Z" fill="#F47421"/>
+    <path d="M73.95 138.013C79.7562 138.013 84.4631 133.306 84.4631 127.5C84.4631 121.694 79.7562 116.987 73.95 116.987C68.1439 116.987 63.437 121.694 63.437 127.5C63.437 133.306 68.1439 138.013 73.95 138.013Z" fill="white"/>
+    <path d="M141.487 73.7415C137.41 80.8039 139.83 89.8345 146.892 93.9119C153.954 97.9894 162.985 95.5697 167.062 88.5073C171.14 81.4449 168.72 72.4143 161.658 68.3368C154.595 64.2594 145.565 66.6791 141.487 73.7415Z" fill="#F47421"/>
+  </g>
+  <!-- Postman -->
+  <g id="icon-postman">
+    <rect width="256" height="256" rx="60" fill="#FF6C37"/>
+    <path d="M169.061 88.6123L118.521 139.153L104.268 124.901C153.971 75.1986 158.882 79.5101 169.061 88.6123Z" fill="#EEEEEE"/>
+    <path d="M133.012 153.645L119.239 139.872L169.78 89.3315C183.314 102.984 163.073 125.141 133.012 153.645Z" fill="#EEEEEE"/>
+    <path d="M104.508 125.26L114.688 135.44C114.927 135.68 114.927 135.919 114.688 136.159C114.568 136.279 114.568 136.279 114.449 136.279L93.3693 140.83C92.292 140.95 91.3337 140.231 91.0942 139.153C90.9744 138.554 91.214 137.956 91.5733 137.596L103.789 125.38C104.029 125.14 104.388 125.02 104.508 125.26Z" fill="#EEEEEE"/>
+    <path d="M195.769 60.5877C188.104 53.1625 175.768 53.4021 168.342 61.1867C160.917 68.9712 161.157 81.1871 168.941 88.6131C175.289 94.7207 184.871 95.7988 192.416 91.2476L178.762 77.5943L195.769 60.5877Z" fill="#EEEEEE"/>
+  </g>
+  <!-- VIM -->
+  <g id="icon-vim">
+    <rect width="256" height="256" fill="#242938" rx="60"/>
+    <path fill="#019833" d="M135.498 39.4619C128.076 32.03 116.032 32.03 108.61 39.462L33.4081 114.765C26.0001 122.183 26.0001 134.199 33.4081 141.617L108.186 216.495C115.608 223.927 127.652 223.927 135.074 216.495L210.276 141.191C217.684 133.773 217.684 121.757 210.276 114.339L135.498 39.4619Z"/>
+    <path fill="#fff" d="M161.769 40.7104L159.083 43.3988V53.2693L161.435 55.6235H173.86V65.1606L91.672 148.576V55.7425H105.331L108.133 52.9365V42.9482L105.546 40.9465H33.6672L31.3158 43.3007V53.5048L33.7069 55.8988H46.2085V216.316C46.2085 222.361 50.6553 227.485 56.6396 228.335V228.335C60.4891 228.883 64.3678 227.553 67.0718 224.759L235 51.2474V43.4001L232.315 40.7117L161.769 40.7104Z"/>
+  </g>
 """
 
 
 def generate_skills_cards():
-    w, h = 284, 226
+    w, h = 284, 220
     css = font_face() + BASE_CSS
 
     # 1. skills-languages.svg
@@ -1120,29 +1202,25 @@ def generate_skills_cards():
   <!-- Row 1 Icons (Python, C++, C, Bash) -->
   <g class="f" style="animation-delay:0.25s">
     <g transform="translate(0, 48) scale(0.1484)"><use href="#icon-py"/></g>
-    <g transform="translate(58, 48) scale(0.1484)"><use href="#icon-cpp"/></g>
-    <g transform="translate(116, 48) scale(0.1484)"><use href="#icon-c"/></g>
-    <g transform="translate(174, 48) scale(0.1484)"><use href="#icon-bash"/></g>
+    <g transform="translate(67, 48) scale(0.1484)"><use href="#icon-cpp"/></g>
+    <g transform="translate(134, 48) scale(0.1484)"><use href="#icon-c"/></g>
+    <g transform="translate(201, 48) scale(0.1484)"><use href="#icon-bash"/></g>
   </g>
 
-  <!-- Row 2 Icons (HTML5, CSS3, JavaScript) -->
+  <!-- Row 2 Icons (HTML5, CSS3, JavaScript, Markdown) -->
   <g class="f" style="animation-delay:0.32s">
-    <g transform="translate(0, 96) scale(0.1484)"><use href="#icon-html"/></g>
-    <g transform="translate(58, 96) scale(0.1484)"><use href="#icon-css"/></g>
-    <g transform="translate(116, 96) scale(0.1484)"><use href="#icon-js"/></g>
-    <!-- Zsh shell pill -->
-    <g transform="translate(174, 98)">
-      <rect width="66" height="34" rx="8" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="33" y="21" text-anchor="middle" font-family="{MONO}" font-size="10" font-weight="600" fill="{INK_SOFT}">zsh / sh</text>
-    </g>
+    <g transform="translate(0, 98) scale(0.1484)"><use href="#icon-html"/></g>
+    <g transform="translate(67, 98) scale(0.1484)"><use href="#icon-css"/></g>
+    <g transform="translate(134, 98) scale(0.1484)"><use href="#icon-js"/></g>
+    <g transform="translate(201, 98) scale(0.1484)"><use href="#icon-markdown"/></g>
   </g>
 
   <!-- Divider -->
-  <line class="f" style="animation-delay:0.4s" x1="0" y1="148" x2="240" y2="148" stroke="#ebebe6" stroke-width="0.8"/>
+  <line class="f" style="animation-delay:0.4s" x1="0" y1="150" x2="240" y2="150" stroke="#ebebe6" stroke-width="0.8"/>
 
   <!-- Bottom Readout -->
   <g class="f" style="animation-delay:0.45s" transform="translate(0, 168)">
-    <text x="0" y="0" font-family="{MONO}" font-size="10.5" fill="{MUTED}">C · C++ · Python · Shell · JS</text>
+    <text x="0" y="0" font-family="{MONO}" font-size="10.5" fill="{MUTED}">C · C++ · Python · Shell · Web · MD</text>
     <text class="nu" x="228" y="0" font-family="{MONO}" font-size="12" font-weight="600" fill="{BLUE}">&#8599;</text>
   </g>
 </g>
@@ -1180,59 +1258,28 @@ def generate_skills_cards():
   <!-- Title -->
   <text class="f" style="animation-delay:0.22s" x="0" y="32" font-family="{SANS}" font-weight="600" font-size="17" fill="{INK}">Models &amp; Frameworks</text>
 
-  <!-- Row 1: PyTorch + Scikit-Learn + NumPy/Pandas Badge -->
+  <!-- Row 1: PyTorch, TensorFlow, Scikit-Learn, OpenCV -->
   <g class="f" style="animation-delay:0.28s">
     <g transform="translate(0, 48) scale(0.1484)"><use href="#icon-pytorch"/></g>
-    <g transform="translate(50, 48) scale(0.1484)"><use href="#icon-sklearn"/></g>
-    <g transform="translate(100, 48)">
-      <rect width="140" height="38" rx="8" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="70" y="16" text-anchor="middle" font-family="{MONO}" font-size="9.5" font-weight="600" fill="{INK}">NumPy · Pandas</text>
-      <text x="70" y="29" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{MUTED}">Array &amp; DataFrames</text>
-    </g>
+    <g transform="translate(67, 48) scale(0.1484)"><use href="#icon-tensorflow"/></g>
+    <g transform="translate(134, 48) scale(0.1484)"><use href="#icon-sklearn"/></g>
+    <g transform="translate(201, 48) scale(0.1484)"><use href="#icon-opencv"/></g>
   </g>
 
-  <!-- Row 2 Pills: Specialized ML Stack -->
-  <g class="f" style="animation-delay:0.35s" transform="translate(0, 96)">
-    <g transform="translate(0, 0)">
-      <rect width="68" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="34" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">LightGBM</text>
-    </g>
-    <g transform="translate(74, 0)">
-      <rect width="62" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="31" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">XGBoost</text>
-    </g>
-    <g transform="translate(142, 0)">
-      <rect width="48" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="24" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">SHAP</text>
-    </g>
-    <g transform="translate(196, 0)">
-      <rect width="44" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="22" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">ViTs</text>
-    </g>
-  </g>
-
-  <!-- Row 3 Pills: Inference & Deployment -->
-  <g class="f" style="animation-delay:0.4s" transform="translate(0, 122)">
-    <g transform="translate(0, 0)">
-      <rect width="98" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="49" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">Faster-Whisper</text>
-    </g>
-    <g transform="translate(104, 0)">
-      <rect width="52" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="26" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">Gradio</text>
-    </g>
-    <g transform="translate(162, 0)">
-      <rect width="54" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="27" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">DINOv2</text>
-    </g>
+  <!-- Row 2: NumPy, Pandas, Jupyter, FastAPI -->
+  <g class="f" style="animation-delay:0.35s">
+    <g transform="translate(0, 98) scale(0.1484)"><use href="#icon-numpy"/></g>
+    <g transform="translate(67, 98) scale(0.1484)"><use href="#icon-pandas"/></g>
+    <g transform="translate(134, 98) scale(0.1484)"><use href="#icon-jupyter"/></g>
+    <g transform="translate(201, 98) scale(0.1484)"><use href="#icon-fastapi"/></g>
   </g>
 
   <!-- Divider -->
-  <line class="f" style="animation-delay:0.42s" x1="0" y1="148" x2="240" y2="148" stroke="#ebebe6" stroke-width="0.8"/>
+  <line class="f" style="animation-delay:0.42s" x1="0" y1="150" x2="240" y2="150" stroke="#ebebe6" stroke-width="0.8"/>
 
   <!-- Bottom Readout -->
   <g class="f" style="animation-delay:0.48s" transform="translate(0, 168)">
-    <text x="0" y="0" font-family="{MONO}" font-size="10.5" fill="{AMBER}">&#x2713; PyTorch · TreeSHAP · Whisper</text>
+    <text x="0" y="0" font-family="{MONO}" font-size="10.5" fill="{AMBER}">&#x2713; PyTorch · TensorFlow · Scikit · Pandas</text>
     <text class="nu" x="228" y="0" font-family="{MONO}" font-size="12" font-weight="600" fill="{AMBER}">&#8599;</text>
   </g>
 </g>
@@ -1270,48 +1317,28 @@ def generate_skills_cards():
   <!-- Title -->
   <text class="f" style="animation-delay:0.26s" x="0" y="32" font-family="{SANS}" font-weight="600" font-size="17" fill="{INK}">Developer Stack</text>
 
-  <!-- Row 1 Icons (Git, GitHub, VS Code, Linux) -->
+  <!-- Row 1: Git, GitHub, VS Code, Linux -->
   <g class="f" style="animation-delay:0.32s">
     <g transform="translate(0, 48) scale(0.1484)"><use href="#icon-git"/></g>
-    <g transform="translate(58, 48) scale(0.1484)"><use href="#icon-github"/></g>
-    <g transform="translate(116, 48) scale(0.1484)"><use href="#icon-vscode"/></g>
-    <g transform="translate(174, 48) scale(0.1484)"><use href="#icon-linux"/></g>
+    <g transform="translate(67, 48) scale(0.1484)"><use href="#icon-github"/></g>
+    <g transform="translate(134, 48) scale(0.1484)"><use href="#icon-vscode"/></g>
+    <g transform="translate(201, 48) scale(0.1484)"><use href="#icon-linux"/></g>
   </g>
 
-  <!-- Row 2 Pills: Environment -->
-  <g class="f" style="animation-delay:0.38s" transform="translate(0, 96)">
-    <g transform="translate(0, 0)">
-      <rect width="80" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="40" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">Linux CLI</text>
-    </g>
-    <g transform="translate(86, 0)">
-      <rect width="66" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="33" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">Git VCS</text>
-    </g>
-    <g transform="translate(158, 0)">
-      <rect width="70" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="35" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">JupyterLab</text>
-    </g>
-  </g>
-
-  <!-- Row 3 Pills: Web / Systems -->
-  <g class="f" style="animation-delay:0.42s" transform="translate(0, 122)">
-    <g transform="translate(0, 0)">
-      <rect width="90" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="45" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">LocalStorage</text>
-    </g>
-    <g transform="translate(96, 0)">
-      <rect width="86" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>
-      <text x="43" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{INK_SOFT}">Offline-first</text>
-    </g>
+  <!-- Row 2: Docker, Ubuntu, Postman, VIM -->
+  <g class="f" style="animation-delay:0.38s">
+    <g transform="translate(0, 98) scale(0.1484)"><use href="#icon-docker"/></g>
+    <g transform="translate(67, 98) scale(0.1484)"><use href="#icon-ubuntu"/></g>
+    <g transform="translate(134, 98) scale(0.1484)"><use href="#icon-postman"/></g>
+    <g transform="translate(201, 98) scale(0.1484)"><use href="#icon-vim"/></g>
   </g>
 
   <!-- Divider -->
-  <line class="f" style="animation-delay:0.45s" x1="0" y1="148" x2="240" y2="148" stroke="#ebebe6" stroke-width="0.8"/>
+  <line class="f" style="animation-delay:0.45s" x1="0" y1="150" x2="240" y2="150" stroke="#ebebe6" stroke-width="0.8"/>
 
   <!-- Bottom Readout -->
   <g class="f" style="animation-delay:0.5s" transform="translate(0, 168)">
-    <text x="0" y="0" font-family="{MONO}" font-size="10.5" fill="{GREEN}">&#x2713; Unix-first developer stack</text>
+    <text x="0" y="0" font-family="{MONO}" font-size="10.5" fill="{GREEN}">&#x2713; Git · Linux · Docker · Postman · VIM</text>
     <text class="nu" x="228" y="0" font-family="{MONO}" font-size="12" font-weight="600" fill="{GREEN}">&#8599;</text>
   </g>
 </g>

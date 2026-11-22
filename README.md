@@ -39,9 +39,9 @@
 ## Tools & Technologies
 
 <div align="center">
-  <img src="./cards/skills-languages.svg" width="32.8%" alt="Languages — Python, C++, C, Bash, HTML5, CSS3, JavaScript">
-  <img src="./cards/skills-ml.svg" width="32.8%" alt="Machine Learning & AI — PyTorch, Scikit-learn, LightGBM, XGBoost, SHAP">
-  <img src="./cards/skills-tools.svg" width="32.8%" alt="Environment & Tools — Git, GitHub, VS Code, Linux">
+  <img src="./cards/skills-languages.svg" width="32.8%" alt="Languages — Python, C++, C, Bash, HTML5, CSS3, JavaScript, Markdown">
+  <img src="./cards/skills-ml.svg" width="32.8%" alt="Machine Learning & AI — PyTorch, TensorFlow, Scikit-learn, OpenCV, NumPy, Pandas, Jupyter, FastAPI">
+  <img src="./cards/skills-tools.svg" width="32.8%" alt="Environment & Tools — Git, GitHub, VS Code, Linux, Docker, Ubuntu, Postman, VIM">
 </div>
 
 ## GitHub activity
