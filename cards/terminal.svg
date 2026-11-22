@@ -164,7 +164,7 @@
     <text x="0" y="0">
       <tspan fill="#38bdf8" font-weight="600">[Faster-Whisper]</tspan>
       <tspan fill="#c9d1d9"> Transcribed 42m audio in 8.4s · </tspan>
-      <tspan fill="#34d399" font-weight="600">0.00% WER</tspan>
+      <tspan fill="#34d399" font-weight="600">RTF 0.03x (Fast)</tspan>
     </text>
     <!-- Dancing Mini-Equalizer Waveform -->
     <g transform="translate(390, -10)">

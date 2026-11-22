@@ -161,7 +161,7 @@ def build_hero():
 
   <!-- Readouts -->
   <text class="f" style="animation-delay:0.8s" x="16" y="140" font-family="{MONO}" font-size="10" fill="{MUTED}">16 kHz log-mel</text>
-  <text class="f" style="animation-delay:0.85s" x="240" y="140" text-anchor="end" font-family="{MONO}" font-size="10" fill="{BLUE}">0% hallucination</text>
+  <text class="f" style="animation-delay:0.85s" x="240" y="140" text-anchor="end" font-family="{MONO}" font-size="9.5" font-weight="600" fill="{BLUE}">Evidence-Grounded &#8599;</text>
 </g>
 </svg>"""
     write_card("hero.svg", content)
@@ -376,7 +376,7 @@ def build_terminal(theme="dark"):
     <text x="0" y="0">
       <tspan fill="{prompt_color}" font-weight="600">[Faster-Whisper]</tspan>
       <tspan fill="{out_dim}"> Transcribed 42m audio in 8.4s · </tspan>
-      <tspan fill="{success}" font-weight="600">0.00% WER</tspan>
+      <tspan fill="{success}" font-weight="600">RTF 0.03x (Fast)</tspan>
     </text>
     <!-- Dancing Mini-Equalizer Waveform -->
     <g transform="translate(390, -10)">
@@ -536,11 +536,11 @@ def generate_project_cards():
   
   <!-- Verified check badge -->
   <g transform="translate(14, 134)" class="f" style="animation-delay:0.75s">
-    <rect width="110" height="24" rx="4" fill="#e8efff" stroke="#c7d8ff" stroke-width="1"/>
+    <rect width="118" height="24" rx="4" fill="#e8efff" stroke="#c7d8ff" stroke-width="1"/>
     <path d="M 10 12 l 3 3 l 6 -6" fill="none" stroke="{BLUE}" stroke-width="1.5" stroke-linecap="round"/>
-    <text x="24" y="15" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{BLUE}">0% HALLUCINATION</text>
+    <text x="24" y="15" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{BLUE}">EVIDENCE GROUNDED</text>
   </g>
-  <text class="f" style="animation-delay:0.85s" x="14" y="176" font-family="{MONO}" font-size="8.5" fill="{BLUE}">&#x2713; Transcript Grounded</text>
+  <text class="f" style="animation-delay:0.85s" x="14" y="176" font-family="{MONO}" font-size="8.5" fill="{BLUE}">&#x2713; Verified Decisions</text>
 """
     meeting_desc = [
         "Inter IIT ML bootcamp pipeline turning",

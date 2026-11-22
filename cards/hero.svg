@@ -76,6 +76,6 @@
 
   <!-- Readouts -->
   <text class="f" style="animation-delay:0.8s" x="16" y="140" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#76767c">16 kHz log-mel</text>
-  <text class="f" style="animation-delay:0.85s" x="240" y="140" text-anchor="end" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#2563eb">0% hallucination</text>
+  <text class="f" style="animation-delay:0.85s" x="240" y="140" text-anchor="end" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" font-weight="600" fill="#2563eb">Evidence-Grounded &#8599;</text>
 </g>
 </svg>
