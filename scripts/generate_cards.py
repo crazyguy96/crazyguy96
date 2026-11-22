@@ -439,30 +439,30 @@ CARD_W = 434
 CARD_H = 226
 
 
-def build_project_card(filename, category, title, desc_lines, tags, repo_slug, accent_color, right_svg, delay):
+def build_project_card(filename, category, title, desc_lines, tags, accent_color, right_svg, delay):
     w, h = CARD_W, CARD_H
     css = font_face() + BASE_CSS
     
     # Generate description lines
     desc_svg = []
-    y_start = 56
+    y_start = 58
     for i, line in enumerate(desc_lines):
-        y = y_start + i * 16.5
+        y = y_start + i * 17
         desc_svg.append(
-            f'<text class="r" style="animation-delay:{delay + 0.12 + i * 0.04:.2f}s" '
+            f'<text class="f" style="animation-delay:{delay + 0.15 + i * 0.04:.2f}s" '
             f'x="0" y="{y:.1f}" font-family="{SANS}" font-size="11.5" fill="{INK_SOFT}">{escape(line)}</text>'
         )
     desc_str = "\n    ".join(desc_svg)
 
-    # Generate tag pills
+    # Generate tag pills (anchored at y=137)
     tags_svg = []
     cur_x = 0
     for j, tag in enumerate(tags):
         tag_w = round(len(tag) * 5.8 + 14)
         tags_svg.append(
-            f'<g class="f" style="animation-delay:{delay + 0.3 + j * 0.05:.2f}s" transform="translate({cur_x}, 0)">\n'
-            f'      <rect width="{tag_w}" height="19" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>\n'
-            f'      <text x="{tag_w / 2:.1f}" y="13" text-anchor="middle" font-family="{MONO}" font-size="9.5" fill="{INK_SOFT}">{escape(tag)}</text>\n'
+            f'<g class="f" style="animation-delay:{delay + 0.32 + j * 0.05:.2f}s" transform="translate({cur_x}, 137)">\n'
+            f'      <rect width="{tag_w}" height="20" rx="4" fill="{PAPER}" stroke="{BORDER}" stroke-width="0.8"/>\n'
+            f'      <text x="{tag_w / 2:.1f}" y="13.5" text-anchor="middle" font-family="{MONO}" font-size="9.5" fill="{INK_SOFT}">{escape(tag)}</text>\n'
             f'    </g>'
         )
         cur_x += tag_w + 6
@@ -488,15 +488,15 @@ def build_project_card(filename, category, title, desc_lines, tags, repo_slug, a
 <rect width="{w}" height="{h}" rx="14" fill="none" stroke="{BORDER}" stroke-width="1"/>
 
 <!-- Left Content Block -->
-<g transform="translate(22, 22)">
+<g transform="translate(24, 28)">
   <!-- Category Tag -->
   <g class="f" style="animation-delay:{delay:.2f}s">
     <rect x="0" y="0" width="6" height="6" rx="1.5" fill="{accent_color}"/>
-    <text x="12" y="6" font-family="{MONO}" font-size="10.5" letter-spacing="1" font-weight="600" fill="{accent_color}">{escape(category)}</text>
+    <text x="12" y="6.5" font-family="{MONO}" font-size="10.5" letter-spacing="1.2" font-weight="600" fill="{accent_color}">{escape(category)}</text>
   </g>
   
   <!-- Title -->
-  <text class="r" style="animation-delay:{delay + 0.08:.2f}s" x="0" y="32" font-family="{SANS}" font-weight="600" font-size="18.5" fill="{INK}" letter-spacing="-0.3">
+  <text class="f" style="animation-delay:{delay + 0.1:.2f}s" x="0" y="34" font-family="{SANS}" font-weight="600" font-size="18.5" fill="{INK}" letter-spacing="-0.3">
     {escape(title)}
   </text>
   
@@ -506,17 +506,13 @@ def build_project_card(filename, category, title, desc_lines, tags, repo_slug, a
   </g>
 
   <!-- Divider -->
-  <line class="f" style="animation-delay:{delay + 0.28:.2f}s" x1="0" y1="127" x2="234" y2="127" stroke="#ebebe6" stroke-width="0.8"/>
+  <line class="f" style="animation-delay:{delay + 0.3:.2f}s" x1="0" y1="125" x2="234" y2="125" stroke="#ebebe6" stroke-width="0.8"/>
 
   <!-- Tech Stack Tag Pills -->
-  <g transform="translate(0, 137)">
-    {tags_str}
-  </g>
+  {tags_str}
 
-  <!-- Repo Action Link -->
-  <g transform="translate(0, 175)" class="r" style="animation-delay:{delay + 0.42:.2f}s">
-    <text x="0" y="0" font-family="{MONO}" font-size="11" font-weight="600" fill="{accent_color}">{escape(repo_slug)} &#8599;</text>
-  </g>
+  <!-- Interactive Action Arrow -->
+  <text class="nu" x="224" y="152" font-family="{MONO}" font-size="13" font-weight="600" fill="{accent_color}">&#8599;</text>
 </g>
 
 <!-- Right Schematic Visual Box -->
@@ -555,7 +551,7 @@ def generate_project_cards():
     build_project_card(
         "meeting", "SPEECH PIPELINE", "AI Meeting Assistant",
         meeting_desc, ["Faster-Whisper", "Verification"],
-        "AI_Meeting_Assistant", BLUE, meeting_visual, 0.1
+        BLUE, meeting_visual, 0.1
     )
 
     # 2. delay.svg
@@ -593,7 +589,7 @@ def generate_project_cards():
     build_project_card(
         "delay", "EXPLAINABLE ML", "Land Delay Prediction",
         delay_desc, ["LightGBM", "XGBoost", "SHAP"],
-        "SIH_PS_ID_26017", AMBER, delay_visual, 0.2
+        AMBER, delay_visual, 0.2
     )
 
     # 3. vision.svg
@@ -630,7 +626,7 @@ def generate_project_cards():
     build_project_card(
         "vision", "COMPUTER VISION", "Vision Transformers",
         vision_desc, ["PyTorch", "DINOv2", "CIFAR-10"],
-        "Self-Supervised-Vit", VIOLET, vision_visual, 0.3
+        VIOLET, vision_visual, 0.3
     )
 
     # 4. mazdoor.svg
@@ -675,7 +671,7 @@ def generate_project_cards():
     build_project_card(
         "mazdoor", "CIVIC TECH", "Mazdoor Evidence Kit",
         mazdoor_desc, ["Offline-first", "LocalStorage"],
-        "Mazdoor-Evidence-Kit", GREEN, mazdoor_visual, 0.4
+        GREEN, mazdoor_visual, 0.4
     )
 
 

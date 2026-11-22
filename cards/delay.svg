@@ -34,49 +34,45 @@
 <rect width="434" height="226" rx="14" fill="none" stroke="#e4e4df" stroke-width="1"/>
 
 <!-- Left Content Block -->
-<g transform="translate(22, 22)">
+<g transform="translate(24, 28)">
   <!-- Category Tag -->
   <g class="f" style="animation-delay:0.20s">
     <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#d97706"/>
-    <text x="12" y="6" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="1" font-weight="600" fill="#d97706">EXPLAINABLE ML</text>
+    <text x="12" y="6.5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="1.2" font-weight="600" fill="#d97706">EXPLAINABLE ML</text>
   </g>
   
   <!-- Title -->
-  <text class="r" style="animation-delay:0.28s" x="0" y="32" font-family="Geist, system-ui, -apple-system, sans-serif" font-weight="600" font-size="18.5" fill="#111111" letter-spacing="-0.3">
+  <text class="f" style="animation-delay:0.30s" x="0" y="34" font-family="Geist, system-ui, -apple-system, sans-serif" font-weight="600" font-size="18.5" fill="#111111" letter-spacing="-0.3">
     Land Delay Prediction
   </text>
   
   <!-- Description (What I worked on) -->
   <g>
-    <text class="r" style="animation-delay:0.32s" x="0" y="56.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">Smart India Hackathon PS 26017.</text>
-    <text class="r" style="animation-delay:0.36s" x="0" y="72.5" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">Compares ML classifiers for infra delay</text>
-    <text class="r" style="animation-delay:0.40s" x="0" y="89.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">risk; uses SHAP attribution to explain</text>
-    <text class="r" style="animation-delay:0.44s" x="0" y="105.5" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">predictions on unlabeled projects.</text>
+    <text class="f" style="animation-delay:0.35s" x="0" y="58.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">Smart India Hackathon PS 26017.</text>
+    <text class="f" style="animation-delay:0.39s" x="0" y="75.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">Compares ML classifiers for infra delay</text>
+    <text class="f" style="animation-delay:0.43s" x="0" y="92.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">risk; uses SHAP attribution to explain</text>
+    <text class="f" style="animation-delay:0.47s" x="0" y="109.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">predictions on unlabeled projects.</text>
   </g>
 
   <!-- Divider -->
-  <line class="f" style="animation-delay:0.48s" x1="0" y1="127" x2="234" y2="127" stroke="#ebebe6" stroke-width="0.8"/>
+  <line class="f" style="animation-delay:0.50s" x1="0" y1="125" x2="234" y2="125" stroke="#ebebe6" stroke-width="0.8"/>
 
   <!-- Tech Stack Tag Pills -->
-  <g transform="translate(0, 137)">
-    <g class="f" style="animation-delay:0.50s" transform="translate(0, 0)">
-      <rect width="60" height="19" rx="4" fill="#f7f7f5" stroke="#e4e4df" stroke-width="0.8"/>
-      <text x="30.0" y="13" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#4a4a4e">LightGBM</text>
+  <g class="f" style="animation-delay:0.52s" transform="translate(0, 137)">
+      <rect width="60" height="20" rx="4" fill="#f7f7f5" stroke="#e4e4df" stroke-width="0.8"/>
+      <text x="30.0" y="13.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#4a4a4e">LightGBM</text>
     </g>
-    <g class="f" style="animation-delay:0.55s" transform="translate(66, 0)">
-      <rect width="55" height="19" rx="4" fill="#f7f7f5" stroke="#e4e4df" stroke-width="0.8"/>
-      <text x="27.5" y="13" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#4a4a4e">XGBoost</text>
+    <g class="f" style="animation-delay:0.57s" transform="translate(66, 137)">
+      <rect width="55" height="20" rx="4" fill="#f7f7f5" stroke="#e4e4df" stroke-width="0.8"/>
+      <text x="27.5" y="13.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#4a4a4e">XGBoost</text>
     </g>
-    <g class="f" style="animation-delay:0.60s" transform="translate(127, 0)">
-      <rect width="37" height="19" rx="4" fill="#f7f7f5" stroke="#e4e4df" stroke-width="0.8"/>
-      <text x="18.5" y="13" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#4a4a4e">SHAP</text>
+    <g class="f" style="animation-delay:0.62s" transform="translate(127, 137)">
+      <rect width="37" height="20" rx="4" fill="#f7f7f5" stroke="#e4e4df" stroke-width="0.8"/>
+      <text x="18.5" y="13.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#4a4a4e">SHAP</text>
     </g>
-  </g>
 
-  <!-- Repo Action Link -->
-  <g transform="translate(0, 175)" class="r" style="animation-delay:0.62s">
-    <text x="0" y="0" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#d97706">SIH_PS_ID_26017 &#8599;</text>
-  </g>
+  <!-- Interactive Action Arrow -->
+  <text class="nu" x="224" y="152" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" fill="#d97706">&#8599;</text>
 </g>
 
 <!-- Right Schematic Visual Box -->
