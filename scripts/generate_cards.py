@@ -168,35 +168,267 @@ def build_hero():
 
 
 # ---- 2 · terminal.svg ---------------------------------------------------------
-def build_terminal():
-    w, h = 880, 150
-    css = font_face() + BASE_CSS
-    content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="AI Meeting Assistant Pipeline Preview">
-<title>AI Meeting Assistant Pipeline Preview</title>
+def build_terminal(theme="dark"):
+    w, h = 880, 248
+    
+    if theme == "dark":
+        bg = "#0d1117"
+        header_bg = "#161b22"
+        border = "#30363d"
+        dot1, dot2, dot3 = "#ff5f56", "#ffbd2e", "#27c93f"
+        title_color = "#8b949e"
+        branch_color = "#6e7681"
+        prompt_color = "#38bdf8"
+        cmd_color = "#f0f6fc"
+        cursor_color = "#38bdf8"
+        out_primary = "#f0f6fc"
+        out_dim = "#c9d1d9"
+        out_muted = "#8b949e"
+        c_meet = "#38bdf8"
+        c_delay = "#fbbf24"
+        c_vit = "#a78bfa"
+        c_mazdoor = "#34d399"
+        success = "#34d399"
+    else:
+        bg = "#ffffff"
+        header_bg = "#f7f7f5"
+        border = "#e4e4df"
+        dot1, dot2, dot3 = "#ff5f56", "#ffbd2e", "#27c93f"
+        title_color = "#76767c"
+        branch_color = "#a1a1aa"
+        prompt_color = "#2563eb"
+        cmd_color = "#111111"
+        cursor_color = "#2563eb"
+        out_primary = "#111111"
+        out_dim = "#27272a"
+        out_muted = "#71717a"
+        c_meet = "#2563eb"
+        c_delay = "#d97706"
+        c_vit = "#7c3aed"
+        c_mazdoor = "#059669"
+        success = "#059669"
+
+    css = font_face() + """
+.term-mono { font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; }
+.term-header { font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; }
+@media (prefers-reduced-motion: reduce) {
+  clipPath rect { width: 100% !important; }
+  rect, g, text { animation: none !important; opacity: 1 !important; }
+}
+"""
+
+    content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Interactive Developer Terminal - Jatin Mehra">
+<title>jatin@iitg: ~/projects (zsh)</title>
 <style>{css}</style>
 <defs>
-  <clipPath id="term-clip"><rect width="{w}" height="{h}" rx="14"/></clipPath>
+  <!-- Clip path Command 1: whoami -->
+  <clipPath id="c1-clip">
+    <rect x="20" y="-14" width="0" height="24">
+      <animate attributeName="width" 
+               values="0; 0; 52; 52; 52; 0; 0" 
+               keyTimes="0; 0.03; 0.10; 0.88; 0.94; 0.98; 1" 
+               dur="14s" repeatCount="indefinite" />
+    </rect>
+  </clipPath>
+
+  <!-- Clip path Command 2: ls projects/ -->
+  <clipPath id="c2-clip">
+    <rect x="20" y="-14" width="0" height="24">
+      <animate attributeName="width" 
+               values="0; 0; 100; 100; 100; 0; 0" 
+               keyTimes="0; 0.19; 0.28; 0.88; 0.94; 0.98; 1" 
+               dur="14s" repeatCount="indefinite" />
+    </rect>
+  </clipPath>
+
+  <!-- Clip path Command 3: meeting-assistant audio verify -->
+  <clipPath id="c3-clip">
+    <rect x="20" y="-14" width="0" height="24">
+      <animate attributeName="width" 
+               values="0; 0; 380; 380; 380; 0; 0" 
+               keyTimes="0; 0.38; 0.54; 0.88; 0.94; 0.98; 1" 
+               dur="14s" repeatCount="indefinite" />
+    </rect>
+  </clipPath>
 </defs>
-<rect width="{w}" height="{h}" rx="14" fill="{WHITE}" stroke="{BORDER}" stroke-width="1"/>
-<line x1="0" y1="36" x2="{w}" y2="36" stroke="{BORDER}" stroke-width="1"/>
 
-<!-- Window Controls -->
-<circle cx="24" cy="18" r="4" fill="#d4d4ce"/>
-<circle cx="38" cy="18" r="4" fill="#d4d4ce"/>
-<circle cx="52" cy="18" r="4" fill="#d4d4ce"/>
-<text x="72" y="22" font-family="{MONO}" font-size="11" fill="{MUTED}">jatin@iitg: ~/projects/ai-meeting-assistant (bash)</text>
+<!-- Window Frame Surface -->
+<rect width="{w}" height="{h}" rx="14" fill="{bg}" stroke="{border}" stroke-width="1"/>
+<path d="M 0 14 Q 0 0 14 0 L {w-14} 0 Q {w} 0 {w} 14 L {w} 36 L 0 36 Z" fill="{header_bg}"/>
+<line x1="0" y1="36" x2="{w}" y2="36" stroke="{border}" stroke-width="1"/>
 
-<!-- Terminal Execution Preview -->
-<g transform="translate(24, 64)" font-family="{MONO}" font-size="13">
-  <!-- Command -->
-  <text x="0" y="0" fill="{BLUE}" font-weight="600">$</text>
-  <text x="16" y="0" fill="{INK}">python -m pipeline.transcribe --audio keynote.wav --ground-truth-check</text>
+<!-- Traffic lights -->
+<circle cx="22" cy="18" r="4.5" fill="{dot1}"/>
+<circle cx="38" cy="18" r="4.5" fill="{dot2}"/>
+<circle cx="54" cy="18" r="4.5" fill="{dot3}"/>
+
+<!-- Header Info -->
+<text x="74" y="22" class="term-header" fill="{title_color}">jatin@iitg: ~/projects</text>
+<text x="230" y="22" class="term-header" fill="{branch_color}">git:(<tspan fill="{prompt_color}">main</tspan>)</text>
+
+<!-- Live Pulse on Right -->
+<g transform="translate({w - 92}, 13)">
+  <circle cx="4" cy="5" r="3" fill="{success}">
+    <animate attributeName="opacity" values="1; 0.3; 1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="14" y="9" class="term-header" fill="{branch_color}" font-size="10.5">ACTIVE</text>
+</g>
+
+<!-- Terminal Execution Body -->
+<g transform="translate(24, 62)" class="term-mono">
+
+  <!-- CMD 1: whoami -->
+  <g>
+    <text x="0" y="0" fill="{prompt_color}" font-weight="600">$</text>
+    <text x="20" y="0" fill="{cmd_color}" clip-path="url(#c1-clip)">whoami</text>
+    
+    <rect y="-12" width="7.5" height="15" rx="1.5" fill="{cursor_color}">
+      <animate attributeName="x" 
+               values="20; 20; 74; 74; 74; 20" 
+               keyTimes="0; 0.03; 0.10; 0.13; 0.94; 1" 
+               dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" 
+               values="1; 0; 1; 1; 1; 0; 0" 
+               keyTimes="0; 0.015; 0.03; 0.10; 0.125; 0.13; 1" 
+               dur="14s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 
   <!-- Output 1 -->
-  <text x="16" y="26" fill="{INK_SOFT}">[Faster-Whisper] Transcribed 42m audio in 8.4s · 0.00% WER</text>
-  
-  <!-- Output 2 -->
-  <text x="16" y="50" fill="{MUTED}">Generated: 14 action items, 4 decisions · Verified against transcript context</text>
+  <g transform="translate(20, 22)">
+    <animate attributeName="opacity" 
+             values="0; 0; 1; 1; 0; 0" 
+             keyTimes="0; 0.125; 0.14; 0.88; 0.94; 1" 
+             dur="14s" repeatCount="indefinite"/>
+    <text x="0" y="0">
+      <tspan fill="{out_primary}" font-weight="600">Jatin Mehra</tspan>
+      <tspan fill="{out_muted}"> · B.Tech Data Science &amp; AI @ </tspan>
+      <tspan fill="{prompt_color}">IIT Guwahati</tspan>
+      <tspan fill="{out_muted}"> (2025–2029)</tspan>
+    </text>
+  </g>
+
+  <!-- CMD 2: ls projects/ -->
+  <g transform="translate(0, 48)">
+    <animate attributeName="opacity" 
+             values="0; 0; 1; 1; 0; 0" 
+             keyTimes="0; 0.18; 0.185; 0.88; 0.94; 1" 
+             dur="14s" repeatCount="indefinite"/>
+    <text x="0" y="0" fill="{prompt_color}" font-weight="600">$</text>
+    <text x="20" y="0" fill="{cmd_color}" clip-path="url(#c2-clip)">ls projects/</text>
+    
+    <rect y="-12" width="7.5" height="15" rx="1.5" fill="{cursor_color}">
+      <animate attributeName="x" 
+               values="20; 20; 122; 122; 122; 20" 
+               keyTimes="0; 0.19; 0.28; 0.31; 0.94; 1" 
+               dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" 
+               values="0; 0; 1; 1; 1; 0; 0" 
+               keyTimes="0; 0.185; 0.19; 0.28; 0.305; 0.31; 1" 
+               dur="14s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Output 2: 4 Projects -->
+  <g transform="translate(20, 70)">
+    <animate attributeName="opacity" 
+             values="0; 0; 1; 1; 0; 0" 
+             keyTimes="0; 0.31; 0.325; 0.88; 0.94; 1" 
+             dur="14s" repeatCount="indefinite"/>
+    <text x="0" y="0">
+      <tspan fill="{c_meet}" font-weight="600">ai-meeting-assistant/</tspan>
+      <tspan fill="{out_muted}">   </tspan>
+      <tspan fill="{c_delay}" font-weight="600">land-delay-risk/</tspan>
+      <tspan fill="{out_muted}">   </tspan>
+      <tspan fill="{c_vit}" font-weight="600">galaxy-vit/</tspan>
+      <tspan fill="{out_muted}">   </tspan>
+      <tspan fill="{c_mazdoor}" font-weight="600">mazdoor-evidence-kit/</tspan>
+    </text>
+  </g>
+
+  <!-- CMD 3: meeting-assistant pipeline -->
+  <g transform="translate(0, 96)">
+    <animate attributeName="opacity" 
+             values="0; 0; 1; 1; 0; 0" 
+             keyTimes="0; 0.365; 0.37; 0.88; 0.94; 1" 
+             dur="14s" repeatCount="indefinite"/>
+    <text x="0" y="0" fill="{prompt_color}" font-weight="600">$</text>
+    <text x="20" y="0" fill="{cmd_color}" clip-path="url(#c3-clip)">meeting-assistant --audio keynote.wav --verify</text>
+    
+    <rect y="-12" width="7.5" height="15" rx="1.5" fill="{cursor_color}">
+      <animate attributeName="x" 
+               values="20; 20; 402; 402; 402; 20" 
+               keyTimes="0; 0.38; 0.54; 0.57; 0.94; 1" 
+               dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" 
+               values="0; 0; 1; 1; 1; 0; 0" 
+               keyTimes="0; 0.37; 0.38; 0.54; 0.565; 0.57; 1" 
+               dur="14s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Output 3a: Faster-Whisper + Mini-Equalizer -->
+  <g transform="translate(20, 118)">
+    <animate attributeName="opacity" 
+             values="0; 0; 1; 1; 0; 0" 
+             keyTimes="0; 0.575; 0.59; 0.88; 0.94; 1" 
+             dur="14s" repeatCount="indefinite"/>
+    <text x="0" y="0">
+      <tspan fill="{prompt_color}" font-weight="600">[Faster-Whisper]</tspan>
+      <tspan fill="{out_dim}"> Transcribed 42m audio in 8.4s · </tspan>
+      <tspan fill="{success}" font-weight="600">0.00% WER</tspan>
+    </text>
+    <!-- Dancing Mini-Equalizer Waveform -->
+    <g transform="translate(390, -10)">
+      <rect x="0" y="4" width="2" height="8" rx="1" fill="{prompt_color}">
+        <animate attributeName="height" values="8; 14; 6; 12; 8" dur="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="4; 1; 5; 2; 4" dur="0.7s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="4" y="2" width="2" height="12" rx="1" fill="{prompt_color}">
+        <animate attributeName="height" values="12; 5; 14; 7; 12" dur="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="2; 5.5; 1; 4.5; 2" dur="0.7s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="8" y="5" width="2" height="6" rx="1" fill="{prompt_color}">
+        <animate attributeName="height" values="6; 13; 7; 15; 6" dur="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="5; 1.5; 4.5; 0.5; 5" dur="0.7s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="12" y="3" width="2" height="10" rx="1" fill="{prompt_color}">
+        <animate attributeName="height" values="10; 4; 12; 6; 10" dur="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="3; 6; 2; 5; 3" dur="0.7s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- Output 3b: Ground Truth Verification -->
+  <g transform="translate(20, 138)">
+    <animate attributeName="opacity" 
+             values="0; 0; 1; 1; 0; 0" 
+             keyTimes="0; 0.63; 0.645; 0.88; 0.94; 1" 
+             dur="14s" repeatCount="indefinite"/>
+    <text x="0" y="0">
+      <tspan fill="{success}" font-weight="600">&#x2713; </tspan>
+      <tspan fill="{out_dim}">Verified </tspan>
+      <tspan fill="{out_primary}" font-weight="600">14 action items, 4 decisions</tspan>
+      <tspan fill="{out_muted}"> against transcript context</tspan>
+    </text>
+  </g>
+
+  <!-- BLOCK 4: Ready Active Prompt -->
+  <g transform="translate(0, 164)">
+    <animate attributeName="opacity" 
+             values="0; 0; 1; 1; 0; 0" 
+             keyTimes="0; 0.68; 0.69; 0.88; 0.94; 1" 
+             dur="14s" repeatCount="indefinite"/>
+    <text x="0" y="0" fill="{prompt_color}" font-weight="600">$</text>
+    
+    <rect x="20" y="-12" width="7.5" height="15" rx="1.5" fill="{cursor_color}">
+      <animate attributeName="opacity" 
+               values="1; 0; 1; 0; 1; 0; 1; 0; 1; 0; 1" 
+               keyTimes="0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1" 
+               dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
 </g>
 </svg>"""
     write_card("terminal.svg", content)
