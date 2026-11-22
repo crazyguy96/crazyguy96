@@ -15,13 +15,12 @@
 
 ## About me
 
-Hi, I’m Jatin Mehra, a sophomore at IIT Guwahati pursuing a **B.Tech in Data Science and Artificial Intelligence (2025–2029)**. I’m interested in how machine learning can solve problems with messy, real-world inputs, from meeting audio and infrastructure reports to galaxy images.
+> **Sophomore at IIT Guwahati** pursuing a **B.Tech in Data Science & Artificial Intelligence (2025–2029)**.  
+> Interested in how machine learning can solve problems with messy, real-world inputs—from meeting audio and infrastructure reports to galaxy surveys.
 
-I enjoy data structures and algorithms ([LeetCode](https://leetcode.com/u/JatinMehra08/) · [Codeforces](https://codeforces.com/profile/crazyguy96)), especially breaking down a complex problem and finding a more efficient solution. On the development side, I like exploring frameworks and turning an idea into something people can try.
-
-Badminton is a big part of my life. I also enjoy cricket and football. Sports have taught me to think on my feet and work well in a team.
-
-I’m looking for **internships in Data Science, AI/ML, or software development**. I’m also open to collaborating on projects and talking tech or sports. [Reach out on LinkedIn](https://www.linkedin.com/in/jatin-mehra-51a675380/).
+| 🧠 Algorithms & Systems | 🏸 Beyond the Screen | 💼 Opportunities |
+| :--- | :--- | :--- |
+| Competitive programming on [LeetCode](https://leetcode.com/u/JatinMehra08/) & [Codeforces](https://codeforces.com/profile/crazyguy96). Breaking down complex problems and turning algorithms into clean working tools. | Badminton competitor, cricket and football player. Sports have taught me to think on my feet and build high-tempo team rhythm. | Looking for **internships in Data Science, AI/ML, or Software Development**. Open to collaborations—[reach out on LinkedIn](https://www.linkedin.com/in/jatin-mehra-51a675380/). |
 
 ## Featured projects
 
@@ -39,11 +38,6 @@ I’m looking for **internships in Data Science, AI/ML, or software development*
 | [Land Acquisition Delay Prediction](https://github.com/crazyguy96/SIH_PS_ID_26017) | A Smart India Hackathon PS 26017 project. The ML pipeline compares classifiers for infrastructure delay risk and uses SHAP to explain predictions on unlabeled projects. |
 | [Self-Supervised Vision Transformers](https://github.com/crazyguy96/Self-Supervised-Vit) | Experiments with DINOv2 representations of DESI Legacy Survey galaxy images, plus a compact DINO-style student–teacher implementation trained on CIFAR-10. |
 | [Mazdoor Evidence Kit](https://github.com/crazyguy96/Mazdoor-Evidence-Kit) | A mobile-first workflow for daily-wage workers to record work, reconcile payments, and organize evidence they can choose to share. |
-
-## Research
-
-- **Self-supervised vision:** I’ve explored how DINOv2 represents galaxy images using whole-image and patch-level features, and how those features can support unsupervised object and part discovery.
-- **Bayesian statistics:** In a Weibull competing-risks course project, I compared maximum-likelihood and Bayesian estimators under order constraints using simulation, tracking bias, MSE, and interval coverage.
 
 ## Tools & Technologies
 
