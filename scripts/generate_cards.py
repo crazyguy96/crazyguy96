@@ -1010,7 +1010,7 @@ def generate_about_cards():
   <text class="sans r" style="animation-delay:0.45s" font-size="12.5" fill="{INK_SOFT}">
     <tspan x="0" y="64">Sophomore @ IIT Guwahati (Data Science &amp; AI).</tspan>
     <tspan x="0" y="84">Looking for Data Science, AI/ML or software</tspan>
-    <tspan x="0" y="104">development roles for Summer / Fall 2026.</tspan>
+    <tspan x="0" y="104">development roles for Summer 2027 or 2028.</tspan>
   </text>
 
   <!-- Action: LinkedIn Pill Button -->
