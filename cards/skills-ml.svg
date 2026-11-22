@@ -234,8 +234,8 @@
 
   <!-- Bottom Readout -->
   <g class="f" style="animation-delay:0.48s" transform="translate(0, 168)">
-    <text x="0" y="0" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" fill="#d97706">&#x2713; PyTorch · TensorFlow · Scikit · Pandas</text>
-    <text class="nu" x="228" y="0" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" fill="#d97706">&#8599;</text>
+    <text x="0" y="0" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#d97706">&#x2713; PyTorch · TF · Scikit · NumPy</text>
+    <text class="nu" x="240" y="0" text-anchor="end" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" fill="#d97706">&#8599;</text>
   </g>
 </g>
 </svg>

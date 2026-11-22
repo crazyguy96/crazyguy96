@@ -1220,8 +1220,8 @@ def generate_skills_cards():
 
   <!-- Bottom Readout -->
   <g class="f" style="animation-delay:0.45s" transform="translate(0, 168)">
-    <text x="0" y="0" font-family="{MONO}" font-size="10.5" fill="{MUTED}">C · C++ · Python · Shell · Web · MD</text>
-    <text class="nu" x="228" y="0" font-family="{MONO}" font-size="12" font-weight="600" fill="{BLUE}">&#8599;</text>
+    <text x="0" y="0" font-family="{MONO}" font-size="9.5" fill="{MUTED}">&#x2713; C · C++ · Python · Web · MD</text>
+    <text class="nu" x="240" y="0" text-anchor="end" font-family="{MONO}" font-size="12" font-weight="600" fill="{BLUE}">&#8599;</text>
   </g>
 </g>
 </svg>"""
@@ -1279,8 +1279,8 @@ def generate_skills_cards():
 
   <!-- Bottom Readout -->
   <g class="f" style="animation-delay:0.48s" transform="translate(0, 168)">
-    <text x="0" y="0" font-family="{MONO}" font-size="10.5" fill="{AMBER}">&#x2713; PyTorch · TensorFlow · Scikit · Pandas</text>
-    <text class="nu" x="228" y="0" font-family="{MONO}" font-size="12" font-weight="600" fill="{AMBER}">&#8599;</text>
+    <text x="0" y="0" font-family="{MONO}" font-size="9.5" fill="{AMBER}">&#x2713; PyTorch · TF · Scikit · NumPy</text>
+    <text class="nu" x="240" y="0" text-anchor="end" font-family="{MONO}" font-size="12" font-weight="600" fill="{AMBER}">&#8599;</text>
   </g>
 </g>
 </svg>"""
@@ -1338,8 +1338,8 @@ def generate_skills_cards():
 
   <!-- Bottom Readout -->
   <g class="f" style="animation-delay:0.5s" transform="translate(0, 168)">
-    <text x="0" y="0" font-family="{MONO}" font-size="10.5" fill="{GREEN}">&#x2713; Git · Linux · Docker · Postman · VIM</text>
-    <text class="nu" x="228" y="0" font-family="{MONO}" font-size="12" font-weight="600" fill="{GREEN}">&#8599;</text>
+    <text x="0" y="0" font-family="{MONO}" font-size="9.5" fill="{GREEN}">&#x2713; Git · Linux · Docker · VIM</text>
+    <text class="nu" x="240" y="0" text-anchor="end" font-family="{MONO}" font-size="12" font-weight="600" fill="{GREEN}">&#8599;</text>
   </g>
 </g>
 </svg>"""
