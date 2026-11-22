@@ -43,7 +43,7 @@
     Land Delay Prediction
   </text>
   <text class="r" style="animation-delay:0.40s" x="0" y="62" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="13.5" fill="#4a4a4e">
-    Risk scores & SHAP attribution
+    Risk scores &amp; SHAP attribution
   </text>
   <text class="r" style="animation-delay:0.50s" x="0" y="100" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#76767c">
     LightGBM · XGBoost · SHAP

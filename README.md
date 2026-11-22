@@ -45,14 +45,17 @@ I’m looking for **internships in Data Science, AI/ML, or software development*
 - **Self-supervised vision:** I’ve explored how DINOv2 represents galaxy images using whole-image and patch-level features, and how those features can support unsupervised object and part discovery.
 - **Bayesian statistics:** In a Weibull competing-risks course project, I compared maximum-likelihood and Bayesian estimators under order constraints using simulation, tracking bias, MSE, and interval coverage.
 
-## Tools I use
+## Tools & Technologies
 
-| Area | Tools |
-| :--- | :--- |
-| Languages and notebooks | Python, C++, Jupyter |
-| Machine learning | PyTorch, scikit-learn, LightGBM, XGBoost |
-| Data and explainability | pandas, NumPy, SHAP |
-| Speech and demos | Faster-Whisper, Gradio |
+**Languages**  
+[![Languages](https://skillicons.dev/icons?i=py,cpp,c,bash,html,css,js&theme=light)](https://skillicons.dev)
+
+**Machine Learning & Data Science**  
+[![Machine Learning & Data](https://skillicons.dev/icons?i=pytorch,sklearn,pandas,numpy,jupyter&theme=light)](https://skillicons.dev)  
+*Libraries & frameworks:* LightGBM · XGBoost · SHAP · Faster-Whisper · Gradio
+
+**Environment & Tools**  
+[![Tools](https://skillicons.dev/icons?i=git,github,vscode,linux&theme=light)](https://skillicons.dev)
 
 ## GitHub activity
 

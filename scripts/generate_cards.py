@@ -233,16 +233,16 @@ def build_project_card(filename, category, title, subhead, meta, accent_color, r
 <g transform="translate(24, 32)">
   <g class="f" style="animation-delay:{delay:.2f}s">
     <rect x="0" y="0" width="6" height="6" rx="1.5" fill="{accent_color}"/>
-    <text x="12" y="6" font-family="{MONO}" font-size="11" letter-spacing="1" fill="{accent_color}">{category}</text>
+    <text x="12" y="6" font-family="{MONO}" font-size="11" letter-spacing="1" fill="{accent_color}">{escape(category)}</text>
   </g>
   <text class="r" style="animation-delay:{delay + 0.1:.2f}s" x="0" y="36" font-family="{SANS}" font-weight="600" font-size="19" fill="{INK}" letter-spacing="-0.3">
-    {title}
+    {escape(title)}
   </text>
   <text class="r" style="animation-delay:{delay + 0.2:.2f}s" x="0" y="62" font-family="{SANS}" font-size="13.5" fill="{INK_SOFT}">
-    {subhead}
+    {escape(subhead)}
   </text>
   <text class="r" style="animation-delay:{delay + 0.3:.2f}s" x="0" y="100" font-family="{MONO}" font-size="11" fill="{MUTED}">
-    {meta}
+    {escape(meta)}
   </text>
   <text class="nu" x="228" y="100" font-family="{MONO}" font-size="12" fill="{accent_color}">&#8599;</text>
 </g>
@@ -347,7 +347,7 @@ def generate_project_cards():
       <text x="98" y="58" text-anchor="end" font-weight="600" fill="{INK}">₹1,300</text>
     </g>
   </g>
-  <text class="f" style="animation-delay:0.85s" x="14" y="122" font-family="{MONO}" font-size="8.5" fill="{GREEN}">✓ Tamper-evident proof</text>
+  <text class="f" style="animation-delay:0.85s" x="14" y="122" font-family="{MONO}" font-size="8.5" fill="{GREEN}">&#x2713; Tamper-evident proof</text>
 """
     build_project_card("mazdoor", "CIVIC TECH", "Mazdoor Evidence Kit",
                        "Work logs & wage records", "Offline-first · LocalStorage",
