@@ -21,21 +21,21 @@
 </p>
 
 <div align="center">
-  <a href="https://leetcode.com/u/JatinMehra08/"><img src="./cards/about-leetcode.svg?v=2" width="49%" alt="Data Structures &amp; LeetCode — Algorithms &amp; Problem Solving"></a>
-  <a href="https://codeforces.com/profile/crazyguy96"><img src="./cards/about-codeforces.svg?v=2" width="49%" alt="Competitive Programming &amp; Codeforces — Contests &amp; Rating"></a>
+  <a href="https://leetcode.com/u/JatinMehra08/"><img src="./cards/about-leetcode.svg" width="49%" alt="Data Structures &amp; LeetCode — Algorithms &amp; Problem Solving"></a>
+  <a href="https://codeforces.com/profile/crazyguy96"><img src="./cards/about-codeforces.svg" width="49%" alt="Competitive Programming &amp; Codeforces — Contests &amp; Rating"></a>
   <br>
-  <a href="#about-me"><img src="./cards/about-sports.svg?v=2" width="49%" alt="Athletics &amp; Team Instincts — Badminton, Cricket, Football"></a>
-  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/"><img src="./cards/about-work.svg?v=2" width="49%" alt="Seeking Internships — Reach out on LinkedIn"></a>
+  <a href="#about-me"><img src="./cards/about-athletics.svg" width="49%" alt="Athletics &amp; Team Instincts — Badminton, Cricket, Football"></a>
+  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/"><img src="./cards/about-internships.svg" width="49%" alt="Seeking Internships — Reach out on LinkedIn"></a>
 </div>
 
 ## Featured projects
 
 <div align="center">
-  <a href="https://github.com/crazyguy96/AI_Meeting_Assistant"><img src="./cards/meeting.svg?v=2" width="49%" alt="AI Meeting Assistant — audio to verified action items"></a>
-  <a href="https://github.com/crazyguy96/SIH_PS_ID_26017"><img src="./cards/delay.svg?v=2" width="49%" alt="Land Acquisition Delay Prediction — risk scores and SHAP attribution"></a>
+  <a href="https://github.com/crazyguy96/AI_Meeting_Assistant"><img src="./cards/meeting.svg" width="49%" alt="AI Meeting Assistant — audio to verified action items"></a>
+  <a href="https://github.com/crazyguy96/SIH_PS_ID_26017"><img src="./cards/delay.svg" width="49%" alt="Land Acquisition Delay Prediction — risk scores and SHAP attribution"></a>
   <br>
-  <a href="https://github.com/crazyguy96/Self-Supervised-Vit"><img src="./cards/vision.svg?v=2" width="49%" alt="Self-Supervised Vision Transformers — DINOv2 on galaxy surveys"></a>
-  <a href="https://github.com/crazyguy96/Mazdoor-Evidence-Kit"><img src="./cards/mazdoor.svg?v=2" width="49%" alt="Mazdoor Evidence Kit — work logs and wage records"></a>
+  <a href="https://github.com/crazyguy96/Self-Supervised-Vit"><img src="./cards/vision-transformers.svg" width="49%" alt="Self-Supervised Vision Transformers — DINOv2 on galaxy surveys"></a>
+  <a href="https://github.com/crazyguy96/Mazdoor-Evidence-Kit"><img src="./cards/mazdoor.svg" width="49%" alt="Mazdoor Evidence Kit — work logs and wage records"></a>
 </div>
 
 ## Tools & Technologies

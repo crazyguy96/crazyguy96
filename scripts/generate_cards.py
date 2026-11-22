@@ -522,6 +522,8 @@ def build_project_card(filename, category, title, desc_lines, tags, accent_color
 </g>
 </svg>"""
     write_card(f"{filename}.svg", content)
+    if filename == "vision":
+        write_card("vision-transformers.svg", content)
 
 
 def generate_project_cards():
@@ -987,6 +989,7 @@ def generate_about_cards():
 </g>
 </svg>"""
     write_card("about-sports.svg", sports_svg)
+    write_card("about-athletics.svg", sports_svg)
 
     # 4. about-work.svg
     work_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Opportunities - Internships in Data Science and AI">
@@ -1029,6 +1032,7 @@ def generate_about_cards():
 </g>
 </svg>"""
     write_card("about-work.svg", work_svg)
+    write_card("about-internships.svg", work_svg)
 
     # Legacy about-code.svg
     write_card("about-code.svg", leetcode_svg)
