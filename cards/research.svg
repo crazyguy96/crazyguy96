@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 76" role="img" aria-label="Research">
+  <rect x="1" y="1" width="278" height="74" rx="16" fill="#121b30" stroke="#c4a8ff" stroke-opacity=".57" stroke-width="2"/>
+  <circle cx="35" cy="38" r="23" fill="#c4a8ff" fill-opacity=".1"/>
+  <path d="M30 23h10m-8 0v12L20 52h30L38 35V23m-13 21h20" fill="none" stroke="#c4a8ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="71" y="48" fill="#f5f8ff" font-family="system-ui, sans-serif" font-size="28" font-weight="700">Research</text>
+  <path d="M236 38h19m-6-6 6 6-6 6" fill="none" stroke="#c4a8ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
