@@ -1,42 +1,61 @@
-<!-- Every card is an animated SVG drawn by scripts/render_readme_cards.py.
-     Design: "Three Worlds", inspired by Avi Vashishta & Damir Sokolovsky.
-     Spacing is baked into the SVGs, so keep rows together. -->
 <div align="center">
-  <img src="./cards/hero.svg" width="100%" alt="Jatin Mehra · Data Science and AI at IIT Guwahati" /><br>
-  <img src="./cards/activity.svg" width="100%" alt="Jatin's GitHub contributions in the last 12 months" /><br>
-  <a href="#featured-projects"><img src="./cards/build.svg" width="33.333%" alt="BUILD: 4 systems" /></a><a href="https://leetcode.com/u/JatinMehra08/"><img src="./cards/algo.svg" width="33.333%" alt="DSA: LeetCode &amp; Codeforces" /></a><a href="#research"><img src="./cards/research.svg" width="33.333%" alt="RESEARCH: B.Tech 2025-2029" /></a><br>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./cards/title-projects-dark.svg" /><img src="./cards/title-projects-light.svg" width="100%" alt="Featured Systems &amp; Pipelines" /></picture><br>
-  <a href="https://github.com/crazyguy96/AI_Meeting_Assistant"><img src="./cards/repo-meeting-assistant.svg" width="49.5%" alt="AI Meeting Assistant" /></a><a href="https://github.com/crazyguy96/SIH_PS_ID_26017"><img src="./cards/repo-delay-prediction.svg" width="49.5%" alt="Land Delay Risk Prediction" /></a><br>
-  <a href="https://github.com/crazyguy96/Self-Supervised-Vit"><img src="./cards/repo-vision-vit.svg" width="49.5%" alt="Self-Supervised Vision ViT" /></a><a href="https://github.com/crazyguy96/Mazdoor-Evidence-Kit"><img src="./cards/repo-mazdoor-evidence.svg" width="49.5%" alt="Mazdoor Evidence Kit" /></a>
+  <img src="./cards/hero.svg" alt="Jatin Mehra · Data Science &amp; AI at IIT Guwahati" width="100%">
+</div>
+
+<div align="center">
+  <a href="https://github.com/crazyguy96/AI_Meeting_Assistant"><img src="./cards/terminal.svg" width="100%" alt="AI Meeting Assistant terminal session preview"></a>
 </div>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/">LinkedIn</a> &nbsp;/&nbsp;
-  <a href="https://leetcode.com/u/JatinMehra08/">LeetCode</a> &nbsp;/&nbsp;
-  <a href="https://codeforces.com/profile/crazyguy96">Codeforces</a> &nbsp;/&nbsp;
-  <a href="https://github.com/crazyguy96?tab=repositories">All Repositories</a>
+  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="https://leetcode.com/u/JatinMehra08/">LeetCode</a> &nbsp;·&nbsp;
+  <a href="https://codeforces.com/profile/crazyguy96">Codeforces</a> &nbsp;·&nbsp;
+  <a href="https://github.com/crazyguy96?tab=repositories">All repositories</a>
 </p>
 
-## About
+## About me
 
-Hi, I’m Jatin Mehra, an undergraduate at IIT Guwahati pursuing a **B.Tech in Data Science and Artificial Intelligence (2025–2029)**. I work on machine learning for problems with messy, unstructured real-world inputs: speech audio, infrastructure reports, and astronomical survey imagery.
+Hi, I’m Jatin Mehra, a sophomore at IIT Guwahati pursuing a **B.Tech in Data Science and Artificial Intelligence (2025–2029)**. I’m interested in how machine learning can solve problems with messy, real-world inputs, from meeting audio and infrastructure reports to galaxy images.
 
-I spend significant time on data structures and algorithms ([LeetCode](https://leetcode.com/u/JatinMehra08/) · [Codeforces](https://codeforces.com/profile/crazyguy96)), focusing on clean problem decomposition and efficient implementations. On the applied side, I turn machine learning pipelines into verifiable tools people can use.
+I enjoy data structures and algorithms ([LeetCode](https://leetcode.com/u/JatinMehra08/) · [Codeforces](https://codeforces.com/profile/crazyguy96)), especially breaking down a complex problem and finding a more efficient solution. On the development side, I like exploring frameworks and turning an idea into something people can try.
 
-Outside of computer science, badminton is a big part of my life, along with cricket and football.
+Badminton is a big part of my life. I also enjoy cricket and football. Sports have taught me to think on my feet and work well in a team.
 
-I am looking for **internships in Data Science, AI/ML, or software engineering**. [Get in touch on LinkedIn](https://www.linkedin.com/in/jatin-mehra-51a675380/).
+I’m looking for **internships in Data Science, AI/ML, or software development**. I’m also open to collaborating on projects and talking tech or sports. [Reach out on LinkedIn](https://www.linkedin.com/in/jatin-mehra-51a675380/).
+
+## Featured projects
+
+<div align="center">
+  <a href="https://github.com/crazyguy96/AI_Meeting_Assistant"><img src="./cards/meeting.svg" width="49%" alt="AI Meeting Assistant — audio to verified action items"></a>
+  <a href="https://github.com/crazyguy96/SIH_PS_ID_26017"><img src="./cards/delay.svg" width="49%" alt="Land Acquisition Delay Prediction — risk scores and SHAP attribution"></a>
+  <br>
+  <a href="https://github.com/crazyguy96/Self-Supervised-Vit"><img src="./cards/vision.svg" width="49%" alt="Self-Supervised Vision Transformers — DINOv2 on galaxy surveys"></a>
+  <a href="https://github.com/crazyguy96/Mazdoor-Evidence-Kit"><img src="./cards/mazdoor.svg" width="49%" alt="Mazdoor Evidence Kit — work logs and wage records"></a>
+</div>
+
+| Project | What I worked on |
+| :--- | :--- |
+| [AI Meeting Assistant](https://github.com/crazyguy96/AI_Meeting_Assistant) | An Inter IIT ML bootcamp project that turns recordings into transcripts, minutes, decisions, and action items. The pipeline uses Faster-Whisper for transcription and checks generated records against transcript evidence. |
+| [Land Acquisition Delay Prediction](https://github.com/crazyguy96/SIH_PS_ID_26017) | A Smart India Hackathon PS 26017 project. The ML pipeline compares classifiers for infrastructure delay risk and uses SHAP to explain predictions on unlabeled projects. |
+| [Self-Supervised Vision Transformers](https://github.com/crazyguy96/Self-Supervised-Vit) | Experiments with DINOv2 representations of DESI Legacy Survey galaxy images, plus a compact DINO-style student–teacher implementation trained on CIFAR-10. |
+| [Mazdoor Evidence Kit](https://github.com/crazyguy96/Mazdoor-Evidence-Kit) | A mobile-first workflow for daily-wage workers to record work, reconcile payments, and organize evidence they can choose to share. |
 
 ## Research
 
-- **Self-supervised vision:** Exploring how DINOv2 represents galaxy images using whole-image and patch-level features, and how self-attention heads naturally cluster astronomical structures without manual annotations.
-- **Bayesian statistics:** In a Weibull competing-risks project, compared maximum-likelihood and Bayesian estimators under order constraints using Monte Carlo simulation, evaluating bias, MSE, and interval coverage.
+- **Self-supervised vision:** I’ve explored how DINOv2 represents galaxy images using whole-image and patch-level features, and how those features can support unsupervised object and part discovery.
+- **Bayesian statistics:** In a Weibull competing-risks course project, I compared maximum-likelihood and Bayesian estimators under order constraints using simulation, tracking bias, MSE, and interval coverage.
 
-## Tools
+## Tools I use
 
-| Category | Stack |
+| Area | Tools |
 | :--- | :--- |
-| Languages and environments | Python, C++, Jupyter |
+| Languages and notebooks | Python, C++, Jupyter |
 | Machine learning | PyTorch, scikit-learn, LightGBM, XGBoost |
 | Data and explainability | pandas, NumPy, SHAP |
-| Speech and interfaces | Faster-Whisper, Gradio |
+| Speech and demos | Faster-Whisper, Gradio |
+
+## GitHub activity
+
+<div align="center">
+  <a href="https://github.com/crazyguy96"><img src="./cards/activity.svg" alt="Public GitHub contribution calendar and summary for the last year" width="100%"></a>
+</div>
