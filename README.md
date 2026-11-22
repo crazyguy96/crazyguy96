@@ -7,10 +7,10 @@
 </div>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://leetcode.com/u/JatinMehra08/">LeetCode</a> &nbsp;·&nbsp;
-  <a href="https://codeforces.com/profile/crazyguy96">Codeforces</a> &nbsp;·&nbsp;
-  <a href="https://github.com/crazyguy96?tab=repositories">All repositories</a>
+  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/" title="LinkedIn"><img src="./cards/icon-linkedin.svg" height="38" alt="LinkedIn"></a> &nbsp;&nbsp;
+  <a href="https://leetcode.com/u/JatinMehra08/" title="LeetCode"><img src="./cards/icon-leetcode.svg" height="38" alt="LeetCode"></a> &nbsp;&nbsp;
+  <a href="https://codeforces.com/profile/crazyguy96" title="Codeforces"><img src="./cards/icon-codeforces.svg" height="38" alt="Codeforces"></a> &nbsp;&nbsp;
+  <a href="https://github.com/crazyguy96?tab=repositories" title="All repositories"><img src="./cards/icon-github.svg" height="38" alt="All repositories"></a>
 </p>
 
 ## About me
