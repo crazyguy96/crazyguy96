@@ -11,7 +11,7 @@
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 .live { animation: pulse 2s ease-in-out infinite; }
 </style>
-<rect width="286" height="216" rx="14" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+<rect width="286" height="216" rx="14" fill="#f4efe6" stroke="#dad3c5" stroke-width="1"/>
 
 <g transform="translate(22, 22)">
   <!-- Tag -->
@@ -26,7 +26,7 @@
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.35s" font-size="12" fill="#4a4a4e">
+  <text class="sans r" style="animation-delay:0.35s" font-size="12" fill="#45423d">
     <tspan x="0" y="56">Badminton is a big part of my life,</tspan>
     <tspan x="0" y="73">alongside cricket and football. Sports</tspan>
     <tspan x="0" y="90">taught me to think fast and collaborate.</tspan>

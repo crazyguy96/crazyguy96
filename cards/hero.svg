@@ -26,7 +26,7 @@
   </linearGradient>
   <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0">
     <stop offset="0" stop-color="#111111"/><stop offset=".42" stop-color="#111111"/>
-    <stop offset=".5" stop-color="#2563eb"/><stop offset=".58" stop-color="#111111"/>
+    <stop offset=".5" stop-color="#e11d48"/><stop offset=".58" stop-color="#111111"/>
     <stop offset="1" stop-color="#111111"/>
     <animateTransform attributeName="gradientTransform" type="translate" values="-600 0;600 0;600 0"
       keyTimes="0;.45;1" dur="7s" begin="1.6s" repeatCount="indefinite"/>
@@ -35,32 +35,32 @@
 
 <!-- Card Surface -->
 <g clip-path="url(#hero-clip)">
-  <rect width="880" height="230" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+  <rect width="880" height="230" fill="#f4efe6" stroke="#dad3c5" stroke-width="1"/>
   <rect class="sh" x="0" y="0" width="140" height="230" fill="url(#card-sheen)" transform="translate(-300 0)"/>
 </g>
-<rect width="880" height="230" rx="14" fill="none" stroke="#e4e4df" stroke-width="1"/>
+<rect width="880" height="230" rx="14" fill="none" stroke="#dad3c5" stroke-width="1"/>
 
 <!-- Left Content -->
 <g transform="translate(44, 40)">
   <g class="f" style="animation-delay:0.1s">
-    <circle cx="4" cy="4" r="3.5" fill="#2563eb" class="live"/>
-    <text x="16" y="8" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" letter-spacing="1" fill="#76767c">DATA SCIENCE &amp; AI · IIT GUWAHATI (2025–2029)</text>
+    <circle cx="4" cy="4" r="3.5" fill="#e11d48" class="live"/>
+    <text x="16" y="8" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" letter-spacing="1" fill="#757169">DATA SCIENCE &amp; AI · IIT GUWAHATI (2025–2029)</text>
   </g>
   <text class="r" style="animation-delay:0.2s" x="0" y="68" font-family="'Instrument Serif', Georgia, serif" font-size="62" letter-spacing="-1.5" fill="#111111">
     Jatin <tspan font-style="italic" fill="url(#shine)">Mehra</tspan>
   </text>
-  <text class="r" style="animation-delay:0.35s" x="2" y="104" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4e">
+  <text class="r" style="animation-delay:0.35s" x="2" y="104" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="16" fill="#45423d">
     Machine learning systems for messy, real-world inputs.
   </text>
-  <text class="r" style="animation-delay:0.5s" x="2" y="132" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#76767c">
+  <text class="r" style="animation-delay:0.5s" x="2" y="132" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#757169">
     Speech AI · Computer Vision · Explainable ML · DSA
   </text>
 </g>
 
 <!-- Right Side Visual Moment: Acoustic Spectrum Envelope -->
 <g transform="translate(580, 36)">
-  <rect class="f" style="animation-delay:0.3s" width="256" height="158" rx="10" fill="#f7f7f5" stroke="#e4e4df" stroke-width="1"/>
-  <text class="f" style="animation-delay:0.4s" x="16" y="24" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" fill="#76767c">ACOUSTIC SPECTRUM f(t)</text>
+  <rect class="f" style="animation-delay:0.3s" width="256" height="158" rx="10" fill="#e8e2d7" stroke="#dad3c5" stroke-width="1"/>
+  <text class="f" style="animation-delay:0.4s" x="16" y="24" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" fill="#757169">ACOUSTIC SPECTRUM f(t)</text>
   
   <!-- Waveform lines -->
   <line x1="16" y1="80" x2="240" y2="80" stroke="#dfdfd9" stroke-width="1"/>
@@ -72,10 +72,10 @@
         fill="none" stroke="#b4b4aa" stroke-width="1.5" stroke-linecap="round"/>
   <!-- Vibrant Accent Signal -->
   <path class="r" style="animation-delay:0.65s" d="M 40 80 C 55 60, 65 100, 80 80 C 95 48, 105 112, 120 80 C 135 52, 145 108, 160 80 C 175 64, 185 96, 200 80" 
-        fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round"/>
+        fill="none" stroke="#e11d48" stroke-width="2.2" stroke-linecap="round"/>
 
   <!-- Readouts -->
-  <text class="f" style="animation-delay:0.8s" x="16" y="140" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#76767c">16 kHz log-mel</text>
-  <text class="f" style="animation-delay:0.85s" x="240" y="140" text-anchor="end" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" font-weight="600" fill="#2563eb">Evidence-Grounded &#8599;</text>
+  <text class="f" style="animation-delay:0.8s" x="16" y="140" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#757169">16 kHz log-mel</text>
+  <text class="f" style="animation-delay:0.85s" x="240" y="140" text-anchor="end" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" font-weight="600" fill="#e11d48">Evidence-Grounded &#8599;</text>
 </g>
 </svg>

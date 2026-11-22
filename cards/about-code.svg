@@ -11,13 +11,13 @@
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 .live { animation: pulse 2s ease-in-out infinite; }
 </style>
-<rect width="286" height="216" rx="14" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+<rect width="286" height="216" rx="14" fill="#f4efe6" stroke="#dad3c5" stroke-width="1"/>
 
 <g transform="translate(22, 26)">
   <!-- Tag -->
   <g class="f" style="animation-delay:0.1s">
-    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#d97706"/>
-    <text x="12" y="6" class="mono" font-size="10" letter-spacing="1" fill="#d97706">01 / ALGORITHMS</text>
+    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#eab308"/>
+    <text x="12" y="6" class="mono" font-size="10" letter-spacing="1" fill="#eab308">01 / ALGORITHMS</text>
   </g>
 
   <!-- Title -->
@@ -26,7 +26,7 @@
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.3s" font-size="12" fill="#4a4a4e">
+  <text class="sans r" style="animation-delay:0.3s" font-size="12" fill="#45423d">
     <tspan x="0" y="64">Breaking down complex problems</tspan>
     <tspan x="0" y="82">into optimal complexity, then turning</tspan>
     <tspan x="0" y="100">algorithms into working tools.</tspan>
@@ -35,20 +35,23 @@
   <!-- Badges: LeetCode & Codeforces -->
   <g transform="translate(0, 126)" class="f" style="animation-delay:0.4s">
     <!-- LeetCode Pill -->
+    <a href="https://leetcode.com/u/JatinMehra08/" target="_blank">
     <g>
-      <rect width="112" height="28" rx="14" fill="#fcfcfb" stroke="#e4e4df" stroke-width="1"/>
+      <rect width="112" height="28" rx="14" fill="#e8e2d7" stroke="#dad3c5" stroke-width="1"/>
       <g transform="translate(8, 6) scale(0.666)">
         <path fill="#ffa116" d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.762-1.823.762s-1.357-.295-1.824-.762L4.57 15.349a2.58 2.58 0 0 1 0-3.647l5.188-5.188a2.58 2.58 0 0 1 3.647 0l2.697 2.608a.748.748 0 0 1-1.058 1.058l-2.697-2.608a1.085 1.085 0 0 0-1.531 0L5.628 12.76a1.085 1.085 0 0 0 0 1.531l5.188 5.189c.423.423 1.108.423 1.531 0l2.697-2.608a.748.748 0 0 1 1.058 1.058z"/>
-        <path fill="#262626" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
+        <path fill="#111111" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
         <path fill="#8a8a8e" d="M8.077 12.75h7.846a.75.75 0 0 0 0-1.5H8.077a.75.75 0 0 0 0 1.5z"/>
       </g>
       <text x="30" y="18" class="sans" font-size="11.5" font-weight="600" fill="#111111">LeetCode</text>
-      <text x="96" y="18" class="mono" font-size="11" fill="#d97706">&#8599;</text>
+      <text x="96" y="18" class="mono" font-size="11" fill="#eab308">&#8599;</text>
     </g>
+    </a>
 
     <!-- Codeforces Pill -->
+    <a href="https://codeforces.com/profile/crazyguy96" target="_blank">
     <g transform="translate(120, 0)">
-      <rect width="122" height="28" rx="14" fill="#fcfcfb" stroke="#e4e4df" stroke-width="1"/>
+      <rect width="122" height="28" rx="14" fill="#e8e2d7" stroke="#dad3c5" stroke-width="1"/>
       <g transform="translate(8, 7) scale(0.666)">
         <rect x="1.5" y="8" width="5.5" height="13" rx="1.5" fill="#1F8ACB"/>
         <rect x="9.25" y="2" width="5.5" height="19" rx="1.5" fill="#FCD239"/>
@@ -57,6 +60,7 @@
       <text x="30" y="18" class="sans" font-size="11.5" font-weight="600" fill="#111111">Codeforces</text>
       <text x="106" y="18" class="mono" font-size="11" fill="#1F8ACB">&#8599;</text>
     </g>
+    </a>
   </g>
 </g>
 </svg>

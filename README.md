@@ -21,7 +21,7 @@
 </p>
 
 <div align="center">
-  <a href="https://leetcode.com/u/JatinMehra08/"><img src="./cards/about-code.svg" width="32.8%" alt="Data Structures &amp; Code — LeetCode and Codeforces"></a>
+  <a href="https://codeforces.com/profile/crazyguy96"><img src="./cards/about-code.svg" width="32.8%" alt="Data Structures &amp; Code — Codeforces &amp; LeetCode"></a>
   <a href="#about-me"><img src="./cards/about-sports.svg" width="32.8%" alt="Athletics &amp; Team Instincts — Badminton, Cricket, Football"></a>
   <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/"><img src="./cards/about-work.svg" width="32.8%" alt="Seeking Internships — Reach out on LinkedIn"></a>
 </div>

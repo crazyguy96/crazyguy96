@@ -16,20 +16,20 @@ DATA_FILE = os.path.join(ROOT, "data", "contributions.json")
 OUT_DIR = os.path.join(ROOT, "cards")
 FONTS_DIR = os.path.join(ROOT, "fonts")
 
-# Palette tokens: Paper & Ink with focused accents
-WHITE = "#ffffff"
-PAPER = "#f7f7f5"
-BORDER = "#e4e4df"
-BORDER_SOFT = "#eeeeea"
+# Palette tokens: Option 3 Bauhaus Sand Linen
+WHITE = "#f4efe6"
+PAPER = "#e8e2d7"
+BORDER = "#dad3c5"
+BORDER_SOFT = "#e2dcd0"
 INK = "#111111"
-INK_SOFT = "#4a4a4e"
-MUTED = "#76767c"
+INK_SOFT = "#45423d"
+MUTED = "#757169"
 
 # Project accents
-BLUE = "#2563eb"
-AMBER = "#d97706"
-VIOLET = "#7c3aed"
-GREEN = "#059669"
+BLUE = "#e11d48"    # Bold Dark Rose / Crimson Pink
+AMBER = "#eab308"   # Bauhaus Canary Yellow
+VIOLET = "#e11d48"  # Bold Dark Rose
+GREEN = "#111111"   # Deep Carbon Black
 
 SERIF = "'Instrument Serif', Georgia, serif"
 SANS = "Geist, system-ui, -apple-system, sans-serif"
@@ -750,17 +750,21 @@ def generate_social_icons():
     <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.06"/>
   </filter>
 </defs>
-<rect width="42" height="42" rx="10" fill="#ffffff" stroke="#e4e4df" stroke-width="1.2" filter="url(#shadow-{brand})"/>
+<rect width="42" height="42" rx="10" fill="{WHITE}" stroke="{BORDER}" stroke-width="1.2" filter="url(#shadow-{brand})"/>
 <g transform="translate(9, 9)">
 {inner_svg}
 </g>
 </svg>"""
 
+    is_dark = WHITE in ["#1e1d1b", "#141416", "#0d1117", "#161b22"]
+    github_fill = "#f0ebe1" if is_dark else "#181717"
+    leetcode_dark = "#f0ebe1" if is_dark else "#262626"
+
     linkedin_inner = """<path fill="#0077b5" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>"""
 
-    leetcode_inner = """<g>
+    leetcode_inner = f"""<g>
   <path fill="#ffa116" d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.762-1.823.762s-1.357-.295-1.824-.762L4.57 15.349a2.58 2.58 0 0 1 0-3.647l5.188-5.188a2.58 2.58 0 0 1 3.647 0l2.697 2.608a.748.748 0 0 1-1.058 1.058l-2.697-2.608a1.085 1.085 0 0 0-1.531 0L5.628 12.76a1.085 1.085 0 0 0 0 1.531l5.188 5.189c.423.423 1.108.423 1.531 0l2.697-2.608a.748.748 0 0 1 1.058 1.058z"/>
-  <path fill="#262626" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
+  <path fill="{leetcode_dark}" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
   <path fill="#8a8a8e" d="M8.077 12.75h7.846a.75.75 0 0 0 0-1.5H8.077a.75.75 0 0 0 0 1.5z"/>
 </g>"""
 
@@ -770,7 +774,7 @@ def generate_social_icons():
   <rect x="17" y="5" width="5.5" height="16" rx="1.5" fill="#E34343"/>
 </g>"""
 
-    github_inner = """<path fill="#181717" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>"""
+    github_inner = f"""<path fill="{github_fill}" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>"""
 
     icons = {
         "icon-linkedin": ("LinkedIn", linkedin_inner),
@@ -794,9 +798,9 @@ def generate_social_icons():
         pill_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{label}">
 <title>{label}</title>
 <style>
-  .lbl {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #111111; }}
+  .lbl {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 500; fill: {INK}; }}
 </style>
-<rect width="{w}" height="{h}" rx="16" fill="#ffffff" stroke="#e4e4df" stroke-width="1.2"/>
+<rect width="{w}" height="{h}" rx="16" fill="{WHITE}" stroke="{BORDER}" stroke-width="1.2"/>
 <g transform="translate(10, 8) scale(0.666)">
   {icon}
 </g>
@@ -825,22 +829,22 @@ def generate_about_cards():
     code_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Algorithms &amp; Systems - LeetCode and Codeforces">
 <title>Algorithms &amp; Systems</title>
 <style>{css}</style>
-<rect width="{w}" height="{h}" rx="14" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+<rect width="{w}" height="{h}" rx="14" fill="{WHITE}" stroke="{BORDER}" stroke-width="1"/>
 
 <g transform="translate(22, 26)">
   <!-- Tag -->
   <g class="f" style="animation-delay:0.1s">
-    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#d97706"/>
-    <text x="12" y="6" class="mono" font-size="10" letter-spacing="1" fill="#d97706">01 / ALGORITHMS</text>
+    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="{AMBER}"/>
+    <text x="12" y="6" class="mono" font-size="10" letter-spacing="1" fill="{AMBER}">01 / ALGORITHMS</text>
   </g>
 
   <!-- Title -->
-  <text x="0" y="36" class="serif r" style="animation-delay:0.2s" font-size="22" fill="#111111">
+  <text x="0" y="36" class="serif r" style="animation-delay:0.2s" font-size="22" fill="{INK}">
     Data Structures &amp; Code
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.3s" font-size="12" fill="#4a4a4e">
+  <text class="sans r" style="animation-delay:0.3s" font-size="12" fill="{INK_SOFT}">
     <tspan x="0" y="64">Breaking down complex problems</tspan>
     <tspan x="0" y="82">into optimal complexity, then turning</tspan>
     <tspan x="0" y="100">algorithms into working tools.</tspan>
@@ -849,28 +853,32 @@ def generate_about_cards():
   <!-- Badges: LeetCode & Codeforces -->
   <g transform="translate(0, 126)" class="f" style="animation-delay:0.4s">
     <!-- LeetCode Pill -->
+    <a href="https://leetcode.com/u/JatinMehra08/" target="_blank">
     <g>
-      <rect width="112" height="28" rx="14" fill="#fcfcfb" stroke="#e4e4df" stroke-width="1"/>
+      <rect width="112" height="28" rx="14" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
       <g transform="translate(8, 6) scale(0.666)">
         <path fill="#ffa116" d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.762-1.823.762s-1.357-.295-1.824-.762L4.57 15.349a2.58 2.58 0 0 1 0-3.647l5.188-5.188a2.58 2.58 0 0 1 3.647 0l2.697 2.608a.748.748 0 0 1-1.058 1.058l-2.697-2.608a1.085 1.085 0 0 0-1.531 0L5.628 12.76a1.085 1.085 0 0 0 0 1.531l5.188 5.189c.423.423 1.108.423 1.531 0l2.697-2.608a.748.748 0 0 1 1.058 1.058z"/>
-        <path fill="#262626" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
+        <path fill="{INK}" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
         <path fill="#8a8a8e" d="M8.077 12.75h7.846a.75.75 0 0 0 0-1.5H8.077a.75.75 0 0 0 0 1.5z"/>
       </g>
-      <text x="30" y="18" class="sans" font-size="11.5" font-weight="600" fill="#111111">LeetCode</text>
-      <text x="96" y="18" class="mono" font-size="11" fill="#d97706">&#8599;</text>
+      <text x="30" y="18" class="sans" font-size="11.5" font-weight="600" fill="{INK}">LeetCode</text>
+      <text x="96" y="18" class="mono" font-size="11" fill="{AMBER}">&#8599;</text>
     </g>
+    </a>
 
     <!-- Codeforces Pill -->
+    <a href="https://codeforces.com/profile/crazyguy96" target="_blank">
     <g transform="translate(120, 0)">
-      <rect width="122" height="28" rx="14" fill="#fcfcfb" stroke="#e4e4df" stroke-width="1"/>
+      <rect width="122" height="28" rx="14" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
       <g transform="translate(8, 7) scale(0.666)">
         <rect x="1.5" y="8" width="5.5" height="13" rx="1.5" fill="#1F8ACB"/>
         <rect x="9.25" y="2" width="5.5" height="19" rx="1.5" fill="#FCD239"/>
         <rect x="17" y="5" width="5.5" height="16" rx="1.5" fill="#E34343"/>
       </g>
-      <text x="30" y="18" class="sans" font-size="11.5" font-weight="600" fill="#111111">Codeforces</text>
+      <text x="30" y="18" class="sans" font-size="11.5" font-weight="600" fill="{INK}">Codeforces</text>
       <text x="106" y="18" class="mono" font-size="11" fill="#1F8ACB">&#8599;</text>
     </g>
+    </a>
   </g>
 </g>
 </svg>"""
@@ -880,7 +888,7 @@ def generate_about_cards():
     sports_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Beyond the Screen - Athletics and Team Instincts">
 <title>Beyond the Screen</title>
 <style>{css}</style>
-<rect width="{w}" height="{h}" rx="14" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+<rect width="{w}" height="{h}" rx="14" fill="{WHITE}" stroke="{BORDER}" stroke-width="1"/>
 
 <g transform="translate(22, 22)">
   <!-- Tag -->
@@ -890,12 +898,12 @@ def generate_about_cards():
   </g>
 
   <!-- Title -->
-  <text x="0" y="34" class="serif r" style="animation-delay:0.25s" font-size="22" fill="#111111">
+  <text x="0" y="34" class="serif r" style="animation-delay:0.25s" font-size="22" fill="{INK}">
     Reflexes &amp; Team Rhythm
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.35s" font-size="12" fill="#4a4a4e">
+  <text class="sans r" style="animation-delay:0.35s" font-size="12" fill="{INK_SOFT}">
     <tspan x="0" y="56">Badminton is a big part of my life,</tspan>
     <tspan x="0" y="73">alongside cricket and football. Sports</tspan>
     <tspan x="0" y="90">taught me to think fast and collaborate.</tspan>
@@ -956,22 +964,22 @@ def generate_about_cards():
     work_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Opportunities - Internships in Data Science and AI">
 <title>Opportunities</title>
 <style>{css}</style>
-<rect width="{w}" height="{h}" rx="14" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+<rect width="{w}" height="{h}" rx="14" fill="{WHITE}" stroke="{BORDER}" stroke-width="1"/>
 
 <g transform="translate(22, 26)">
   <!-- Tag -->
   <g class="f" style="animation-delay:0.2s">
-    <circle cx="3" cy="3" r="3" fill="#059669" class="live"/>
-    <text x="14" y="6" class="mono" font-size="10" letter-spacing="1" fill="#059669">03 / ACTIVE CANDIDATE</text>
+    <circle cx="3" cy="3" r="3" fill="{BLUE}" class="live"/>
+    <text x="14" y="6" class="mono" font-size="10" letter-spacing="1" fill="{BLUE}">03 / ACTIVE CANDIDATE</text>
   </g>
 
   <!-- Title -->
-  <text x="0" y="36" class="serif r" style="animation-delay:0.3s" font-size="22" fill="#111111">
+  <text x="0" y="36" class="serif r" style="animation-delay:0.3s" font-size="22" fill="{INK}">
     Seeking Internships
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.4s" font-size="12" fill="#4a4a4e">
+  <text class="sans r" style="animation-delay:0.4s" font-size="12" fill="{INK_SOFT}">
     <tspan x="0" y="64">Sophomore @ IIT Guwahati (DSAI).</tspan>
     <tspan x="0" y="82">Looking for Data Science, AI/ML or</tspan>
     <tspan x="0" y="100">software development roles.</tspan>

@@ -28,17 +28,17 @@
 
 <!-- Card Surface -->
 <g clip-path="url(#card-clip-mazdoor)">
-  <rect width="434" height="226" fill="#ffffff" stroke="#e4e4df" stroke-width="1"/>
+  <rect width="434" height="226" fill="#f4efe6" stroke="#dad3c5" stroke-width="1"/>
   <rect class="sh" style="animation-delay:1.60s" x="0" y="0" width="120" height="226" fill="url(#card-sheen)" transform="translate(-280 0)"/>
 </g>
-<rect width="434" height="226" rx="14" fill="none" stroke="#e4e4df" stroke-width="1"/>
+<rect width="434" height="226" rx="14" fill="none" stroke="#dad3c5" stroke-width="1"/>
 
 <!-- Left Content Block -->
 <g transform="translate(24, 28)">
   <!-- Category Tag -->
   <g class="f" style="animation-delay:0.40s">
-    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#059669"/>
-    <text x="12" y="6.5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="1.2" font-weight="600" fill="#059669">CIVIC TECH</text>
+    <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#111111"/>
+    <text x="12" y="6.5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="1.2" font-weight="600" fill="#111111">CIVIC TECH</text>
   </g>
   
   <!-- Title -->
@@ -48,10 +48,10 @@
   
   <!-- Description (What I worked on) -->
   <g>
-    <text class="f" style="animation-delay:0.55s" x="0" y="58.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">Mobile-first offline workflow for daily-wage</text>
-    <text class="f" style="animation-delay:0.59s" x="0" y="75.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">workers to log shifts, reconcile wage</text>
-    <text class="f" style="animation-delay:0.63s" x="0" y="92.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">payments, and organize tamper-</text>
-    <text class="f" style="animation-delay:0.67s" x="0" y="109.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#4a4a4e">evident records they choose to share.</text>
+    <text class="f" style="animation-delay:0.55s" x="0" y="58.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#45423d">Mobile-first offline workflow for daily-wage</text>
+    <text class="f" style="animation-delay:0.59s" x="0" y="75.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#45423d">workers to log shifts, reconcile wage</text>
+    <text class="f" style="animation-delay:0.63s" x="0" y="92.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#45423d">payments, and organize tamper-</text>
+    <text class="f" style="animation-delay:0.67s" x="0" y="109.0" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="11.5" fill="#45423d">evident records they choose to share.</text>
   </g>
 
   <!-- Divider -->
@@ -59,42 +59,42 @@
 
   <!-- Tech Stack Tag Pills -->
   <g class="f" style="animation-delay:0.72s" transform="translate(0, 137)">
-      <rect width="89" height="20" rx="4" fill="#f7f7f5" stroke="#e4e4df" stroke-width="0.8"/>
-      <text x="44.5" y="13.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#4a4a4e">Offline-first</text>
+      <rect width="89" height="20" rx="4" fill="#e8e2d7" stroke="#dad3c5" stroke-width="0.8"/>
+      <text x="44.5" y="13.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#45423d">Offline-first</text>
     </g>
     <g class="f" style="animation-delay:0.77s" transform="translate(95, 137)">
-      <rect width="84" height="20" rx="4" fill="#f7f7f5" stroke="#e4e4df" stroke-width="0.8"/>
-      <text x="42.0" y="13.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#4a4a4e">LocalStorage</text>
+      <rect width="84" height="20" rx="4" fill="#e8e2d7" stroke="#dad3c5" stroke-width="0.8"/>
+      <text x="42.0" y="13.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#45423d">LocalStorage</text>
     </g>
 
   <!-- Interactive Action Arrow -->
-  <text class="nu" x="224" y="152" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" fill="#059669">&#8599;</text>
+  <text class="nu" x="224" y="152" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" fill="#111111">&#8599;</text>
 </g>
 
 <!-- Right Schematic Visual Box -->
 <g transform="translate(274, 18)">
-  <rect class="f" style="animation-delay:0.55s" width="138" height="190" rx="10" fill="#f7f7f5" stroke="#e4e4df" stroke-width="1"/>
+  <rect class="f" style="animation-delay:0.55s" width="138" height="190" rx="10" fill="#e8e2d7" stroke="#dad3c5" stroke-width="1"/>
   
-  <text class="f" style="animation-delay:0.55s" x="14" y="22" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#76767c">WORK LOG LEDGER</text>
+  <text class="f" style="animation-delay:0.55s" x="14" y="22" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#757169">WORK LOG LEDGER</text>
   
   <!-- Ledger Slip -->
   <g transform="translate(14, 38)">
-    <rect width="110" height="82" rx="4" fill="#ffffff" stroke="#dcdcd7" stroke-width="1"/>
+    <rect width="110" height="82" rx="4" fill="#f4efe6" stroke="#dcdcd7" stroke-width="1"/>
     
     <g font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5">
-      <text x="8" y="18" fill="#4a4a4e">Shift 08h</text>
-      <text x="102" y="18" text-anchor="end" fill="#059669">₹650</text>
+      <text x="8" y="18" fill="#45423d">Shift 08h</text>
+      <text x="102" y="18" text-anchor="end" fill="#111111">₹650</text>
       <line x1="8" y1="24" x2="102" y2="24" stroke="#ebebe6" stroke-width="0.75"/>
       
-      <text x="8" y="38" fill="#4a4a4e">Shift 08h</text>
-      <text x="102" y="38" text-anchor="end" fill="#059669">₹650</text>
+      <text x="8" y="38" fill="#45423d">Shift 08h</text>
+      <text x="102" y="38" text-anchor="end" fill="#111111">₹650</text>
       <line x1="8" y1="44" x2="102" y2="44" stroke="#ebebe6" stroke-width="0.75"/>
 
-      <text x="8" y="58" fill="#76767c">Overtime 02h</text>
-      <text x="102" y="58" text-anchor="end" fill="#059669">₹200</text>
+      <text x="8" y="58" fill="#757169">Overtime 02h</text>
+      <text x="102" y="58" text-anchor="end" fill="#111111">₹200</text>
       <line x1="8" y1="64" x2="102" y2="64" stroke="#ebebe6" stroke-width="0.75"/>
 
-      <text x="8" y="74" fill="#76767c">Total</text>
+      <text x="8" y="74" fill="#757169">Total</text>
       <text x="102" y="74" text-anchor="end" font-weight="600" fill="#111111">₹1,500</text>
     </g>
   </g>
@@ -102,9 +102,9 @@
   <!-- Proof Badge -->
   <g transform="translate(14, 134)" class="f" style="animation-delay:0.85s">
     <rect width="110" height="24" rx="4" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
-    <text x="12" y="16" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" font-weight="600" fill="#059669">TAMPER-EVIDENT</text>
+    <text x="12" y="16" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" font-weight="600" fill="#111111">TAMPER-EVIDENT</text>
   </g>
-  <text class="f" style="animation-delay:0.95s" x="14" y="176" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" fill="#059669">&#x2713; 100% Offline Vault</text>
+  <text class="f" style="animation-delay:0.95s" x="14" y="176" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" fill="#111111">&#x2713; 100% Offline Vault</text>
 
 </g>
 </svg>
