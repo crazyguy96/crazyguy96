@@ -1,59 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 252" role="img" aria-labelledby="title details">
-  <title id="title">jatin@github terminal preview</title>
-  <desc id="details">Jatin Mehra studies Data Science and AI at IIT Guwahati. Featured projects include AI Meeting Assistant, Land Delay Risk, DINOv2 Galaxy Vision, and Mazdoor Evidence Kit. The meeting assistant turns audio into transcripts and evidence-checked action items.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 152" role="img" aria-labelledby="terminal-title">
+  <title id="terminal-title">AI Meeting Assistant Pipeline Preview</title>
+
   <style>
-    .command-text { animation-duration: 12s; animation-iteration-count: infinite; }
-    .command-one { animation-name: type-one; }
-    .command-two { animation-name: type-two; }
-    .command-three { animation-name: type-three; }
-    .output-one { animation: show-one 12s infinite step-end; }
-    .output-two { animation: show-two 12s infinite step-end; }
-    .output-three { animation: show-three 12s infinite step-end; }
-    .prompt { animation: cursor 1s infinite step-end; }
-    @keyframes type-one {
-      0% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(6, end); }
-      9%, 100% { clip-path: inset(0); }
-    }
-    @keyframes type-two {
-      0%, 18% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(11, end); }
-      30%, 100% { clip-path: inset(0); }
-    }
-    @keyframes type-three {
-      0%, 40% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(22, end); }
-      60%, 100% { clip-path: inset(0); }
-    }
-    @keyframes show-one { 0% { opacity: 0; } 11%, 100% { opacity: 1; } }
-    @keyframes show-two { 0% { opacity: 0; } 32%, 100% { opacity: 1; } }
-    @keyframes show-three { 0% { opacity: 0; } 63%, 100% { opacity: 1; } }
-    @keyframes cursor { 50% { opacity: .25; } }
-    @media (prefers-reduced-motion: reduce) {
-      .command-text, .output-one, .output-two, .output-three, .prompt { animation: none; }
-    }
+    .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
   </style>
-  <rect x="1" y="1" width="918" height="250" rx="22" fill="#0c1426" stroke="#334362" stroke-width="2"/>
-  <path d="M2 48h916" stroke="#334362"/>
-  <g>
-    <circle cx="29" cy="25" r="5" fill="#fa8699"/>
-    <circle cx="47" cy="25" r="5" fill="#ffc87a"/>
-    <circle cx="65" cy="25" r="5" fill="#6be8e1"/>
-  </g>
-  <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="23">
-    <text x="91" y="32" fill="#afc0dd">jatin@github</text>
-    <g fill="#6be8e1">
-      <text x="31" y="81">$</text>
-      <text x="31" y="137">$</text>
-      <text x="31" y="193">$</text>
-      <text class="command-text command-one" x="58" y="81">whoami</text>
-      <text class="command-text command-two" x="58" y="137">ls projects</text>
-      <text class="command-text command-three" x="58" y="193">open meeting-assistant</text>
-    </g>
-    <g fill="#e9f1ff" font-size="21">
-      <text class="output-one" x="58" y="108">Jatin Mehra · Data Science &amp; AI · IIT Guwahati</text>
-      <text class="output-two" x="58" y="164">Meeting AI · Land Delay Risk · Galaxy Vision · Mazdoor</text>
-      <g class="output-three">
-        <text x="58" y="222">Audio → Transcript → Evidence-checked action items</text>
-        <rect class="prompt" x="710" y="205" width="10" height="21" rx="1" fill="#6be8e1"/>
-      </g>
-    </g>
+
+  <!-- Shell surface and quiet hairline -->
+  <rect x="0.5" y="0.5" width="919" height="151" rx="14" fill="#16171a" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+  <!-- Top bar -->
+  <line x1="0" y1="36" x2="920" y2="36" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
+  <circle cx="24" cy="18" r="4" fill="#2c2e35"/>
+  <circle cx="38" cy="18" r="4" fill="#2c2e35"/>
+  <circle cx="52" cy="18" r="4" fill="#2c2e35"/>
+  <text x="72" y="22" class="mono" font-size="11" fill="#737373">meeting-assistant · python 3.11</text>
+
+  <!-- Command Line Session -->
+  <g transform="translate(24, 66)" class="mono" font-size="13">
+    <!-- Prompt & Command -->
+    <text x="0" y="0" fill="#3eb4a2">$</text>
+    <text x="16" y="0" fill="#ededed">python -m meeting_assistant --audio discussion.wav --ground-truth-check</text>
+
+    <!-- Output lines -->
+    <text x="16" y="26" fill="#a1a1a6">Transcribed with Faster-Whisper · 42m audio in 8.4s</text>
+    <text x="16" y="50" fill="#737373">Generated 14 action items, 4 decisions · Verified against transcript context</text>
   </g>
 </svg>

@@ -10,7 +10,7 @@ import re
 from urllib.request import Request, urlopen
 
 CARD_PATH = Path(__file__).resolve().parents[1] / "cards" / "activity.svg"
-COLORS = ("#263650", "#245961", "#277b78", "#38a99b", "#76e6cb")
+COLORS = ("#222328", "#1d3532", "#25534c", "#2d7469", "#3eb4a2")
 DAY = timedelta(days=1)
 
 
@@ -81,36 +81,36 @@ def render(days):
     parts = []
     for day, (_, level) in sorted(days.items()):
         week, weekday = divmod((day - start).days, 7)
-        x = 37 + week * 12
-        y = 101 + weekday * 12
+        x = 36 + week * 12
+        y = 96 + weekday * 12
         parts.append(f'<rect x="{x}" y="{y}" width="9" height="9" rx="2" fill="{COLORS[level]}"/>')
         if day.day == 1:
             month = calendar.month_abbr[day.month]
-            parts.append(f'<text x="{x}" y="89">{month}</text>')
+            parts.append(f'<text x="{x}" y="84">{month}</text>')
 
     legend = []
     for index, color in enumerate(COLORS):
-        legend.append(f'<rect x="{110 + 13 * index}" y="194" width="10" height="10" rx="2" fill="{color}"/>')
+        legend.append(f'<rect x="{104 + 13 * index}" y="196" width="9" height="9" rx="2" fill="{color}"/>')
     summary = escape(f"{total:,} contributions across {active} active days. Busiest day: {busiest}.")
     graphic = "\n    ".join(parts)
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 236" role="img" aria-labelledby="title summary">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 228" role="img" aria-labelledby="title summary">
   <title id="title">GitHub activity in the last year</title>
   <desc id="summary">{summary}</desc>
-  <rect x="1" y="1" width="918" height="234" rx="20" fill="#111a2f" stroke="#4b776e" stroke-width="2"/>
-  <g font-family="system-ui, sans-serif">
-    <text x="36" y="49" fill="#f4f8ff" font-size="30" font-weight="700">GitHub activity</text>
-    <text x="883" y="47" text-anchor="end" fill="#b8c9e4" font-size="15">Through {last:%d %b %Y}</text>
-    <g fill="#b8c9e4" font-family="ui-monospace, monospace" font-size="11">
+  <rect x="0.5" y="0.5" width="919" height="227" rx="14" fill="#16171a" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    <text x="36" y="44" fill="#ededed" font-size="20" font-weight="500">GitHub activity</text>
+    <text x="884" y="44" text-anchor="end" fill="#737373" font-family="ui-monospace, monospace" font-size="12">Through {last:%d %b %Y}</text>
+    <g fill="#737373" font-family="ui-monospace, monospace" font-size="10.5">
     {graphic}
     </g>
-    <text x="36" y="204" fill="#b8c9e4" font-size="13">Fewer</text>
+    <text x="36" y="204" fill="#737373" font-family="ui-monospace, monospace" font-size="11">Less</text>
     {''.join(legend)}
-    <text x="181" y="204" fill="#b8c9e4" font-size="13">More</text>
-    <path d="M705 75v129" stroke="#38566a"/>
-    <text x="729" y="110" fill="#76e6cb" font-size="34" font-weight="750">{total:,}</text>
-    <text x="729" y="133" fill="#ecf3ff" font-size="17">contributions</text>
-    <text x="729" y="165" fill="#b8c9e4" font-size="16">{active} active days</text>
-    <text x="729" y="192" fill="#b8c9e4" font-size="16">Best day · {busiest}</text>
+    <text x="176" y="204" fill="#737373" font-family="ui-monospace, monospace" font-size="11">More</text>
+    <path d="M708 72v120" stroke="rgba(255, 255, 255, 0.06)"/>
+    <text x="736" y="108" fill="#ededed" font-size="32" font-weight="500" font-family="ui-monospace, monospace">{total:,}</text>
+    <text x="736" y="132" fill="#a1a1a6" font-size="14">contributions</text>
+    <text x="736" y="162" fill="#737373" font-family="ui-monospace, monospace" font-size="12">{active} active days</text>
+    <text x="736" y="184" fill="#737373" font-family="ui-monospace, monospace" font-size="12">Busiest day: {busiest}</text>
   </g>
 </svg>
 """
