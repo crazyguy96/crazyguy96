@@ -815,14 +815,14 @@ def generate_social_icons():
 
 # ---- 6 · About Me 4-Card 2x2 Bento Grid ----------------------------------------
 def generate_about_cards():
-    w, h = 434, 226
+    w, h = 380, 152
     css = font_face() + """
 .serif { font-family: 'Instrument Serif', Georgia, serif; }
 .sans { font-family: Geist, system-ui, -apple-system, sans-serif; }
 .mono { font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
 .f { opacity: 0; animation: fade .8s ease-out both; }
 .r { opacity: 0; animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
-@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 .live { animation: pulse 2s ease-in-out infinite; }
@@ -834,37 +834,37 @@ def generate_about_cards():
 <style>{css}</style>
 <rect width="{w}" height="{h}" rx="14" fill="{WHITE}" stroke="{BORDER}" stroke-width="1"/>
 
-<g transform="translate(28, 26)">
+<g transform="translate(20, 18)">
   <!-- Tag -->
   <g class="f" style="animation-delay:0.1s">
     <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#ffa116"/>
-    <text x="12" y="6" class="mono" font-size="10.5" letter-spacing="1" fill="#ffa116" font-weight="600">01 / PROBLEM SOLVING</text>
+    <text x="12" y="6" class="mono" font-size="9.5" letter-spacing="1" fill="#ffa116" font-weight="600">01 / PROBLEM SOLVING</text>
   </g>
 
   <!-- Title -->
-  <text x="0" y="36" class="serif r" style="animation-delay:0.2s" font-size="24" fill="{INK}">
+  <text x="0" y="30" class="serif r" style="animation-delay:0.2s" font-size="20.5" fill="{INK}">
     Data Structures &amp; LeetCode
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.3s" font-size="12.5" fill="{INK_SOFT}">
-    <tspan x="0" y="64">Deconstructing complex problems into optimal time</tspan>
-    <tspan x="0" y="84">&amp; space complexity. Active practice across graphs,</tspan>
-    <tspan x="0" y="104">trees, dynamic programming, and systems design.</tspan>
+  <text class="sans r" style="animation-delay:0.3s" font-size="11.5" fill="{INK_SOFT}">
+    <tspan x="0" y="52">Deconstructing complex problems into optimal time</tspan>
+    <tspan x="0" y="69">&amp; space complexity. Active practice across graphs,</tspan>
+    <tspan x="0" y="86">trees, dynamic programming, and systems design.</tspan>
   </text>
 
   <!-- Action: LeetCode Pill -->
-  <g transform="translate(0, 130)" class="f" style="animation-delay:0.4s">
+  <g transform="translate(0, 106)" class="f" style="animation-delay:0.4s">
     <a href="https://leetcode.com/u/JatinMehra08/" target="_blank">
     <g>
-      <rect width="180" height="32" rx="16" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
-      <g transform="translate(12, 8) scale(0.666)">
+      <rect width="170" height="28" rx="14" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
+      <g transform="translate(10, 5) scale(0.666)">
         <path fill="#ffa116" d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.762-1.823.762s-1.357-.295-1.824-.762L4.57 15.349a2.58 2.58 0 0 1 0-3.647l5.188-5.188a2.58 2.58 0 0 1 3.647 0l2.697 2.608a.748.748 0 0 1-1.058 1.058l-2.697-2.608a1.085 1.085 0 0 0-1.531 0L5.628 12.76a1.085 1.085 0 0 0 0 1.531l5.188 5.189c.423.423 1.108.423 1.531 0l2.697-2.608a.748.748 0 0 1 1.058 1.058z"/>
         <path fill="{INK}" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
         <path fill="#8a8a8e" d="M8.077 12.75h7.846a.75.75 0 0 0 0-1.5H8.077a.75.75 0 0 0 0 1.5z"/>
       </g>
-      <text x="36" y="20.5" class="sans" font-size="12" font-weight="600" fill="#92400e">LeetCode Profile</text>
-      <text x="156" y="20.5" class="mono" font-size="12" fill="#d97706">&#8599;</text>
+      <text x="34" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="{INK}">LeetCode Profile</text>
+      <text x="148" y="18.5" class="mono" font-size="11" fill="#ffa116">&#8599;</text>
     </g>
     </a>
   </g>
@@ -872,6 +872,7 @@ def generate_about_cards():
 </svg>"""
     write_card("about-leetcode.svg", leetcode_svg)
     write_card("about-leetcode-v2.svg", leetcode_svg)
+    write_card("about-leetcode-v3.svg", leetcode_svg)
 
     # 2. about-codeforces.svg
     codeforces_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Competitive Programming &amp; Contests - Codeforces">
@@ -879,37 +880,37 @@ def generate_about_cards():
 <style>{css}</style>
 <rect width="{w}" height="{h}" rx="14" fill="{WHITE}" stroke="{BORDER}" stroke-width="1"/>
 
-<g transform="translate(28, 26)">
+<g transform="translate(20, 18)">
   <!-- Tag -->
   <g class="f" style="animation-delay:0.15s">
     <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#1F8ACB"/>
-    <text x="12" y="6" class="mono" font-size="10.5" letter-spacing="1" fill="#1F8ACB" font-weight="600">02 / COMPETITIVE</text>
+    <text x="12" y="6" class="mono" font-size="9.5" letter-spacing="1" fill="#1F8ACB" font-weight="600">02 / COMPETITIVE</text>
   </g>
 
   <!-- Title -->
-  <text x="0" y="36" class="serif r" style="animation-delay:0.25s" font-size="24" fill="{INK}">
+  <text x="0" y="30" class="serif r" style="animation-delay:0.25s" font-size="20.5" fill="{INK}">
     Contests &amp; Codeforces
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.35s" font-size="12.5" fill="{INK_SOFT}">
-    <tspan x="0" y="64">Competing under the clock in rated rounds.</tspan>
-    <tspan x="0" y="84">Sharpening mathematical intuition, fast invariants,</tspan>
-    <tspan x="0" y="104">and high-speed, bug-free implementations.</tspan>
+  <text class="sans r" style="animation-delay:0.35s" font-size="11.5" fill="{INK_SOFT}">
+    <tspan x="0" y="52">Competing under the clock in rated rounds.</tspan>
+    <tspan x="0" y="69">Sharpening mathematical intuition, fast invariants,</tspan>
+    <tspan x="0" y="86">and high-speed, bug-free implementations.</tspan>
   </text>
 
   <!-- Action: Codeforces Pill -->
-  <g transform="translate(0, 130)" class="f" style="animation-delay:0.45s">
+  <g transform="translate(0, 106)" class="f" style="animation-delay:0.45s">
     <a href="https://codeforces.com/profile/crazyguy96" target="_blank">
     <g>
-      <rect width="186" height="32" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
-      <g transform="translate(12, 9) scale(0.666)">
+      <rect width="176" height="28" rx="14" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
+      <g transform="translate(11, 5) scale(0.666)">
         <rect x="1.5" y="8" width="5.5" height="13" rx="1.5" fill="#1F8ACB"/>
         <rect x="9.25" y="2" width="5.5" height="19" rx="1.5" fill="#FCD239"/>
         <rect x="17" y="5" width="5.5" height="16" rx="1.5" fill="#E34343"/>
       </g>
-      <text x="36" y="20.5" class="sans" font-size="12" font-weight="600" fill="#1e40af">Codeforces Profile</text>
-      <text x="162" y="20.5" class="mono" font-size="12" fill="#1F8ACB">&#8599;</text>
+      <text x="34" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="{INK}">Codeforces Profile</text>
+      <text x="154" y="18.5" class="mono" font-size="11" fill="#1F8ACB">&#8599;</text>
     </g>
     </a>
   </g>
@@ -917,6 +918,7 @@ def generate_about_cards():
 </svg>"""
     write_card("about-codeforces.svg", codeforces_svg)
     write_card("about-codeforces-v2.svg", codeforces_svg)
+    write_card("about-codeforces-v3.svg", codeforces_svg)
 
     # 3. about-sports.svg
     sports_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Beyond the Screen - Athletics and Team Instincts">
@@ -924,31 +926,31 @@ def generate_about_cards():
 <style>{css}</style>
 <rect width="{w}" height="{h}" rx="14" fill="{WHITE}" stroke="{BORDER}" stroke-width="1"/>
 
-<g transform="translate(28, 26)">
+<g transform="translate(20, 18)">
   <!-- Tag -->
   <g class="f" style="animation-delay:0.2s">
     <rect x="0" y="0" width="6" height="6" rx="1.5" fill="#059669"/>
-    <text x="12" y="6" class="mono" font-size="10.5" letter-spacing="1" fill="#059669" font-weight="600">03 / ATHLETICS</text>
+    <text x="12" y="6" class="mono" font-size="9.5" letter-spacing="1" fill="#059669" font-weight="600">03 / ATHLETICS</text>
   </g>
 
   <!-- Title -->
-  <text x="0" y="36" class="serif r" style="animation-delay:0.3s" font-size="24" fill="{INK}">
+  <text x="0" y="30" class="serif r" style="animation-delay:0.3s" font-size="20.5" fill="{INK}">
     Reflexes &amp; Team Rhythm
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.4s" font-size="12.5" fill="{INK_SOFT}">
-    <tspan x="0" y="64">Badminton is a big part of my life, alongside</tspan>
-    <tspan x="0" y="84">cricket and football. Sports taught me to think fast,</tspan>
-    <tspan x="0" y="104">stay calm under pressure, and collaborate in teams.</tspan>
+  <text class="sans r" style="animation-delay:0.4s" font-size="11.5" fill="{INK_SOFT}">
+    <tspan x="0" y="52">Badminton is a big part of my life, alongside</tspan>
+    <tspan x="0" y="69">cricket and football. Sports taught me to think fast,</tspan>
+    <tspan x="0" y="86">stay calm under pressure, and collaborate in teams.</tspan>
   </text>
 
   <!-- Sports Badges: Single Symmetric Row -->
-  <g transform="translate(0, 130)" class="f" style="animation-delay:0.5s">
+  <g transform="translate(0, 106)" class="f" style="animation-delay:0.5s">
     <!-- Badminton -->
     <g>
-      <rect width="124" height="32" rx="16" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
-      <g transform="translate(10, 6)">
+      <rect width="112" height="28" rx="14" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
+      <g transform="translate(9, 4) scale(0.9)">
         <ellipse cx="9" cy="10" rx="5" ry="6" transform="rotate(-30 9 10)" fill="none" stroke="#059669" stroke-width="1.3"/>
         <line x1="6" y1="7" x2="12" y2="13" stroke="#10b981" stroke-width="0.7"/>
         <line x1="6" y1="13" x2="12" y2="7" stroke="#10b981" stroke-width="0.7"/>
@@ -958,25 +960,25 @@ def generate_about_cards():
           <path d="M 2.5 3.5 L 6.5 0.5 M 2.5 4.5 L 7.5 4 M 2.5 5.5 L 6.5 7.5" stroke="#059669" stroke-width="0.9" stroke-linecap="round"/>
         </g>
       </g>
-      <text x="36" y="20.5" class="sans" font-size="12" font-weight="600" fill="#047857">Badminton</text>
+      <text x="33" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="{INK}">Badminton</text>
     </g>
 
     <!-- Cricket -->
-    <g transform="translate(132, 0)">
-      <rect width="102" height="32" rx="16" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
-      <g transform="translate(10, 6)">
+    <g transform="translate(118, 0)">
+      <rect width="94" height="28" rx="14" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
+      <g transform="translate(9, 5) scale(0.9)">
         <line x1="3" y1="3" x2="6" y2="6" stroke="#92400e" stroke-width="1.6" stroke-linecap="round"/>
         <path d="M 6 6 L 14 14 A 1.2 1.2 0 0 1 12 16 L 4.5 8.5 Z" fill="#d97706" stroke="#b45309" stroke-width="0.8"/>
         <circle cx="14" cy="5.5" r="3" fill="#dc2626"/>
         <path d="M 12.5 4.5 Q 14 5.5 15.5 6.5" fill="none" stroke="#ffffff" stroke-width="0.6" stroke-dasharray="0.8 0.8"/>
       </g>
-      <text x="34" y="20.5" class="sans" font-size="12" font-weight="600" fill="#92400e">Cricket</text>
+      <text x="31" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="{INK}">Cricket</text>
     </g>
 
     <!-- Football -->
-    <g transform="translate(242, 0)">
-      <rect width="106" height="32" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-      <g transform="translate(10, 6)">
+    <g transform="translate(218, 0)">
+      <rect width="98" height="28" rx="14" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
+      <g transform="translate(9, 5) scale(0.9)">
         <circle cx="10" cy="10" r="6.5" fill="#ffffff" stroke="#1e293b" stroke-width="1"/>
         <polygon points="10,7.5 12.5,9.2 11.5,12 8.5,12 7.5,9.2" fill="#1e293b"/>
         <line x1="10" y1="7.5" x2="10" y2="4" stroke="#1e293b" stroke-width="0.75"/>
@@ -985,7 +987,7 @@ def generate_about_cards():
         <line x1="8.5" y1="12" x2="6" y2="14.5" stroke="#1e293b" stroke-width="0.75"/>
         <line x1="7.5" y1="9.2" x2="4.5" y2="8" stroke="#1e293b" stroke-width="0.75"/>
       </g>
-      <text x="34" y="20.5" class="sans" font-size="12" font-weight="600" fill="#1e293b">Football</text>
+      <text x="31" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="{INK}">Football</text>
     </g>
   </g>
 </g>
@@ -993,6 +995,7 @@ def generate_about_cards():
     write_card("about-sports.svg", sports_svg)
     write_card("about-athletics.svg", sports_svg)
     write_card("about-athletics-v2.svg", sports_svg)
+    write_card("about-athletics-v3.svg", sports_svg)
 
     # 4. about-work.svg
     work_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Opportunities - Internships in Data Science and AI">
@@ -1000,35 +1003,35 @@ def generate_about_cards():
 <style>{css}</style>
 <rect width="{w}" height="{h}" rx="14" fill="{WHITE}" stroke="{BORDER}" stroke-width="1"/>
 
-<g transform="translate(28, 26)">
+<g transform="translate(20, 18)">
   <!-- Tag -->
   <g class="f" style="animation-delay:0.25s">
     <circle cx="3.5" cy="3.5" r="3.5" fill="{BLUE}" class="live"/>
-    <text x="14" y="7" class="mono" font-size="10.5" letter-spacing="1" fill="{BLUE}" font-weight="600">04 / ACTIVE CANDIDATE</text>
+    <text x="14" y="7" class="mono" font-size="9.5" letter-spacing="1" fill="{BLUE}" font-weight="600">04 / ACTIVE CANDIDATE</text>
   </g>
 
   <!-- Title -->
-  <text x="0" y="36" class="serif r" style="animation-delay:0.35s" font-size="24" fill="{INK}">
+  <text x="0" y="30" class="serif r" style="animation-delay:0.35s" font-size="20.5" fill="{INK}">
     Seeking Internships
   </text>
 
   <!-- Body -->
-  <text class="sans r" style="animation-delay:0.45s" font-size="12.5" fill="{INK_SOFT}">
-    <tspan x="0" y="64">Sophomore @ IIT Guwahati (Data Science &amp; AI).</tspan>
-    <tspan x="0" y="84">Looking for Data Science, AI/ML or software</tspan>
-    <tspan x="0" y="104">development roles for Summer 2027 or 2028.</tspan>
+  <text class="sans r" style="animation-delay:0.45s" font-size="11.5" fill="{INK_SOFT}">
+    <tspan x="0" y="52">Sophomore @ IIT Guwahati (Data Science &amp; AI).</tspan>
+    <tspan x="0" y="69">Looking for Data Science, AI/ML or software</tspan>
+    <tspan x="0" y="86">development roles for Summer 2027 or 2028.</tspan>
   </text>
 
   <!-- Action: LinkedIn Pill Button -->
-  <g transform="translate(0, 130)" class="f" style="animation-delay:0.55s">
+  <g transform="translate(0, 106)" class="f" style="animation-delay:0.55s">
     <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/" target="_blank">
     <g>
-      <rect width="206" height="32" rx="16" fill="#0077b5" stroke="#0077b5" stroke-width="1"/>
-      <g transform="translate(12, 8) scale(0.666)">
-        <path fill="#ffffff" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+      <rect width="192" height="28" rx="14" fill="{PAPER}" stroke="{BORDER}" stroke-width="1"/>
+      <g transform="translate(10, 6) scale(0.666)">
+        <path fill="#0077b5" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
       </g>
-      <text x="36" y="20.5" class="sans" font-size="12" font-weight="600" fill="#ffffff">Connect on LinkedIn</text>
-      <text x="182" y="20.5" class="mono" font-size="12" fill="#ffffff">&#8599;</text>
+      <text x="34" y="18.5" class="sans" font-size="12" font-weight="600" fill="{INK}">Connect on LinkedIn</text>
+      <text x="170" y="18.5" class="mono" font-size="12" fill="{BLUE}">&#8599;</text>
     </g>
     </a>
   </g>
@@ -1037,6 +1040,7 @@ def generate_about_cards():
     write_card("about-work.svg", work_svg)
     write_card("about-internships.svg", work_svg)
     write_card("about-internships-v2.svg", work_svg)
+    write_card("about-internships-v3.svg", work_svg)
 
     # Legacy about-code.svg
     write_card("about-code.svg", leetcode_svg)
