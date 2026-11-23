@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <a href="https://github.com/crazyguy96/AI_Meeting_Assistant"><img src="./cards/terminal.svg" width="100%" alt="AI Meeting Assistant terminal session preview"></a>
+  <a href="https://github.com/crazyguy96/AI_Meeting_Assistant"><img src="./cards/terminal-v2.svg" width="100%" alt="AI Meeting Assistant terminal session preview"></a>
 </div>
 
 <p align="center">

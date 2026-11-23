@@ -379,7 +379,7 @@ def build_terminal(theme="dark"):
       <tspan fill="{success}" font-weight="600">RTF 0.03x (Fast)</tspan>
     </text>
     <!-- Dancing Mini-Equalizer Waveform -->
-    <g transform="translate(390, -10)">
+    <g transform="translate(520, -10)">
       <rect x="0" y="4" width="2" height="8" rx="1" fill="{prompt_color}">
         <animate attributeName="height" values="8; 14; 6; 12; 8" dur="0.7s" repeatCount="indefinite"/>
         <animate attributeName="y" values="4; 1; 5; 2; 4" dur="0.7s" repeatCount="indefinite"/>
@@ -432,6 +432,7 @@ def build_terminal(theme="dark"):
 </g>
 </svg>"""
     write_card("terminal.svg", content)
+    write_card("terminal-v2.svg", content)
 
 
 # ---- 3 · Project Cards (meeting, delay, vision, mazdoor) -----------------------

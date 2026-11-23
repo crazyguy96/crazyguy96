@@ -167,7 +167,7 @@
       <tspan fill="#34d399" font-weight="600">RTF 0.03x (Fast)</tspan>
     </text>
     <!-- Dancing Mini-Equalizer Waveform -->
-    <g transform="translate(390, -10)">
+    <g transform="translate(520, -10)">
       <rect x="0" y="4" width="2" height="8" rx="1" fill="#38bdf8">
         <animate attributeName="height" values="8; 14; 6; 12; 8" dur="0.7s" repeatCount="indefinite"/>
         <animate attributeName="y" values="4; 1; 5; 2; 4" dur="0.7s" repeatCount="indefinite"/>
