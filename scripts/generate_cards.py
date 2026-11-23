@@ -853,28 +853,29 @@ def generate_about_cards():
     <tspan x="0" y="71">&amp; space complexity. Active practice across graphs,</tspan>
     <tspan x="0" y="88">trees, dynamic programming, and systems design.</tspan>
   </text>
-</g>
 
-<!-- Action: LeetCode Pill (Centered) -->
-<g transform="translate(105, 114)" class="f" style="animation-delay:0.4s">
-  <a href="https://leetcode.com/u/JatinMehra08/" target="_blank">
-  <g>
-    <rect width="170" height="28" rx="14" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
-    <g transform="translate(10, 5) scale(0.666)">
-      <path fill="#ffa116" d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.762-1.823.762s-1.357-.295-1.824-.762L4.57 15.349a2.58 2.58 0 0 1 0-3.647l5.188-5.188a2.58 2.58 0 0 1 3.647 0l2.697 2.608a.748.748 0 0 1-1.058 1.058l-2.697-2.608a1.085 1.085 0 0 0-1.531 0L5.628 12.76a1.085 1.085 0 0 0 0 1.531l5.188 5.189c.423.423 1.108.423 1.531 0l2.697-2.608a.748.748 0 0 1 1.058 1.058z"/>
-      <path fill="{INK}" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
-      <path fill="#8a8a8e" d="M8.077 12.75h7.846a.75.75 0 0 0 0-1.5H8.077a.75.75 0 0 0 0 1.5z"/>
+  <!-- Action: LeetCode Pill (Left-aligned, vertically centered between text and bottom edge) -->
+  <g transform="translate(0, 106)" class="f" style="animation-delay:0.4s">
+    <a href="https://leetcode.com/u/JatinMehra08/" target="_blank">
+    <g>
+      <rect width="170" height="28" rx="14" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+      <g transform="translate(10, 5) scale(0.666)">
+        <path fill="#ffa116" d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.762-1.823.762s-1.357-.295-1.824-.762L4.57 15.349a2.58 2.58 0 0 1 0-3.647l5.188-5.188a2.58 2.58 0 0 1 3.647 0l2.697 2.608a.748.748 0 0 1-1.058 1.058l-2.697-2.608a1.085 1.085 0 0 0-1.531 0L5.628 12.76a1.085 1.085 0 0 0 0 1.531l5.188 5.189c.423.423 1.108.423 1.531 0l2.697-2.608a.748.748 0 0 1 1.058 1.058z"/>
+        <path fill="{INK}" d="M20.823 14.283l-5.188 5.188a.748.748 0 0 1-1.058-1.058l5.188-5.189a1.085 1.085 0 0 0 0-1.531l-5.188-5.188a.748.748 0 0 1 1.058-1.058l5.188 5.188a2.58 2.58 0 0 1 0 3.648z"/>
+        <path fill="#8a8a8e" d="M8.077 12.75h7.846a.75.75 0 0 0 0-1.5H8.077a.75.75 0 0 0 0 1.5z"/>
+      </g>
+      <text x="34" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#92400e">LeetCode Profile</text>
+      <text x="148" y="18.5" class="mono" font-size="11" fill="#d97706">&#8599;</text>
     </g>
-    <text x="34" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#92400e">LeetCode Profile</text>
-    <text x="148" y="18.5" class="mono" font-size="11" fill="#d97706">&#8599;</text>
+    </a>
   </g>
-  </a>
 </g>
 </svg>"""
     write_card("about-leetcode.svg", leetcode_svg)
     write_card("about-leetcode-v2.svg", leetcode_svg)
     write_card("about-leetcode-v3.svg", leetcode_svg)
     write_card("about-leetcode-v4.svg", leetcode_svg)
+    write_card("about-leetcode-v5.svg", leetcode_svg)
 
     # 2. about-codeforces.svg
     codeforces_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Competitive Programming &amp; Contests - Codeforces">
@@ -900,28 +901,29 @@ def generate_about_cards():
     <tspan x="0" y="71">Sharpening mathematical intuition, fast invariants,</tspan>
     <tspan x="0" y="88">and high-speed, bug-free implementations.</tspan>
   </text>
-</g>
 
-<!-- Action: Codeforces Pill (Centered) -->
-<g transform="translate(102, 114)" class="f" style="animation-delay:0.45s">
-  <a href="https://codeforces.com/profile/crazyguy96" target="_blank">
-  <g>
-    <rect width="176" height="28" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
-    <g transform="translate(11, 5) scale(0.666)">
-      <rect x="1.5" y="8" width="5.5" height="13" rx="1.5" fill="#1F8ACB"/>
-      <rect x="9.25" y="2" width="5.5" height="19" rx="1.5" fill="#FCD239"/>
-      <rect x="17" y="5" width="5.5" height="16" rx="1.5" fill="#E34343"/>
+  <!-- Action: Codeforces Pill (Left-aligned, vertically centered between text and bottom edge) -->
+  <g transform="translate(0, 106)" class="f" style="animation-delay:0.45s">
+    <a href="https://codeforces.com/profile/crazyguy96" target="_blank">
+    <g>
+      <rect width="176" height="28" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+      <g transform="translate(11, 5) scale(0.666)">
+        <rect x="1.5" y="8" width="5.5" height="13" rx="1.5" fill="#1F8ACB"/>
+        <rect x="9.25" y="2" width="5.5" height="19" rx="1.5" fill="#FCD239"/>
+        <rect x="17" y="5" width="5.5" height="16" rx="1.5" fill="#E34343"/>
+      </g>
+      <text x="34" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#1e40af">Codeforces Profile</text>
+      <text x="154" y="18.5" class="mono" font-size="11" fill="#1F8ACB">&#8599;</text>
     </g>
-    <text x="34" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#1e40af">Codeforces Profile</text>
-    <text x="154" y="18.5" class="mono" font-size="11" fill="#1F8ACB">&#8599;</text>
+    </a>
   </g>
-  </a>
 </g>
 </svg>"""
     write_card("about-codeforces.svg", codeforces_svg)
     write_card("about-codeforces-v2.svg", codeforces_svg)
     write_card("about-codeforces-v3.svg", codeforces_svg)
     write_card("about-codeforces-v4.svg", codeforces_svg)
+    write_card("about-codeforces-v5.svg", codeforces_svg)
 
     # 3. about-sports.svg
     sports_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Beyond the Screen - Athletics and Team Instincts">
@@ -947,51 +949,51 @@ def generate_about_cards():
     <tspan x="0" y="71">cricket and football. Sports taught me to think fast,</tspan>
     <tspan x="0" y="88">stay calm under pressure, and collaborate in teams.</tspan>
   </text>
-</g>
 
-<!-- Sports Badges: Single Centered Symmetric Row -->
-<g transform="translate(32, 114)" class="f" style="animation-delay:0.5s">
-  <!-- Badminton -->
-  <g>
-    <rect width="112" height="28" rx="14" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
-    <g transform="translate(9, 4) scale(0.9)">
-      <ellipse cx="9" cy="10" rx="5" ry="6" transform="rotate(-30 9 10)" fill="none" stroke="#059669" stroke-width="1.3"/>
-      <line x1="6" y1="7" x2="12" y2="13" stroke="#10b981" stroke-width="0.7"/>
-      <line x1="6" y1="13" x2="12" y2="7" stroke="#10b981" stroke-width="0.7"/>
-      <line x1="6.5" y1="15" x2="2.5" y2="19.5" stroke="#047857" stroke-width="1.4" stroke-linecap="round"/>
-      <g transform="translate(14, 1.5)">
-        <ellipse cx="2.5" cy="4.5" rx="1.8" ry="1.3" fill="#047857"/>
-        <path d="M 2.5 3.5 L 6.5 0.5 M 2.5 4.5 L 7.5 4 M 2.5 5.5 L 6.5 7.5" stroke="#059669" stroke-width="0.9" stroke-linecap="round"/>
+  <!-- Sports Badges: Left-aligned row, vertically centered between text and bottom edge -->
+  <g transform="translate(0, 106)" class="f" style="animation-delay:0.5s">
+    <!-- Badminton -->
+    <g>
+      <rect width="112" height="28" rx="14" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+      <g transform="translate(9, 4) scale(0.9)">
+        <ellipse cx="9" cy="10" rx="5" ry="6" transform="rotate(-30 9 10)" fill="none" stroke="#059669" stroke-width="1.3"/>
+        <line x1="6" y1="7" x2="12" y2="13" stroke="#10b981" stroke-width="0.7"/>
+        <line x1="6" y1="13" x2="12" y2="7" stroke="#10b981" stroke-width="0.7"/>
+        <line x1="6.5" y1="15" x2="2.5" y2="19.5" stroke="#047857" stroke-width="1.4" stroke-linecap="round"/>
+        <g transform="translate(14, 1.5)">
+          <ellipse cx="2.5" cy="4.5" rx="1.8" ry="1.3" fill="#047857"/>
+          <path d="M 2.5 3.5 L 6.5 0.5 M 2.5 4.5 L 7.5 4 M 2.5 5.5 L 6.5 7.5" stroke="#059669" stroke-width="0.9" stroke-linecap="round"/>
+        </g>
       </g>
+      <text x="33" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#047857">Badminton</text>
     </g>
-    <text x="33" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#047857">Badminton</text>
-  </g>
 
-  <!-- Cricket -->
-  <g transform="translate(118, 0)">
-    <rect width="94" height="28" rx="14" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
-    <g transform="translate(9, 5) scale(0.9)">
-      <line x1="3" y1="3" x2="6" y2="6" stroke="#92400e" stroke-width="1.6" stroke-linecap="round"/>
-      <path d="M 6 6 L 14 14 A 1.2 1.2 0 0 1 12 16 L 4.5 8.5 Z" fill="#d97706" stroke="#b45309" stroke-width="0.8"/>
-      <circle cx="14" cy="5.5" r="3" fill="#dc2626"/>
-      <path d="M 12.5 4.5 Q 14 5.5 15.5 6.5" fill="none" stroke="#ffffff" stroke-width="0.6" stroke-dasharray="0.8 0.8"/>
+    <!-- Cricket -->
+    <g transform="translate(118, 0)">
+      <rect width="94" height="28" rx="14" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+      <g transform="translate(9, 5) scale(0.9)">
+        <line x1="3" y1="3" x2="6" y2="6" stroke="#92400e" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M 6 6 L 14 14 A 1.2 1.2 0 0 1 12 16 L 4.5 8.5 Z" fill="#d97706" stroke="#b45309" stroke-width="0.8"/>
+        <circle cx="14" cy="5.5" r="3" fill="#dc2626"/>
+        <path d="M 12.5 4.5 Q 14 5.5 15.5 6.5" fill="none" stroke="#ffffff" stroke-width="0.6" stroke-dasharray="0.8 0.8"/>
+      </g>
+      <text x="31" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#92400e">Cricket</text>
     </g>
-    <text x="31" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#92400e">Cricket</text>
-  </g>
 
-  <!-- Football -->
-  <g transform="translate(218, 0)">
-    <rect width="98" height="28" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
-    <g transform="translate(9, 5) scale(0.9)">
-      <circle cx="10" cy="10" r="6.5" fill="#ffffff" stroke="#1e293b" stroke-width="1"/>
-      <polygon points="10,7.5 12.5,9.2 11.5,12 8.5,12 7.5,9.2" fill="#1e293b"/>
-      <line x1="10" y1="7.5" x2="10" y2="4" stroke="#1e293b" stroke-width="0.75"/>
-      <line x1="12.5" y1="9.2" x2="15.5" y2="8" stroke="#1e293b" stroke-width="0.75"/>
-      <line x1="11.5" y1="12" x2="14" y2="14.5" stroke="#1e293b" stroke-width="0.75"/>
-      <line x1="8.5" y1="12" x2="6" y2="14.5" stroke="#1e293b" stroke-width="0.75"/>
-      <line x1="7.5" y1="9.2" x2="4.5" y2="8" stroke="#1e293b" stroke-width="0.75"/>
+    <!-- Football -->
+    <g transform="translate(218, 0)">
+      <rect width="98" height="28" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+      <g transform="translate(9, 5) scale(0.9)">
+        <circle cx="10" cy="10" r="6.5" fill="#ffffff" stroke="#1e293b" stroke-width="1"/>
+        <polygon points="10,7.5 12.5,9.2 11.5,12 8.5,12 7.5,9.2" fill="#1e293b"/>
+        <line x1="10" y1="7.5" x2="10" y2="4" stroke="#1e293b" stroke-width="0.75"/>
+        <line x1="12.5" y1="9.2" x2="15.5" y2="8" stroke="#1e293b" stroke-width="0.75"/>
+        <line x1="11.5" y1="12" x2="14" y2="14.5" stroke="#1e293b" stroke-width="0.75"/>
+        <line x1="8.5" y1="12" x2="6" y2="14.5" stroke="#1e293b" stroke-width="0.75"/>
+        <line x1="7.5" y1="9.2" x2="4.5" y2="8" stroke="#1e293b" stroke-width="0.75"/>
+      </g>
+      <text x="31" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#1e293b">Football</text>
     </g>
-    <text x="31" y="18.5" class="sans" font-size="11.5" font-weight="600" fill="#1e293b">Football</text>
   </g>
 </g>
 </svg>"""
@@ -1000,6 +1002,7 @@ def generate_about_cards():
     write_card("about-athletics-v2.svg", sports_svg)
     write_card("about-athletics-v3.svg", sports_svg)
     write_card("about-athletics-v4.svg", sports_svg)
+    write_card("about-athletics-v5.svg", sports_svg)
 
     # 4. about-work.svg
     work_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Opportunities - Internships in Data Science and AI">
@@ -1025,20 +1028,20 @@ def generate_about_cards():
     <tspan x="0" y="71">Looking for Data Science, AI/ML or software</tspan>
     <tspan x="0" y="88">development roles for Summer 2027 or 2028.</tspan>
   </text>
-</g>
 
-<!-- Action: LinkedIn Pill Button (Centered) -->
-<g transform="translate(94, 114)" class="f" style="animation-delay:0.55s">
-  <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/" target="_blank">
-  <g>
-    <rect width="192" height="28" rx="14" fill="#0077b5" stroke="#0077b5" stroke-width="1"/>
-    <g transform="translate(10, 6) scale(0.666)">
-      <path fill="#ffffff" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+  <!-- Action: LinkedIn Pill Button (Left-aligned, vertically centered between text and bottom edge) -->
+  <g transform="translate(0, 106)" class="f" style="animation-delay:0.55s">
+    <a href="https://www.linkedin.com/in/jatin-mehra-51a675380/" target="_blank">
+    <g>
+      <rect width="192" height="28" rx="14" fill="#0077b5" stroke="#0077b5" stroke-width="1"/>
+      <g transform="translate(10, 6) scale(0.666)">
+        <path fill="#ffffff" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+      </g>
+      <text x="34" y="18.5" class="sans" font-size="12" font-weight="600" fill="#ffffff">Connect on LinkedIn</text>
+      <text x="170" y="18.5" class="mono" font-size="12" fill="#ffffff">&#8599;</text>
     </g>
-    <text x="34" y="18.5" class="sans" font-size="12" font-weight="600" fill="#ffffff">Connect on LinkedIn</text>
-    <text x="170" y="18.5" class="mono" font-size="12" fill="#ffffff">&#8599;</text>
+    </a>
   </g>
-  </a>
 </g>
 </svg>"""
     write_card("about-work.svg", work_svg)
@@ -1046,6 +1049,7 @@ def generate_about_cards():
     write_card("about-internships-v2.svg", work_svg)
     write_card("about-internships-v3.svg", work_svg)
     write_card("about-internships-v4.svg", work_svg)
+    write_card("about-internships-v5.svg", work_svg)
 
     # Legacy about-code.svg
     write_card("about-code.svg", leetcode_svg)
